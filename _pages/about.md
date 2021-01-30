@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about
+tooltip_js: js/tooltip.js
+load_js: true
 ---
 
 *This is an about page.*

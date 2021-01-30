@@ -1,13 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-  {% include head.html %}
+  {%- include head.html -%}
   <body>
-    <nav>{% include nav.html %}</nav>
+    <nav>{%- include nav.html -%}</nav>
     <div class="wrapper">
       <main>{{ content }}</main>
-      <footer>{% include footer.html %}</footer>
+      <footer>{%- include footer.html -%}</footer>
     </div>
-
-    {% include link-previews.html wrapperQuerySelector="content" %}
+    <!-- Loads Tooltip on Hover plugin on selected pages-->
+    {% for js in page.tooltip_js %}
+      <script type="text/javascript">
+        {% include js/tooltip.js %}
+      </script>
+    {% endfor %}
+    <!--Makes API call on selected pages -->
+    {% for js in page.API_call %}
+      <script type="text/javascript">
+        {% include js/axreq.js %}
+      </script>
+    {% endfor %}
   </body>
+
 </html>

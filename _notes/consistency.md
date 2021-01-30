@@ -1,5 +1,5 @@
 ---
-title: Consistency is key
+title: Projects
 ---
 
 Show up. Do the work. Be consistent.

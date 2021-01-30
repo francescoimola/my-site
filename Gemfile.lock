@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/eventmachine/eventmachine.git
+  revision: 9cb13a8a62363df5ebcc414169a3deb2c1608528
+  tag: v1.2.7
+  specs:
+    eventmachine (1.2.7)
+
+GIT
   remote: https://github.com/maximevaillancourt/jekyll-last-modified-at
   revision: e0c918691db625401ef5850a030da59d0124d356
   branch: add-support-for-files-in-git-submodules
@@ -13,15 +20,14 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.8)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.7)
-    ffi (1.14.2)
+    ffi (1.14.2-x64-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
-    i18n (1.8.5)
+    i18n (1.8.7)
       concurrent-ruby (~> 1.0)
     jekyll (4.2.0)
       addressable (~> 2.4)
@@ -47,7 +53,7 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
-    listen (3.3.3)
+    listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
@@ -61,20 +67,23 @@ GEM
     rexml (3.2.4)
     rouge (3.26.0)
     safe_yaml (1.0.5)
-    sassc (2.4.0)
+    sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
+    wdm (0.1.1)
     webrick (1.7.0)
 
 PLATFORMS
-  ruby
+  x64-mingw32
 
 DEPENDENCIES
-  jekyll (~> 4.0)
+  eventmachine (~> 1.2.7)!
+  jekyll (~> 4.2.0)
   jekyll-last-modified-at!
+  wdm (>= 0.1.0)
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.3
+   2.2.5

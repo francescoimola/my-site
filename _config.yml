@@ -1,13 +1,18 @@
-title:               My digital garden
-include:             ['_pages']
-exclude:             ['_includes/notes_graph.json']
+title:  Francesco Imola's garden
+include:  ["_pages"]
+exclude:  [".jekyll-cache", "Gemfile", "Gemfile.lock"]
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
 # Pages deploys your repository (which is usually the repository name).
 baseurl:             /
 
-permalink:           pretty
+# Server Config options
+livereload: true    
+
+permalink:  pretty
 relative_permalinks: false
+
+encoding: utf-8
 
 plugins:
   - jekyll-last-modified-at

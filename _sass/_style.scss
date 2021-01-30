@@ -1,11 +1,22 @@
-$color-primary: hsl(0, 0%, 10%);
-$color-text: hsl(0, 0%, 20%);
-$color-subtext: hsl(0, 0%, 30%);
-$color-border: hsl(0, 0%, 85%);
-$color-box-background: mix($color-primary, white, 4%);
-$border-radius: 4px;
+//Colors Map
+$color: (
+    primary: hsl( 0, 0%, 10% ),
+    text: hsl( 0, 0%, 20% ),
+    links: #005EFF,
+    subtext: hsl( 0, 0%, 30% ),
+    border: hsl( 0, 0%, 85% ),
+);
+$color-box-background: mix( map-get($color, primary), white, 4% );
+$border-radius: 0.25em;
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$fsize: 1rem;
+
+//"Dark mode"
+/* html body {
+  filter: invert(100%) hue-rotate(180deg);
+  background-color: black;
+} */
 
 body {
   box-sizing: content-box;
@@ -14,29 +25,26 @@ body {
   line-height: 1.7;
   padding: 4vh 6vw;
   overflow-x: hidden;
-  color: $color-text;
-  font-size: 1rem;
+  color: map-get($color, text);
+  font-size: $fsize;
   max-width: 63em;
-
-  @media (min-width: 820px) {
-    font-size: 1.2rem;
-  }
 }
 
 time {
   display: block;
-  color: $color-subtext;
+  color: map-get($color, subtext);
   margin: 0.5em 0 1em;
 }
 
 footer {
   margin: 2em 0;
   font-size: 0.8em;
-  color: mix($color-text, white, 80%);
+  color: mix( map-get($color, text), white, 80% );
   padding-top: 1em;
 }
 
 img {
+  border-style: none;
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -61,7 +69,9 @@ hr {
   border: 0;
   height: 1px;
   margin: 1.5em 0;
-  background: $color-border;
+  box-sizing: content-box; 
+  overflow: visible; 
+  background: map-get($color, border);
 }
 
 h1,
@@ -76,21 +86,22 @@ h6 {
 }
 
 a {
+  background-color: transparent;
   transition: background 300ms;
   padding: 0 0.1em;
   text-decoration: none;
-  border-bottom: 1px solid $color-border;
-  color: $color-primary;
+  border-bottom: 1px solid map-get($color, border);
+  color: map-get($color, links);
   &:hover {
-    color: black !important;
-    background: #fffaf1;
+    color: black;
+    background: #FFFAF1;
   }
   &:after {
     position: relative;
     top: -0.5em;
     font-size: 0.7em;
     content: "↗";
-    color: #aaaaaa;
+    color: #AAAAAA;
   }
   &.internal-link:after {
     content: "";
@@ -98,8 +109,8 @@ a {
 }
 
 *:focus {
-  background: #ffe8bc !important;
-  color: black !important;
+  background: #FFE8BC;
+  color: black;
 }
 
 nav {
@@ -109,11 +120,9 @@ nav {
 #notes-entry-container {
   display: grid;
   grid-gap: 2em;
-  grid-template-areas:
-    "content"
-    "side";
+  grid-template-areas: "content" "side";
 
-  @media (min-width: 700px) {
+  @media ( min-width: 700px ) {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "content side";
   }
@@ -126,19 +135,91 @@ nav {
 }
 
 code {
-  background: #f5f5f5;
+  background: #F5F5F5;
   padding: 0.1em 0.2em;
+  border-radius: 4px;
+}
+
+iframe {
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.callout {
+  padding: 3em 1em; 
+  background: #F5F7FF; 
   border-radius: 4px;
 }
 
 .invalid-link {
   color: #444444;
   cursor: help;
-  background: #fafafa;
+  background: #FAFAFA;
   padding: 0 0.1em;
 }
 
 .invalid-link-brackets {
-  color: #ccc;
+  color: #CCCCCC;
   cursor: help;
+}
+
+.mini-preview-anchor {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+
+.mini-preview-wrapper {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+  margin-top: -4px;
+  border: solid 1px #000000;
+  box-shadow: 4px 4px 6px rgba( 0, 0, 0, 0.3 );
+  transition: z-index steps( 1 ) 0.3s, opacity 0.3s, margin-top 0.3s;
+}
+
+.mini-preview-anchor:hover .mini-preview-wrapper {
+  z-index: 2;
+  opacity: 1;
+  margin-top: 6px;
+  transition: opacity 0.3s, margin-top 0.3s;
+}
+
+.mini-preview-loading, .mini-preview-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;    
+}
+
+.mini-preview-loading {
+  display: table;
+  height: 100%;
+  width: 100%;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #F5EAD4;
+  background-color: #59513F;
+}
+
+.mini-preview-loading::before {
+  content: "Loading...";
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mini-preview-cover {
+  background-color: rgba( 0, 0, 0, 0 ); /*IE fix*/
+}
+
+.mini-preview-frame {
+  border: none;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
 }

@@ -4,22 +4,25 @@ exclude:  [".jekyll-cache", "Gemfile", "Gemfile.lock"]
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
 # Pages deploys your repository (which is usually the repository name).
-baseurl:             /
+baseurl:  /
+
+# If you are using a host that cannot resolve URLs that do
+# not end with .html (such as Neocities), set this to 'true'.
+use_html_extension: false
 
 # Server Config options
-livereload: true    
+livereload: true  
 
 permalink:  pretty
-relative_permalinks: false
-
+relative_permalinks:  false
 encoding: utf-8
 
 plugins:
   - jekyll-last-modified-at
 
 sass:
-  sass_dir:          _sass
-  style:            :compressed
+  sass_dir: _sass
+  style: :compressed
 
 collections:
   notes:

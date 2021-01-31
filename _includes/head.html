@@ -1,7 +1,7 @@
 <head>
   <meta charset="UTF-8">
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
   <meta name="description"
     content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
@@ -10,44 +10,44 @@
 
   <title>
     {% if page.id == "home" %}
-    {{ site.title }}
+      {{ site.title }}
     {% else %}
-    {{ page.title }} &mdash; {{ site.title }}
+      {{ page.title }} &mdash; {{ site.title }}
     {% endif %}
   </title>
-  
+
   {% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" />
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"/>
   {% else %}
-  <meta property="og:description" content="{{ site.title | strip_html | strip_newlines | truncate: 160 }}" />
+    <meta property="og:description" content="{{ site.title | strip_html | strip_newlines | truncate: 160 }}"/>
   {% endif %}
 
   {% if page.title %}
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="article">
   {% else %}
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:type" content="website">
   {% endif %}
 
   {% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="article:author" content="{{ site.url }}/">
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    <meta property="article:author" content="{{ site.url }}/">
   {% endif %}
 
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 
   {% if page.image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}">
   {% endif %}
 
   <!--  Load Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
-    
-  <!--  Load Axios --> 
+
+  <!--  Load Axios -->
   {% if page.load_js %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
   {% endif %}
 </head>

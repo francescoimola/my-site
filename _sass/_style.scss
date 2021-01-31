@@ -1,15 +1,21 @@
 //Colors Map
-$color: (
-    primary: hsl( 0, 0%, 10% ),
-    text: hsl( 0, 0%, 20% ),
-    links: #005EFF,
-    subtext: hsl( 0, 0%, 30% ),
-    border: hsl( 0, 0%, 85% ),
+$color: (primary: hsl(0, 0%, 10%),
+  text: hsl(0, 0%, 20%),
+  links: #005EFF,
+  subtext: hsl(0, 0%, 30%),
+  border: hsl(0, 0%, 85%),
 );
-$color-box-background: mix( map-get($color, primary), white, 4% );
+$color-box-background: mix(map-get($color, primary), white, 4%);
 $border-radius: 0.25em;
-$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-  sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$font-family: -apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Helvetica,
+Arial,
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji,
+Segoe UI Symbol;
 $fsize: 1rem;
 
 //"Dark mode"
@@ -39,8 +45,28 @@ time {
 footer {
   margin: 2em 0;
   font-size: 0.8em;
-  color: mix( map-get($color, text), white, 80% );
+  color: mix(map-get($color, text), white, 80%);
   padding-top: 1em;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-right: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  height: 40vh;
+  flex-grow: 1;
+}
+
+li:last-child {
+  flex-grow: 10;
 }
 
 img {
@@ -50,6 +76,51 @@ img {
   margin: 0 auto;
   max-height: 75vh;
   border-radius: $border-radius;
+}
+
+img.myimg {
+  display: auto;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 0%;
+}
+
+//ADVANCED Image Media Queries 
+//Portrait
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
+}
+
+// Short screens
+
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+
+// Smaller screens in portrait
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+
+  img.myimg {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
 }
 
 blockquote {
@@ -69,8 +140,8 @@ hr {
   border: 0;
   height: 1px;
   margin: 1.5em 0;
-  box-sizing: content-box; 
-  overflow: visible; 
+  box-sizing: content-box;
+  overflow: visible;
   background: map-get($color, border);
 }
 
@@ -85,17 +156,19 @@ h6 {
   padding-bottom: 0;
 }
 
-a {
+p a, footer a {
   background-color: transparent;
   transition: background 300ms;
   padding: 0 0.1em;
   text-decoration: none;
   border-bottom: 1px solid map-get($color, border);
   color: map-get($color, links);
+
   &:hover {
     color: black;
     background: #FFFAF1;
   }
+
   &:after {
     position: relative;
     top: -0.5em;
@@ -103,6 +176,7 @@ a {
     content: "↗";
     color: #AAAAAA;
   }
+
   &.internal-link:after {
     content: "";
   }
@@ -120,9 +194,9 @@ nav {
 #notes-entry-container {
   display: grid;
   grid-gap: 2em;
-  grid-template-areas: "content" "side";
+  grid-template-areas: "content""side";
 
-  @media ( min-width: 700px ) {
+  @media (min-width: 700px) {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "content side";
   }
@@ -146,8 +220,8 @@ iframe {
 }
 
 .callout {
-  padding: 3em 1em; 
-  background: #F5F7FF; 
+  padding: 3em 1em;
+  background: #F5F7FF;
   border-radius: 4px;
 }
 
@@ -178,8 +252,8 @@ iframe {
   opacity: 0;
   margin-top: -4px;
   border: solid 1px #000000;
-  box-shadow: 4px 4px 6px rgba( 0, 0, 0, 0.3 );
-  transition: z-index steps( 1 ) 0.3s, opacity 0.3s, margin-top 0.3s;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: z-index steps(1) 0.3s, opacity 0.3s, margin-top 0.3s;
 }
 
 .mini-preview-anchor:hover .mini-preview-wrapper {
@@ -189,12 +263,13 @@ iframe {
   transition: opacity 0.3s, margin-top 0.3s;
 }
 
-.mini-preview-loading, .mini-preview-cover {
+.mini-preview-loading,
+.mini-preview-cover {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
-  left: 0;    
+  left: 0;
 }
 
 .mini-preview-loading {
@@ -215,7 +290,8 @@ iframe {
 }
 
 .mini-preview-cover {
-  background-color: rgba( 0, 0, 0, 0 ); /*IE fix*/
+  background-color: rgba(0, 0, 0, 0);
+  /*IE fix*/
 }
 
 .mini-preview-frame {

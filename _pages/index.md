@@ -17,6 +17,7 @@ I'm an artist, designer, and curator based in London. This site is a living publ
 [[About]]<br>
 [[Writings]]<br>
 [[CV]]<br>
+[[Photographs]]<br>
 
 <style>
   .wrapper {

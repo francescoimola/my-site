@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "bundle": "bundle",
-    "serve": "bundle exec jekyll serve --incremental",
+    "serve": "bundle exec jekyll serve -l",
     "stylelint": "stylelint '_sass/*.scss'; exit 0",
     "reinstall": "bundle install"
   },

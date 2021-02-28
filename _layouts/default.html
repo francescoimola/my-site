@@ -2,23 +2,11 @@
 <html lang="en">
   {%- include head.html -%}
   <body>
-    <nav>{%- include nav.html -%}</nav>
+  <nav>{%- include nav.html -%}</nav>
     <div class="wrapper">
       <main>{{ content }}</main>
-      <footer>{%- include footer.html -%}</footer>
+      <footer><hr>{%- include footer.html -%}</footer>
     </div>
-    <!-- Loads Tooltip on Hover plugin on selected pages-->
-    {% for js in page.tooltip_js %}
-      <script type="text/javascript">
-        {% include js/tooltip.js %}
-      </script>
-    {% endfor %}
-    <!--Makes API call on selected pages -->
-    {% for js in page.API_call %}
-      <script type="text/javascript">
-        {% include js/axreq.js %}
-      </script>
-    {% endfor %}
+    <script type="text/javascript" src="salvattore.min.js"></script>
   </body>
-
 </html>

@@ -8,10 +8,7 @@ baseurl:  /
 
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities), set this to 'true'.
-use_html_extension: false
-
-# Server Config options
-livereload: true  
+use_html_extension: false 
 
 permalink:  pretty
 relative_permalinks:  false

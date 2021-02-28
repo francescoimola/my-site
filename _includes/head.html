@@ -6,6 +6,12 @@
     content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  <!--  Load GoogleFont -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+  <!--  Load CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}styles.css" rel="stylesheet">
 
   <title>
@@ -46,8 +52,6 @@
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
 
-  <!--  Load Axios -->
-  {% if page.load_js %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
-  {% endif %}
+  <!--  Load FontAwesome -->
+  <script src="https://kit.fontawesome.com/06e0fd17c2.js" crossorigin="anonymous"></script>
 </head>

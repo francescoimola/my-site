@@ -6,18 +6,7 @@
  *2. Prevent adjustments of font size after orientation changes in iOS*/
 
  html {
-  line-height: 1.15; /*1*/
   -webkit-text-size-adjust: 100%; /*2*/
-}
-
-/*Sections*/
-
-/*Correct the font size and margin on `h1` elements within `section` and
- *`article` contexts in Chrome, Firefox, and Safari*/
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /*Grouping content*/
@@ -63,12 +52,6 @@ code,
 kbd,
 samp {
   font-size: 1em; /*2*/
-}
-
-/*Add the correct font size in all browsers*/
-
-small {
-  font-size: 80%;
 }
 
 /*Prevent `sub` and `sup` elements from affecting the line height in

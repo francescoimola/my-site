@@ -45,10 +45,9 @@ Lists work as expected:
 
 So do code blocks, with full syntax highlighting:
 
-```js
-// Here's a bit of JavaScript:
+<pre><code>// Here's a bit of JavaScript:
 console.log('hello!')
-```
+</code></pre>
 
 If you'd like to quote other people, consider using quote blocks:
 

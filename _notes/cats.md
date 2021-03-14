@@ -8,7 +8,7 @@ Here's a link to a note that explains why it's important to [[move your body eve
 
 > I like my pillow, my fancy bed,
 >
-> My cat tree and the bathroom sink.
+> My cat tree and the bathroom sink. [[Your first seed]]
 >
 > Each has its time and fills a need,
 >

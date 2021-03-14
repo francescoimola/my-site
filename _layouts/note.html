@@ -10,13 +10,12 @@ layout: default
     </div>
 
     <side>
-        <hr>
         <h3 class="mentiontitle">Notes mentioning this note</h3>
         {%- if page.backlinks.size > 0 -%}
           <div class="mentiongrid">
             {%- for backlink in page.backlinks -%}
               <div class="backlink-box">
-                <a class="internal-link" href="{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+                <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a><br>
                 <div>{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
               </div>
             {%- endfor -%}

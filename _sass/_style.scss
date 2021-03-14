@@ -1,16 +1,17 @@
-//Colors Map
-$color: (primary: #062356,
-  links: #00689c,
-  bkg: #F8F8FF,
-);
-$color-box-background: mix(map-get($color, primary), white, 12%);
-$lighter: mix(map-get($color, primary), white, 60%);
+//Colors
+$site-background: hsl(218, 87%, 8%);
+$primary: mix($site-background, white, 12%);
+$links: hsl(200, 80%, 51%);
+$color-box-background: mix($site-background, white, 88%);
+$lighter: mix($site-background, white, 50%);
 
+// Measurements
 $rootsize: 1em;
 $line-h: $rootsize+($rootsize * 0.2);
 $border-radius: $rootsize * 0.25;
 $margin: $rootsize * 4;
 
+// Font Family
 $font-family: "DM Sans",
 -apple-system,
 BlinkMacSystemFont,
@@ -20,31 +21,26 @@ Apple Color Emoji,
 Segoe UI Emoji,
 Segoe UI Symbol;
 
-/* //Dark mode
-html body {
-  filter: invert(100%) hue-rotate(300deg);
-  background-color: black;
-} */
-
 /* //Debug
 *{ border: 1px solid pink; } 
  */
 
-* { 
-  box-sizing: border-box; 
+* {
+  box-sizing: border-box;
+  z-index: 0;
 }
 
 html {
   line-height: 1.15;
-  font-size: 45px;
-  font-size: #{"min(max(16px, 4vw), 42px);"};
+  font-size: 42px;
+  font-size: #{"min(max(16px, 4vw), 32px);"};
   min-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: map-get($color, bkg);
+  background-color: $site-background;
   margin: 0;
   padding: 0;
   font-size: $rootsize;
@@ -52,24 +48,24 @@ body {
   font-display: swap;
   font-weight: 500;
   line-height: $line-h;
-  color: map-get($color, primary);
+  color: $primary;
   text-transform: none;
-  z-index: 0;
   display: flex;
   justify-content: left;
   align-items: left;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .wrapper {
   margin-right: $line-h * 2;
-  margin-left: $line-h * 2;
+  padding-left: $line-h;
   max-width: 100vw;
   overflow: hidden;
 }
 
 p {
-  font-weight: inherit;
+  font-weight: 500;
   font-style: normal;
   line-height: inherit;
   margin-top: $line-h / 2;
@@ -92,24 +88,31 @@ h6 {
 }
 
 h2 {
-  margin-top: $line-h;
   &:before {
-    content: "—\00A0";
+    content: "[\00A0";
+  }
+
+  &:after {
+    content: "\00A0\]";
+  }
+
+  margin-top: $line-h;
+
+  &#selected-work {
+    margin-top: 0;
   }
 }
 
 h3 {
   &:before {
-    font-family: FontAwesome;
-    font-size: 70%;
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    top: -0.1em;
-    content: "\f7a4\00A0\00A0";
+    content: "——\00A0";
   }
+
   &.mentiontitle {
+    font-weight: 700;
     vertical-align: top;
+    margin-top: 0.2em;
+
     &::before {
       display: none;
       visibility: hidden;
@@ -122,33 +125,34 @@ em {
   font-style: italic;
 }
 
-.wrapper a {
-  text-decoration: underline;
-  text-underline-position: auto;
-  text-decoration-skip-ink: auto;
-  text-decoration-skip: box-decoration;
-  text-underline-offset: 0.1em;
-  color: map-get($color, links);
-  background-color: transparent;
-  opacity: 0.9;
-  margin: 0;
-  padding-bottom: 0;
+strong {
+  font-weight: 700;
+}
 
-  &:hover {
-    color: map-get($color, primary);
+.wrapper a {
+  text-decoration: none;
+  color: $links;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+    background-color: mix($links, $site-background, 50%);
   }
 
   &:after {
-    display: inline-block;
     text-decoration: none;
     position: relative;
     top: -0.5em;
     left: 0.1em;
     font-size: 0.4em;
-    font-family: FontAwesome;
-    content: "\00a0\f360"/ "";
+    font-family: "Font Awesome 5 Free";
+    content: "\00a0\f360""";
     line-height: 0;
-    color: mix(map-get($color, primary), white, 50%);
+    color: $lighter;
+    margin-right: 0.2em;
+    padding: 0;
   }
 
   &.internal-link:after {
@@ -157,8 +161,6 @@ em {
 }
 
 main {
-  overflow: hidden;
-
   p {
     margin-top: 0;
   }
@@ -168,12 +170,43 @@ footer {
   margin-top: $rootsize;
   margin-bottom: $rootsize;
   color: $lighter;
-  line-height: 90%;
 
-  p {
-    font-size: $rootsize / 2;
-    margin-top: 0;
-    margin-bottom: 0;
+  hr {
+    height: ($rootsize * 0.1) / 2;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    line-height: $line-h * 0.9;
+
+    p {
+      flex: 1;
+      font-size: 0.8em;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    p:first-child {
+      margin-right: $rootsize;
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      & {
+        flex-direction: column;
+
+        p {
+          margin-bottom: $rootsize;
+        }
+      }
+    }
   }
 }
 
@@ -184,54 +217,55 @@ hr {
   margin-top: $line-h;
   margin-bottom: $line-h / 2;
   box-sizing: content-box;
-  background: $color-box-background;
+  background: $lighter;
 }
 
 nav {
-  width: 50vw;
-  text-align: center;
-  height: auto;
-  background-color: map-get($color, primary);
-  margin-top: $line-h / 2;
-  margin-left: ($line-h * 2);
-  margin-right: ($line-h * 2);
-  border-radius: $border-radius;
-
-  /* HOVER ON */
-  transition: transform 0.5s;
-
-  &:hover {
-    transform: rotate(-2deg);
-    background-color: mix(map-get($color, primary), white, 90%);
-  }
-
-  @media (min-width: 100px) and (max-width: 321px) {
-    & {
-      width: 65vw;
-    }
-  }
-
-  @media (min-width: 322px) and (max-width: 768px) {
-    & {
-      width: 55vw;
-    }
-  }
+  padding-top: $line-h;
+  padding-left: $line-h;
+  padding-right: $line-h * 2;
 
   h1 {
-    margin-top: $line-h / 4;
-    margin-bottom: $line-h / 4;
+    /* display: inline-block; */
+    margin-top: unset;
+    margin-bottom: unset;
+    font-weight: 700;
+    transform-origin: left center;
 
     a {
+      border-radius: $border-radius;
+      margin-left: -($rootsize / 4);
+      padding: ($rootsize / 4) ($rootsize / 4) ($rootsize / 4) ($rootsize / 4);
+      background-color: mix($primary, $site-background, 95%);
       text-decoration: none;
-      color: map-get($color, bkg);
+      color: $site-background;
+
+      transition: background-color 0.1s;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: mix($primary, $site-background, 60%);
+      }
+    }
+
+    /* HOVER EFFECT */
+    transition: transform 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      transform: rotate(1deg);
     }
   }
 }
 
 blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: $rootsize;
   padding: $rootsize;
-  margin: 0 -1em $rootsize -1em;
-  font-size: 0.88em;
+  font-size: 0.85em;
   background: $color-box-background;
   border-radius: $border-radius;
 
@@ -245,15 +279,21 @@ ul {
   margin: 0 0 $rootsize 0;
 }
 
-code {
-  background: #F5F5F5;
-  padding: 0.1em 0.2em;
-  border-radius: 0.25em;
+pre {
+  code {
+    border-radius: $border-radius;
+    font-size: calc(10px + 1vw);
+  }
 }
 
 iframe {
   overflow: hidden;
-  scrollbar-width: none;
+
+  @supports (scrollbar-width: none) {
+    & {
+      scrollbar-width: none;
+    }
+  }
 }
 
 img {
@@ -262,48 +302,59 @@ img {
 
 #masonry {
   width: 100%;
-  margin-top: $line-h;
-  margin-bottom: $line-h;
-  line-height: $line-h;
-  font-size: $rootsize / 2.25;
-  vertical-align: text-top;
-  text-align: left;
 
-  &[data-columns]::before {
-    content: "4 .column.size-1of4";
-  }
-
-  @media (max-width: 480px){
+  @media (max-width: 480px) {
     &[data-columns]::before {
       content: "1 .column.size-1of1";
     }
   }
-  
+
   @media screen and (min-width: 481px) and (max-width: 768px) {
     &[data-columns]::before {
       content: "2 .column.size-1of2";
     }
   }
+
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     &[data-columns]::before {
       content: "3 .column.size-1of3";
     }
   }
-  
-  /* Again, you’re free to use and define the classes: */
-  .column { float: left; }
-  .size-1of1 { width: 100%; }
-  .size-1of2 { width: 50%; }
-  .size-1of3 { width: 33.333%; }
-  .size-1of4 { width: 25%; }
+
+  @media screen and (min-width: 1025px) {
+    &[data-columns]::before {
+      content: "4 .column.size-1of4";
+    }
+  }
+
+  .column {
+    float: left;
+  }
+
+  .size-1of1 {
+    width: 100%;
+  }
+
+  .size-1of2 {
+    width: 50%;
+  }
+
+  .size-1of3 {
+    width: 33.333%;
+  }
+
+  .size-1of4 {
+    width: 25%;
+  }
 
   div {
     transition: all .25s ease-in-out;
-    -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
+    -moz-column-break-inside: avoid;
     break-inside: avoid;
-    padding-left: $border-radius;
+    margin: 0;
     padding-bottom: $border-radius;
+    padding-right: $border-radius / 1.5;
 
     img {
       width: 100%;
@@ -313,31 +364,31 @@ img {
     }
 
     h3 {
+      font-size: 0.4em;
+      font-size: calc(10px + 0.5vw);
+      font-weight: 700;
       margin-top: $line-h / 8;
-      margin-bottom: $line-h / 4;
+      margin-bottom: $line-h / 8;
+
       &:before {
         display: none;
       }
     }
 
     p {
-      margin-top: $line-h / 4;
+      line-height: $line-h;
+      font-size: 0.39em;
+      font-size: calc(10px + 0.25vw);
       color: $lighter;
     }
   }
 
   /* clearfix */
   &:after {
-  content: '';
-  display: block;
-  clear: both;
+    content: "";
+    display: block;
+    clear: both;
   }
-}
-
-
-*:focus {
-  background: #FFE8BC;
-  color: black;
 }
 
 .mentiongrid {
@@ -348,8 +399,8 @@ img {
 
 .notes-entry-container {
   display: grid;
-  grid-gap: $rootsize * 2;
-  grid-template-areas: "content" "side";
+  grid-gap: $rootsize;
+  grid-template-areas: "content""side";
   margin-bottom: ($margin / 2);
   padding: 0;
   overflow: hidden;
@@ -361,19 +412,25 @@ img {
 }
 
 side {
-  font-size: $rootsize / 2;
+  font-size: 0.5em;
+  font-size: calc(10px + 0.6vw);
   line-height: $line-h;
 
-  hr { margin-top: 0; }
+  hr {
+    margin-top: 0;
+  }
 }
 
 .backlink-box {
+  display: block;
   background: $color-box-background;
   border-radius: $border-radius;
-  margin-left: -0.1em;
-  padding: 0.5em;
+  padding: 0.65em;
 
-  div { margin-top: $rootsize; }
+  div {
+    margin-top: $rootsize / 2;
+    font-size: 98%;
+  }
 }
 
 .callout {

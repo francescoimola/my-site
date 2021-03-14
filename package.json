@@ -8,12 +8,13 @@
   "name": "fran-digital-garden",
   "description": "## README.md",
   "version": "2",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "bundle": "bundle",
     "serve": "bundle exec jekyll serve -l",
     "stylelint": "stylelint '_sass/*.scss'; exit 0",
-    "reinstall": "bundle install"
+    "reinstall": "bundle install",
+    "webhint": "hint http://127.0.0.1:4000//"
   },
   "repository": "https://github.com/francescoimola/digital-garden-and-more-jekyll.git",
   "keywords": [],

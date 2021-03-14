@@ -16,3 +16,6 @@ node_modules
 
 # Yarn Clean Config
 .yarnclean
+
+# Webhints report folder
+hint-report

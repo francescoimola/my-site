@@ -1,0 +1,85 @@
+I"s<p>This is your first note. You’ll find it in the <a href="https://github.com/maximevaillancourt/digital-garden-jekyll-template/tree/master/_notes"><code>notes/</code></a> directory.</p>
+
+<h3 id="link-syntax">Link syntax</h3>
+
+<p>To link to another note, you can use multiple syntaxes. The following four use the “double-bracket” notation (<a href="https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/master/_notes/your-first-note.md#link-syntax">view the Markdown source file</a> to see the underlying syntax).</p>
+
+<ul>
+  <li>Using the note title: <span title="There is no note that matches this link." class="invalid-link">
+<span class="invalid-link-brackets">[[</span>
+a note about cats
+<span class="invalid-link-brackets">]]</span></span></li>
+  <li>Using the note’s filename: <a class="internal-link" href="/cats">cats</a></li>
+  <li>Using the note’s title, with a label: <span title="There is no note that matches this link." class="invalid-link">
+<span class="invalid-link-brackets">[[</span>
+A note about cats|link to the note about cats using the note title
+<span class="invalid-link-brackets">]]</span></span></li>
+  <li>Using the note’s filename, with a label: <a class="internal-link" href="/cats">link to the note about cats using the note’s filename</a></li>
+</ul>
+
+<p>In all cases, if the double-bracket link does not point to a valid note, the double brackets will still be shown, like this: <span title="There is no note that matches this link." class="invalid-link">
+  <span class="invalid-link-brackets">[[</span>
+  there is no note that matches this link
+  <span class="invalid-link-brackets">]]</span></span>.</p>
+
+<p>Alternatively, you can use regular <a href="https://www.markdownguide.org/getting-started/">Markdown syntax</a> for links, with a relative link to the other note, like this: <a href="/cats" class="internal-link">this is a Markdown link to the note about cats</a>. Don’t forget to use the <code>.internal-link</code> class to make sure the link is styled as an internal link (without the little arrow).</p>
+
+<p>Since the Web is all about HTML, you can always use plain HTML if you want, like this: <a class="internal-link" href="/cats">This is a link to the note about cats with HTML</a>.</p>
+
+<p>Of course, you can also link to external websites, like this: <a href="https://wikipedia.org/">this is a link to Wikipedia</a>. Again, you can use plain HTML if you prefer.</p>
+
+<h3 id="automatic-bi-directional-links">Automatic bi-directional links</h3>
+
+<p>Notice in the “Notes mentioning this note” section that there is another note linking to this note. This is a bi-directional link, and those are automatically created when you create links to other notes.</p>
+
+<h3 id="link-previews">Link previews</h3>
+
+<p>If you’re on a device with mouse support, try hovering your mouse on internal links to preview the notes: <span title="There is no note that matches this link." class="invalid-link">
+  <span class="invalid-link-brackets">[[</span>
+  a note about cats
+  <span class="invalid-link-brackets">]]</span></span>.</p>
+
+<h3 id="images-and-other-markdown-goodies">Images and other Markdown goodies</h3>
+
+<p>Finally, because you have the full power of Markdown in this template, you can use regular Markdown syntax for various formatting options.</p>
+
+<p>Lists work as expected:</p>
+
+<ul>
+  <li>List element A</li>
+  <li>List element B</li>
+  <li>List element C</li>
+</ul>
+
+<ol>
+  <li>List element</li>
+  <li>List element</li>
+  <li>List element</li>
+</ol>
+
+<p>So do code blocks, with full syntax highlighting:</p>
+
+<pre><code>// Here's a bit of JavaScript:
+console.log('hello!')
+</code></pre>
+
+<p>If you’d like to quote other people, consider using quote blocks:</p>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet</p>
+</blockquote>
+
+<p>And of course, images look great:</p>
+
+<p><img src="/assets/image.jpg" /></p>
+
+<h3 id="next-steps">Next steps</h3>
+
+<p><strong>If this template is useful to you in any way, consider <a href="https://ko-fi.com/maximevaillancourt">donating</a> to support my work</strong>. ☕</p>
+
+<p>This digital garden template is free, open-source, and <a href="https://github.com/maximevaillancourt/digital-garden-jekyll-template">available on GitHub here</a>.</p>
+
+<p>The easiest way to build your own digital garden based on this template is to read this <a href="https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll">step-by-step guide explaining how to set this up from scratch</a>. If you need any help, my <a href="https://twitter.com/vaillancourtmax">DMs are open on Twitter (@vaillancourtmax)</a>. 👋</p>
+
+<p>Go forth, have fun, and learn new something every day! ✌️</p>
+:ET

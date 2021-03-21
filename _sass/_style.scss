@@ -130,15 +130,18 @@ strong {
 }
 
 .wrapper a {
-  text-decoration: none;
-  color: $links;
-  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  color: unset;
+  text-decoration-color: $links;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .15em;
+  transition: color 0.15s ease-in-out;
 
   &:hover,
   &:focus,
   &:active {
-    color: $primary;
-    background-color: mix($links, $site-background, 50%);
+    color: $links;
   }
 
   &:after {
@@ -226,13 +229,13 @@ nav {
   padding-right: $line-h * 2;
 
   h1 {
-    /* display: inline-block; */
     margin-top: unset;
     margin-bottom: unset;
     font-weight: 700;
     transform-origin: left center;
 
     a {
+      display: inline-block;
       border-radius: $border-radius;
       margin-left: -($rootsize / 4);
       padding: ($rootsize / 4) ($rootsize / 4) ($rootsize / 4) ($rootsize / 4);
@@ -250,12 +253,14 @@ nav {
     }
 
     /* HOVER EFFECT */
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 
     &:hover,
     &:focus,
     &:active {
-      transform: rotate(1deg);
+      margin: 0;
+      padding: 0;
+      transform: translate(1.5%, 1.5%);
     }
   }
 }
@@ -348,7 +353,6 @@ img {
   }
 
   div {
-    transition: all .25s ease-in-out;
     page-break-inside: avoid;
     -moz-column-break-inside: avoid;
     break-inside: avoid;
@@ -361,7 +365,13 @@ img {
       width: 100%;
       max-width: 100%;
       border-radius: $border-radius;
-      transition: all .25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 50%;
+      }
     }
 
     h3 {
@@ -377,10 +387,16 @@ img {
     }
 
     p {
+      letter-spacing: 0.02em;
       line-height: $line-h;
       font-size: 0.4em;
       font-size: calc(10px + 0.25vw);
       color: $lighter;
+    }
+
+    a, a.internal-link {
+      text-decoration: none;
+      border: none;
     }
   }
 

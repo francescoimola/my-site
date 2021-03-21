@@ -1,5 +1,5 @@
 ---
-title: Writings
+title: How to feel more at home
 ---
 
 Move your body every day. Benefits include:

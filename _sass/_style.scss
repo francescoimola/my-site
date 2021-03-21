@@ -111,7 +111,7 @@ h3 {
   &.mentiontitle {
     font-weight: 700;
     vertical-align: top;
-    margin-top: 0.2em;
+    margin-top: 1em;
 
     &::before {
       display: none;
@@ -145,21 +145,30 @@ strong {
   }
 
   &:after {
-    text-decoration: none;
     position: relative;
-    top: -0.5em;
-    left: 0.1em;
-    font-size: 0.4em;
+    font-size: calc(9px + 0.25vw);
     font-family: "Font Awesome 5 Free";
-    content: "\00a0\f360""";
+    content: "\00a0\00a0\f360""";
     line-height: 0;
     color: $lighter;
-    margin-right: 0.2em;
-    padding: 0;
+    padding-right: 0.3em;
+    margin: 0;
+    margin-left: -0.05em;
   }
 
-  &.internal-link:after {
+  &.internal-link:after,
+  &.imga:after {
     display: none;
+  }
+
+  img {
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  img:hover,
+  img:active,
+  img:focus {
+    opacity: 50%;
   }
 }
 
@@ -167,6 +176,11 @@ main {
   p {
     margin-top: 0;
   }
+}
+
+small {
+  font-size: calc(10px + 0.6vw);
+  color: $lighter;
 }
 
 footer {
@@ -303,6 +317,7 @@ iframe {
 
 img {
   max-width: 100%;
+  border-radius: $border-radius;
 }
 
 #masonry {
@@ -361,17 +376,21 @@ img {
     padding-right: 8px;
     padding-right: calc(1px + 0.7vw);
 
-    img {
-      width: 100%;
-      max-width: 100%;
-      border-radius: $border-radius;
-      transition: all 0.25s ease-in-out;
+    div {
 
       &:hover,
       &:focus,
       &:active {
-        opacity: 50%;
+        img {
+          opacity: 50%;
+        }
       }
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      transition: all 0.25s ease-in-out;
     }
 
     h3 {
@@ -394,9 +413,14 @@ img {
       color: $lighter;
     }
 
-    a, a.internal-link {
+    a,
+    a.internal-link {
       text-decoration: none;
       border: none;
+
+      &:after {
+        display: none;
+      }
     }
   }
 
@@ -406,6 +430,10 @@ img {
     display: block;
     clear: both;
   }
+}
+
+.makeitgrey {
+  color: $lighter;
 }
 
 .mentiongrid {

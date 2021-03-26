@@ -57,8 +57,8 @@ body {
   align-items: left;
   flex-direction: column;
   overflow-x: hidden;
-  animation: fadeIn ease 0.5s;
   -webkit-animation: fadeIn ease 0.5s;
+  animation: fadeIn ease 0.5s;
 }
 
 .wrapper {
@@ -135,11 +135,29 @@ strong {
 
 .wrapper a {
   text-decoration: underline;
-  text-decoration-skip-ink: auto;
+  @supports (-webkit-text-decoration-skip: ink) {
+    & {
+      -webkit-text-decoration-skip: ink;
+    }
+  }
+  @supports (text-decoration-skip-ink: auto) {
+    & {
+      text-decoration-skip-ink: auto;
+    }
+  }
   color: unset;
-  text-decoration-color: $links;
-  text-decoration-thickness: $under-line;
-  text-underline-offset: .10em;
+  -webkit-text-decoration-color: $links;
+          text-decoration-color: $links;
+  @supports (text-decoration-thickness: 1px) {
+    & {
+      text-decoration-thickness: $under-line;
+    }
+  }
+  @supports (text-underline-offset: 0.10em) {
+    & {
+      text-underline-offset: 0.10em;
+    }
+  }
   transition: color 0.15s ease-in-out;
 
   &:hover,
@@ -211,8 +229,8 @@ hr {
   margin-bottom: $line-h / 2;
   box-sizing: content-box;
   background: $lighter;
-  animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 1s;
+  animation: fadeIn ease 1s;
 }
 
 nav {
@@ -297,8 +315,8 @@ iframe {
 img {
   max-width: 100%;
   border-radius: $border-radius;
-  animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 0.8s;
+  animation: fadeIn ease 0.8s;
 }
 
 #masonry {
@@ -480,37 +498,7 @@ side {
   }
 }
 
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
   0% {
     opacity: 0;
   }

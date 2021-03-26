@@ -5,11 +5,26 @@
 /*1. Prevent adjustments of font size after orientation changes in iOS*/
 
 html {
-  @supports (-webkit-text-size-adjust: 100%) or (-moz-text-size-adjust: 100%) or (-ms-text-size-adjust: 100%) or (text-size-adjust: 100%) {
+  @supports (-webkit-text-size-adjust: 100%) {
     & {
       -webkit-text-size-adjust: 100%;
+    }
+  }
+
+  @supports (-moz-text-size-adjust: 100%) {
+    & {
       -moz-text-size-adjust: 100%;
+    }
+  }
+
+  @supports (-ms-text-size-adjust: 100%) {
+    & {
       -ms-text-size-adjust: 100%;
+    }
+  }
+
+  @supports (text-size-adjust: 100%) {
+    & {
       text-size-adjust: 100%;
     }
   }

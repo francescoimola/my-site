@@ -8,6 +8,8 @@ $lighter: mix($site-background, white, 50%);
 // Measurements
 $rootsize: 1em;
 $line-h: $rootsize+($rootsize * 0.2);
+$small: calc(10px + 0.5vw);
+$under-line: $rootsize * 0.08;
 $border-radius: $rootsize * 0.25;
 $margin: $rootsize * 4;
 
@@ -55,11 +57,13 @@ body {
   align-items: left;
   flex-direction: column;
   overflow-x: hidden;
+  animation: fadeIn ease 0.5s;
+  -webkit-animation: fadeIn ease 0.5s;
 }
 
 .wrapper {
-  margin-right: $line-h * 2;
-  padding-left: $line-h;
+  padding-right: $line-h * 2;
+  padding-left: $line-h * 2;
   max-width: 100vw;
   overflow: hidden;
 }
@@ -111,7 +115,7 @@ h3 {
   &.mentiontitle {
     font-weight: 700;
     vertical-align: top;
-    margin-top: 1em;
+    margin-top: 0.5em;
 
     &::before {
       display: none;
@@ -134,8 +138,8 @@ strong {
   text-decoration-skip-ink: auto;
   color: unset;
   text-decoration-color: $links;
-  text-decoration-thickness: 1px;
-  text-underline-offset: .15em;
+  text-decoration-thickness: $under-line;
+  text-underline-offset: .10em;
   transition: color 0.15s ease-in-out;
 
   &:hover,
@@ -146,7 +150,7 @@ strong {
 
   &:after {
     position: relative;
-    font-size: calc(9px + 0.25vw);
+    font-size: calc(7px + 0.5vw);
     font-family: "Font Awesome 5 Free";
     content: "\00a0\00a0\f360""";
     line-height: 0;
@@ -179,7 +183,7 @@ main {
 }
 
 small {
-  font-size: calc(10px + 0.6vw);
+  font-size: $small;
   color: $lighter;
 }
 
@@ -188,41 +192,13 @@ footer {
   margin-bottom: $rootsize;
   color: $lighter;
 
-  hr {
-    height: ($rootsize * 0.1) / 2;
-  }
-
   div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     line-height: $line-h * 0.9;
 
     p {
-      flex: 1;
-      font-size: 0.8em;
+      font-size: $small;
       margin-top: 0;
       margin-bottom: 0;
-    }
-
-    p:first-child {
-      margin-right: $rootsize;
-    }
-
-    &:after {
-      content: "";
-      display: inline-block;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 768px) {
-      & {
-        flex-direction: column;
-
-        p {
-          margin-bottom: $rootsize;
-        }
-      }
     }
   }
 }
@@ -230,19 +206,22 @@ footer {
 hr {
   width: 100%;
   border: 0;
-  height: $rootsize * 0.1;
+  height: $under-line;
   margin-top: $line-h;
   margin-bottom: $line-h / 2;
   box-sizing: content-box;
   background: $lighter;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
 }
 
 nav {
   padding-top: $line-h;
-  padding-left: $line-h;
+  padding-left: $line-h * 2;
   padding-right: $line-h * 2;
 
   h1 {
+    display: inline-block;
     margin-top: unset;
     margin-bottom: unset;
     font-weight: 700;
@@ -301,7 +280,7 @@ ul {
 pre {
   code {
     border-radius: $border-radius;
-    font-size: calc(10px + 1vw);
+    font-size: $small;
   }
 }
 
@@ -318,6 +297,8 @@ iframe {
 img {
   max-width: 100%;
   border-radius: $border-radius;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
 }
 
 #masonry {
@@ -394,8 +375,7 @@ img {
     }
 
     h3 {
-      font-size: 0.4em;
-      font-size: calc(10px + 0.5vw);
+      font-size: $small;
       font-weight: 700;
       margin-top: $line-h / 8;
       margin-bottom: $line-h / 8;
@@ -408,8 +388,7 @@ img {
     p {
       letter-spacing: 0.02em;
       line-height: $line-h;
-      font-size: 0.4em;
-      font-size: calc(10px + 0.25vw);
+      font-size: $small;
       color: $lighter;
     }
 
@@ -458,12 +437,8 @@ img {
 
 side {
   font-size: 0.5em;
-  font-size: calc(10px + 0.6vw);
+  font-size: $small;
   line-height: $line-h;
-
-  hr {
-    margin-top: 0;
-  }
 }
 
 .backlink-box {
@@ -492,4 +467,55 @@ side {
 .invalid-link-brackets {
   color: mix($site-background, white, 90%);
   cursor: help;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

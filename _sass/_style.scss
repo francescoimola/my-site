@@ -148,36 +148,46 @@ strong {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
+
   @supports (-webkit-text-decoration-skip: ink) {
     & {
       -webkit-text-decoration-skip: ink;
     }
   }
+
   @supports (text-decoration-skip-ink: auto) {
     & {
+      -webkit-text-decoration-skip: ink;
       text-decoration-skip-ink: auto;
     }
   }
-  color: unset;
+
+  color: $links;
   -webkit-text-decoration-color: $links;
-          text-decoration-color: $links;
+  text-decoration-color: $links;
+
   @supports (text-decoration-thickness: 1px) {
     & {
       text-decoration-thickness: $under-line;
     }
   }
+
   @supports (text-underline-offset: 0.10em) {
     & {
       text-underline-offset: 0.10em;
     }
   }
-  transition: color 0.15s ease-in-out;
+
+  transition: color 0.10s ease-in-out;
 
   &:hover,
   &:focus,
   &:active {
-    color: $links;
+    color: unset;
+    text-decoration: underline;
+    -webkit-text-decoration-color: $links;
+    text-decoration-color: $links;
   }
 
   &:after {
@@ -238,7 +248,7 @@ footer {
 hr {
   width: 100%;
   border: $under-line dotted $lighter;
-  border-style: none none dotted; 
+  border-style: none none dotted;
   height: auto;
   margin-top: $line-h;
   margin-bottom: $line-h / 2;
@@ -268,6 +278,14 @@ nav {
 
   a {
     text-decoration: none;
+    color: unset;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $links;
+      text-decoration: none;
+    }
   }
 
   h1 {
@@ -399,6 +417,10 @@ img {
         img {
           opacity: 50%;
         }
+
+        a {
+          color: $links;
+        }
       }
     }
 
@@ -430,6 +452,7 @@ img {
     a.internal-link {
       text-decoration: none;
       border: none;
+      color: unset;
 
       &:after {
         display: none;

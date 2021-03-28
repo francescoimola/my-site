@@ -13,6 +13,9 @@ $under-line: $rootsize * 0.08;
 $border-radius: $rootsize * 0.25;
 $margin: $rootsize * 4;
 
+// Time
+$transtime: 0.5s;
+
 // Font Family
 $font-family: "DM Sans",
 -apple-system,
@@ -57,8 +60,8 @@ body {
   align-items: left;
   flex-direction: column;
   overflow-x: hidden;
-  -webkit-animation: fadeIn ease 0.5s;
-  animation: fadeIn ease 0.5s;
+  -webkit-animation: fadeIn ease $transtime;
+  animation: fadeIn ease $transtime;
 }
 
 .wrapper {
@@ -115,10 +118,6 @@ h2 {
   }
 
   margin-top: $line-h;
-
-  &#selected-work {
-    margin-top: 0;
-  }
 }
 
 h3 {
@@ -179,15 +178,18 @@ a {
     }
   }
 
-  transition: color 0.10s ease-in-out;
-
   &:hover,
-  &:focus,
-  &:active {
-    color: unset;
+  &:focus {
+    color: $primary;
     text-decoration: underline;
     -webkit-text-decoration-color: $links;
     text-decoration-color: $links;
+  }
+
+  transition: all ($transtime / 2) ease-in-out;
+
+  &:active {
+    background-color: $links;
   }
 
   &:after {
@@ -208,7 +210,7 @@ a {
   }
 
   img {
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity ($transtime / 2) ease-in-out;
   }
 
   img:hover,
@@ -218,10 +220,8 @@ a {
   }
 }
 
-main {
-  p {
-    margin-top: 0;
-  }
+main p {
+  margin-top: 0;
 }
 
 small {
@@ -234,14 +234,11 @@ footer {
   margin-bottom: $rootsize;
   color: $lighter;
 
-  div {
-    line-height: $line-h * 0.9;
-
-    p {
+  div p {
+      line-height: $line-h * 1.5;
       font-size: $small;
       margin-top: 0;
       margin-bottom: 0;
-    }
   }
 }
 
@@ -281,10 +278,13 @@ nav {
     color: unset;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       color: $links;
       text-decoration: none;
+    }
+
+    &:active {
+      background-color: $primary;
     }
   }
 
@@ -293,7 +293,6 @@ nav {
     display: block;
     margin-top: unset;
     margin-bottom: unset;
-    /* font-weight: 700; */
   }
 
   p {
@@ -305,6 +304,8 @@ nav {
 
   hr {
     float: left;
+    width: 102%;
+    margin-left: -1%;
     margin-top: $line-h / 4;
     margin-bottom: 0;
   }
@@ -329,11 +330,9 @@ ul {
   margin: 0 0 $rootsize 0;
 }
 
-pre {
-  code {
-    border-radius: $border-radius;
-    font-size: $small;
-  }
+pre code {
+  border-radius: $border-radius;
+  font-size: $small;
 }
 
 iframe {
@@ -409,11 +408,29 @@ img {
     padding-right: 8px;
     padding-right: calc(1px + 0.7vw);
 
+    a,
+    a.internal-link {
+      text-decoration: none;
+      border: none;
+      color: unset;
+      background-color: unset;
+
+      &:after {
+        display: none;
+      }
+
+      &:active {
+        background-color: transparent;
+        h3 {
+          background-color: $primary;
+        }
+      }
+    }
+
     div {
 
       &:hover,
-      &:focus,
-      &:active {
+      &:focus {
         img {
           opacity: 50%;
         }
@@ -427,7 +444,7 @@ img {
     img {
       width: 100%;
       max-width: 100%;
-      transition: all 0.25s ease-in-out;
+      transition: all ($transtime / 1.5) ease-in-out;
     }
 
     h3 {
@@ -446,17 +463,6 @@ img {
       line-height: $line-h;
       font-size: $small;
       color: $lighter;
-    }
-
-    a,
-    a.internal-link {
-      text-decoration: none;
-      border: none;
-      color: unset;
-
-      &:after {
-        display: none;
-      }
     }
   }
 

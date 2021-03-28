@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Selected Work
+title: Selected work
 permalink: /selected-work
 ---
 <p><h2>Selected Work</h2></p>

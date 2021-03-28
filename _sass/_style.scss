@@ -441,7 +441,7 @@ img {
 
 .notes-entry-container {
   display: grid;
-  grid-gap: $rootsize;
+  grid-gap: $rootsize * 1.8;
   grid-template-areas: "content""side";
   margin-bottom: ($margin / 2);
   padding: 0;

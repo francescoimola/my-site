@@ -1,6 +1,9 @@
 # Generated website directory
 _site/
 
+# Posts drafts
+drafts/
+
 # Sass cache
 .sass-cache/
 

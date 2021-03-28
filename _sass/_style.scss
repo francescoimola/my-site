@@ -133,7 +133,7 @@ strong {
   font-weight: 700;
 }
 
-.wrapper a {
+a {
   text-decoration: underline;
   @supports (-webkit-text-decoration-skip: ink) {
     & {
@@ -223,12 +223,12 @@ footer {
 
 hr {
   width: 100%;
-  border: 0;
-  height: $under-line;
+  border: $under-line dotted $lighter;
+  border-style: none none dotted; 
+  height: auto;
   margin-top: $line-h;
   margin-bottom: $line-h / 2;
   box-sizing: content-box;
-  background: $lighter;
   -webkit-animation: fadeIn ease 1s;
   animation: fadeIn ease 1s;
 }
@@ -238,41 +238,29 @@ nav {
   padding-left: $line-h * 2;
   padding-right: $line-h * 2;
 
+  a {
+    text-decoration: none;
+  }
+
   h1 {
-    display: inline-block;
+    float: left;
+    display: block;
     margin-top: unset;
     margin-bottom: unset;
-    font-weight: 700;
-    transform-origin: left center;
+    /* font-weight: 700; */
+  }
 
-    a {
-      display: inline-block;
-      border-radius: $border-radius;
-      margin-left: -($rootsize / 4);
-      padding: ($rootsize / 4) ($rootsize / 4) ($rootsize / 4) ($rootsize / 4);
-      background-color: mix($primary, $site-background, 95%);
-      text-decoration: none;
-      color: $site-background;
+  p {
+    margin-top: unset;
+    margin-bottom: unset;
+    display: block;
+    float: right;
+  }
 
-      transition: background-color 0.1s;
-
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: mix($primary, $site-background, 60%);
-      }
-    }
-
-    /* HOVER EFFECT */
-    transition: transform 0.3s ease-in-out;
-
-    &:hover,
-    &:focus,
-    &:active {
-      margin: 0;
-      padding: 0;
-      transform: translate(1.5%, 1.5%);
-    }
+  hr {
+    float: left;
+    margin-top: $line-h / 4;
+    margin-bottom: 0;
   }
 }
 

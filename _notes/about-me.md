@@ -1,5 +1,5 @@
 ---
-title: About me
+title: About
 ---
 I'm Francesco Imola, an artist, editor, designer, and curator based in London. I hold a Bachelor’s degree in Digital Arts from University of Greenwich, where I now work—managing social media, curating events, and designing frameworks to help students make work abiding by UK Covid-19 legislations.
 

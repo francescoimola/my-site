@@ -90,7 +90,7 @@ p {
   font-style: normal;
   line-height: inherit;
   margin-top: $line-h / 2;
-  margin-bottom: $line-h;
+  margin-bottom: $line-h / 1.5;
   overflow-wrap: break-word;
 }
 
@@ -227,6 +227,8 @@ main p {
 small {
   font-size: $small;
   color: $lighter;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
@@ -315,7 +317,7 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: $rootsize;
-  padding: $rootsize;
+  padding: $rootsize / 1.25;
   font-size: 0.85em;
   background: $color-box-background;
   border-radius: $border-radius;
@@ -347,6 +349,7 @@ iframe {
 
 img {
   max-width: 100%;
+  height: auto;
   border-radius: $border-radius;
   -webkit-animation: fadeIn ease 0.8s;
   animation: fadeIn ease 0.8s;
@@ -474,10 +477,6 @@ img {
   }
 }
 
-.makeitgrey {
-  color: $lighter;
-}
-
 .mentiongrid {
   display: grid;
   grid-gap: $rootsize;
@@ -495,6 +494,10 @@ img {
   @media (min-width: 769px) {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "content side";
+  }
+
+  div p:last-child {
+    margin-bottom: 0;
   }
 }
 

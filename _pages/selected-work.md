@@ -7,10 +7,13 @@ permalink: /selected-work
 <div id="masonry" data-columns>
     <div>
         <a class="internal-link" href="/how-to-feel-more-at-home">
-            <img loading="lazy" data-src="assets\hftmah\htfmah.png"
-                class="lazyload" alt="Trees lit by green light during dusk"/>
+            <img 
+            alt="Trees lit by green light during dusk"
+            loading="lazy" 
+            data-src="assets\hftmah\htfmah(1)@0,33x.png"
+            class="lazyload"/>
             <h3>How to feel more at home</h3>
-            <p>Poetry, Coding, Web Design, Sound Design</p>
+            <p>Coding, Poetry, Photography, Sound Design. 2020</p>
         </a>
     </div>
     <div>

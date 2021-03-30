@@ -26,3 +26,6 @@ Listen to the exhibition soundtrack
 ### Method
 
 Curation, Writing, Web Design
+
+<br>
+↩  Back to [[Selected Work]]

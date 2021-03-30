@@ -14,7 +14,7 @@ permalink: /selected-work
             data-src="assets\hftmah\htfmah(1)@0,33x.png"
             class="lazyload"/>
             <h3>How to feel more at home</h3>
-            <p>Coding, Poetry, Photography, Sound Design</p>
+            <p>Poetry, Photography, Sound Design</p>
         </a>
     </div>
     <div>
@@ -26,7 +26,7 @@ permalink: /selected-work
             data-src="assets\feedyourdemons\feed-your-demons_1.jpeg"
             class="lazyload"/>
         <h3>Feed Your Demons and Meet the Ally</h3>
-        <p>Exhibition Curation, Writing, Web Design</p>
+        <p>Curation, Writing, Web Design</p>
         </a>
     </div>
     <div>

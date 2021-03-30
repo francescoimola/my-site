@@ -8,7 +8,7 @@ $lighter: mix($site-background, white, 50%);
 // Measurements
 $rootsize: 1em;
 $line-h: $rootsize+($rootsize * 0.2);
-$small: calc(10px + 0.5vw);
+$small: calc(11px + 0.3vw);
 $under-line: $rootsize * 0.08;
 $border-radius: $rootsize * 0.25;
 $margin: $rootsize * 4;
@@ -502,14 +502,13 @@ side {
 }
 
 .backlink-box {
-  display: block;
   background: $color-box-background;
   border-radius: $border-radius;
   padding: 0.65em;
 
   div {
     margin-top: $rootsize / 2;
-    font-size: 98%;
+    line-height: $line-h * 1.25;
   }
 }
 

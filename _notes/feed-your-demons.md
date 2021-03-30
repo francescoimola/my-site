@@ -5,11 +5,20 @@ Cross-referencing mythology, pop culture, the supernatural, digital self-hood, a
 
 Feed Your Demons and Meet the Ally is curated by Magda Żołędź (of ONE Project) and Francesco Imola. The exhibition was presented on July 2, 2020, with an online opening featuring interviews, Q&As, and workshops with artsist in the show.
 
-<a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank"><img src="assets\feedyourdemons\feed-your-demons_1.jpeg"/></a>
+<a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank">
+    <img loading="lazy" 
+    data-src="assets/feedyourdemons/feed-your-demons_1.jpeg"
+    class="lazyload"/></a>
 
-<a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank"><img src="assets\feedyourdemons\feed-your-demons_2.png"/></a>
+<a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank">
+    <img loading="lazy" 
+    data-src="assets/feedyourdemons/feed-your-demons_2.png"
+    class="lazyload"/></a>
 
-<a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank"><img src="assets\feedyourdemons\feed-your-demons_3.png"/></a>
+<a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank">
+    <img loading="lazy" 
+    data-src="assets/feedyourdemons/feed-your-demons_3.png"
+    class="lazyload"/></a>
 
 ### Links
 

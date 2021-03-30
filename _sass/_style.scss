@@ -109,14 +109,6 @@ h6 {
 }
 
 h2 {
-  &:before {
-    content: "[\00A0";
-  }
-
-  &:after {
-    content: "\00A0\]";
-  }
-
   margin-top: $line-h;
 }
 
@@ -236,7 +228,7 @@ footer {
   margin-bottom: $rootsize;
   color: $lighter;
 
-  div p {
+  p {
       line-height: $line-h * 1.5;
       font-size: $small;
       margin-top: 0;
@@ -249,7 +241,6 @@ hr {
   border: $under-line dotted $lighter;
   border-style: none none dotted;
   height: auto;
-  margin-top: $line-h;
   margin-bottom: $line-h / 2;
   box-sizing: content-box;
   -webkit-animation: fadeIn ease 1s;
@@ -332,13 +323,15 @@ ul {
   margin: 0 0 $rootsize 0;
 }
 
-pre code {
+code {
   border-radius: $border-radius;
   font-size: $small;
 }
 
 iframe {
   overflow: hidden;
+  border-radius: $border-radius;
+  margin-bottom: $line-h / 2;
 
   @supports (scrollbar-width: none) {
     & {
@@ -411,8 +404,7 @@ img {
     padding-right: 8px;
     padding-right: calc(1px + 0.7vw);
 
-    a,
-    a.internal-link {
+    a {
       text-decoration: none;
       border: none;
       color: unset;
@@ -430,10 +422,7 @@ img {
       }
     }
 
-    div {
-
-      &:hover,
-      &:focus {
+    div:hover, div:focus {
         img {
           opacity: 50%;
         }
@@ -441,20 +430,17 @@ img {
         a {
           color: $links;
         }
-      }
     }
 
     img {
-      width: 100%;
-      max-width: 100%;
       transition: all ($transtime / 1.5) ease-in-out;
     }
 
     h3 {
       font-size: $small;
       font-weight: 700;
-      margin-top: $line-h / 8;
-      margin-bottom: $line-h / 8;
+      margin-top: $line-h / 4;
+      margin-bottom: $line-h / 6;
 
       &:before {
         display: none;
@@ -466,6 +452,7 @@ img {
       line-height: $line-h;
       font-size: $small;
       color: $lighter;
+      margin-bottom: $line-h / 2;
     }
   }
 
@@ -496,8 +483,15 @@ img {
     grid-template-areas: "content side";
   }
 
-  div p:last-child {
-    margin-bottom: 0;
+  div p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  img {
+    margin-top: $line-h / 1.5;
+    margin-bottom: $line-h / 4;
   }
 }
 

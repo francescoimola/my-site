@@ -2,7 +2,7 @@
 _site/
 
 # Posts drafts
-drafts/
+_drafts/
 
 # Sass cache
 .sass-cache/

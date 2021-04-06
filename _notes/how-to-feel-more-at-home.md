@@ -1,5 +1,6 @@
 ---
 title: How to feel more at home, 2020
+permalink: /feelmoreathome
 ---
 
 Webwork, part of an [ongoing project](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home), articulating personal ideas of home, what (and who) makes one, and how to find meaning living inbetween homes. 

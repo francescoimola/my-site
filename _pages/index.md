@@ -4,19 +4,10 @@ title: Home
 id: home
 permalink: /
 ---
-<br>
-I am an artist, designer, and curator based in London. This site is a living public digital space: here I gather my work, ideas, hobbies, goals, and passions. [[now|Welcome]] &#128075; 
+I am an artist, designer, and curator based in London. This site is a living public digital space: here I gather my work, ideas, hobbies, goals, and passions. 
 
-While the majority of this site is made up of notes, it’s important to dileneate that notes are one part of my digital garden, they are not its entirety. This is my greenhouse where new ideas grow, my workshop where I create new things, and my portfolio of past and WIP projects.
+While the majority of this site is made up of notes, it’s important to dileneate that notes are one part of this digital garden, they are not its entirety. This is a greenhouse where new ideas grow, a workshop where I create new things, and my portfolio of past and WIP projects.
 
-For now, there’s no index or navigational aids: you’ll need to follow a link to some starting point. The links below are a good start. 
+For now, there's no index or navigational aid: you’ll need to follow a link to some starting point. [[now|Welcome]] &#128075;
 
-## Jump to 
 
-> [[Selected work]]
-
-> [[What's at the top of my mind]]
-
-> [[How I built this site]]
-
-> [[About]]

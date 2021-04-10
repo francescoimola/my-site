@@ -9,7 +9,7 @@ layout: default
       {{ content }}
     </div>
 
-    <side>
+    <div class="side">
         <h3 class="mentiontitle">Notes mentioning this note</h3>
         {%- if page.backlinks.size > 0 -%}
           <div class="mentiongrid">
@@ -24,6 +24,6 @@ layout: default
           <div><p>There are no notes linking to this note.</p>
           </div>
         {%- endif -%}
-    </side>
+    </div>
   </div>
 </article>

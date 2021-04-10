@@ -3,7 +3,8 @@ layout: page
 title: Selected work
 permalink: /selectedwork
 ---
-<p><h2>Selected Work</h2></p>
+<h2>Selected Work</h2>
+
 <div id="masonry" data-columns>
     <div>
         <a class="internal-link" href="/feelmoreathome">

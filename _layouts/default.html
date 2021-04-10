@@ -3,11 +3,18 @@
   {%- include head.html -%}
   <body>
       <nav>{%- include nav.html -%}</nav>
+      <span class="undernav"><hr></span>
       <div class="wrapper">
         <main>{{ content }}</main>
         <footer><hr>{%- include footer.html -%}</footer>
       </div>
       <script type="text/javascript" src="assets/lazysizes.min.js" async=""></script>
       <script type="text/javascript" src="salvattore.min.js"></script>
+      <script>
+      $(".backlink-box").click(function() {
+        window.location = $(this).find("a").attr("href"); 
+        return false;
+      });
+      </script>
   </body>
 </html>

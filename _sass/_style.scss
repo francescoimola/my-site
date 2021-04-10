@@ -7,8 +7,11 @@ $lighter: mix($site-background, white, 50%);
 
 // Measurements
 $rootsize: 1em;
-$line-h: $rootsize+($rootsize * 0.2);
-$small: calc(11px + 0.3vw);
+$line-h: $rootsize+($rootsize * 0.25);
+$page-margins: $line-h * 0.9;
+$small: calc(10.5px + 1.5vw);
+$smaller: calc(11px + 0.3vw);
+$gridgap: $rootsize * 2;
 $under-line: $rootsize * 0.08;
 $border-radius: $rootsize * 0.25;
 $margin: $rootsize * 4;
@@ -65,24 +68,10 @@ body {
 }
 
 .wrapper {
-  padding-right: $line-h * 2;
-  padding-left: $line-h * 2;
+  padding-right: $line-h;
+  padding-left: $line-h;
   max-width: 100vw;
   overflow: hidden;
-
-  @media screen and (max-width: 768px) {
-    & {
-      padding-right: $line-h;
-      padding-left: $line-h;
-    }
-  }
-
-  @media screen and (min-width: 769px) {
-    & {
-      padding-right: $line-h * 2;
-      padding-left: $line-h * 2;
-    }
-  }
 }
 
 p {
@@ -106,10 +95,7 @@ h6 {
   font-weight: 500;
   font-style: normal;
   overflow-wrap: break-word;
-}
-
-h2 {
-  margin-top: $line-h;
+  margin-top: 0;
 }
 
 h3 {
@@ -118,7 +104,6 @@ h3 {
   }
 
   &.mentiontitle {
-    font-weight: 700;
     vertical-align: top;
     margin-top: 0.5em;
 
@@ -212,10 +197,6 @@ a {
   }
 }
 
-main p {
-  margin-top: 0;
-}
-
 small {
   font-size: $small;
   color: $lighter;
@@ -225,12 +206,12 @@ small {
 
 footer {
   margin-top: $rootsize;
-  margin-bottom: $rootsize;
+  margin-bottom: $line-h;
   color: $lighter;
 
   p {
     line-height: $line-h * 1.5;
-    font-size: $small;
+    font-size: $smaller;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -249,20 +230,20 @@ hr {
 
 nav {
   padding-top: $line-h;
-  padding-left: $line-h * 2;
-  padding-right: $line-h * 2;
+  padding-left: $page-margins;
+  padding-right: $page-margins;
+  display: grid;
+  grid-gap: $rootsize * 1.8;
 
   @media screen and (max-width: 768px) {
     & {
-      padding-right: $line-h;
-      padding-left: $line-h;
+      display: block;
     }
   }
 
   @media screen and (min-width: 769px) {
     & {
-      padding-right: $line-h * 2;
-      padding-left: $line-h * 2;
+      grid-template-columns: 3fr 1fr;
     }
   }
 
@@ -283,25 +264,20 @@ nav {
 
   h1 {
     float: left;
-    display: block;
-    margin-top: unset;
-    margin-bottom: unset;
+    margin: 0;
   }
 
   p {
-    margin-top: unset;
-    margin-bottom: unset;
-    display: block;
     float: right;
+    margin: 0;
   }
+}
 
-  hr {
-    float: left;
-    width: 102%;
-    margin-left: -1%;
-    margin-top: $line-h / 4;
-    margin-bottom: 0;
-  }
+.undernav {
+  padding-right: $line-h;
+  padding-left: $line-h;
+  width: 101%;
+  margin-left: -0.5%;
 }
 
 blockquote {
@@ -313,7 +289,7 @@ blockquote {
   background: $color-box-background;
   border-radius: $border-radius;
 
-  & + & {
+  &+& {
     margin-top: -($rootsize / 2);
   }
 
@@ -347,6 +323,7 @@ iframe {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: $border-radius;
   -webkit-animation: fadeIn ease 0.8s;
   animation: fadeIn ease 0.8s;
@@ -357,34 +334,26 @@ object {
   height: 15em;
 }
 
+.side {
+  h3 {
+    margin: initial;
+    margin-bottom: $line-h / 2;
+  }
+  div {
+    font-size: 0.7em;
+    font-size: $small;
+    line-height: $line-h;
+  }
+}
+
+@media (min-width: 769px) {
+  .side div {
+    font-size: $smaller;
+  }
+}
+
 #masonry {
-  width: 100%;
-  transform: scale(1.04);
-
-  @media (max-width: 480px) {
-    &[data-columns]::before {
-      content: "1 .column.size-1of1";
-    }
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    &[data-columns]::before {
-      content: "2 .column.size-1of2";
-    }
-  }
-
-  @media screen and (min-width: 769px) and (max-width: 1599px) {
-    &[data-columns]::before {
-      content: "3 .column.size-1of3";
-    }
-  }
-
-  @media screen and (min-width: 1600px) {
-    &[data-columns]::before {
-      content: "4 .column.size-1of4";
-    }
-  }
-
+  margin-top: $line-h / 2;
   .column {
     float: left;
   }
@@ -401,27 +370,43 @@ object {
     width: 33.333%;
   }
 
-  .size-1of4 {
-    width: 25%;
+  @media screen and (max-width: 769px) {
+    &[data-columns]::before {
+      content: "1 .column.size-1of1";
+    }
+
+    & div {
+      width: 104.5%;
+      height: auto;
+      font-size: $small;
+      padding-bottom: calc(1px + 2vw);
+    }
+  }
+
+  @media screen and (min-width: 770px) and (max-width: 1599px) {
+    &[data-columns]::before {
+      content: "2 .column.size-1of2";
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    &[data-columns]::before {
+      content: "3 .column.size-1of3";
+    }
   }
 
   div {
-    page-break-inside: avoid;
-    -moz-column-break-inside: avoid;
-    break-inside: avoid;
     margin-top: 0;
     margin-bottom: calc(1px + 2vw);
-    transition: ($transtime / 1.5) ease-in-out;
-    transform: scale(0.95);
+    transition: all ($transtime / 1.5) ease-in-out;
 
     div:hover,
     div:focus {
+      transform: scale(1.04);
 
       img {
         opacity: 50%;
       }
-
-      transform: scale(1.01);
 
       a {
         color: $links;
@@ -429,6 +414,8 @@ object {
     }
 
     a {
+      display: block;
+      margin-right: 4%;
       text-decoration: none;
       border: none;
       color: unset;
@@ -448,7 +435,7 @@ object {
     }
 
     h3 {
-      font-size: $small;
+      font-size: $smaller;
       font-weight: 700;
       margin-top: $line-h / 4;
       margin-bottom: $line-h / 6;
@@ -461,7 +448,7 @@ object {
     p {
       letter-spacing: 0.02em;
       line-height: $line-h;
-      font-size: $small;
+      font-size: $smaller;
       color: $lighter;
       margin-bottom: $line-h / 2;
     }
@@ -475,6 +462,28 @@ object {
   }
 }
 
+.box {
+  display: grid;
+  grid-gap: $gridgap;
+
+  @media (min-width: 769px) {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  div p:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.wrapper .box {
+  margin-bottom: $line-h;
+
+  & div p {
+    margin-top: 0;
+  }
+}
+
 .mentiongrid {
   display: grid;
   grid-gap: $rootsize;
@@ -483,21 +492,20 @@ object {
 
 .notes-entry-container {
   display: grid;
-  grid-gap: $rootsize * 1.8;
-  grid-template-areas: "content""side";
+  grid-gap: $gridgap;
   margin-bottom: ($margin / 2);
   padding: 0;
-  overflow: hidden;
 
   @media (min-width: 769px) {
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: "content side";
   }
 
-  div p {
-    &:last-child {
-      margin-bottom: 0;
-    }
+  div p:last-child {
+    margin-bottom: 0;
+  }
+
+  div p:first-child {
+    margin-top: 0;
   }
 
   img {
@@ -506,20 +514,34 @@ object {
   }
 }
 
-side {
-  font-size: 0.5em;
-  font-size: $small;
-  line-height: $line-h;
-}
-
 .backlink-box {
   background: $color-box-background;
   border-radius: $border-radius;
   padding: 0.65em;
+  transition: ($transtime / 1.5) ease-in-out;
 
   div {
     margin-top: $rootsize / 2;
     line-height: $line-h * 1.25;
+    transition: color ($transtime / 2) ease-in-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    transform: scale(1.04);
+
+    a {
+      color: $primary;
+      text-decoration: underline;
+      -webkit-text-decoration-color: $links;
+      text-decoration-color: $links;
+    }
+
+    div {
+      color: $lighter;
+    }
   }
 }
 

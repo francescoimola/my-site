@@ -229,10 +229,10 @@ footer {
   color: $lighter;
 
   p {
-      line-height: $line-h * 1.5;
-      font-size: $small;
-      margin-top: 0;
-      margin-bottom: 0;
+    line-height: $line-h * 1.5;
+    font-size: $small;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -313,6 +313,10 @@ blockquote {
   background: $color-box-background;
   border-radius: $border-radius;
 
+  & + & {
+    margin-top: -($rootsize / 2);
+  }
+
   p {
     margin: 0;
     padding: 0;
@@ -355,6 +359,7 @@ object {
 
 #masonry {
   width: 100%;
+  transform: scale(1.04);
 
   @media (max-width: 480px) {
     &[data-columns]::before {
@@ -368,13 +373,13 @@ object {
     }
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1599px) {
     &[data-columns]::before {
       content: "3 .column.size-1of3";
     }
   }
 
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1600px) {
     &[data-columns]::before {
       content: "4 .column.size-1of4";
     }
@@ -404,10 +409,24 @@ object {
     page-break-inside: avoid;
     -moz-column-break-inside: avoid;
     break-inside: avoid;
-    margin: 0;
-    padding-bottom: calc(1px + 1vw);
-    padding-right: 8px;
-    padding-right: calc(1px + 0.7vw);
+    margin-top: 0;
+    margin-bottom: calc(1px + 2vw);
+    transition: ($transtime / 1.5) ease-in-out;
+    transform: scale(0.95);
+
+    div:hover,
+    div:focus {
+
+      img {
+        opacity: 50%;
+      }
+
+      transform: scale(1.01);
+
+      a {
+        color: $links;
+      }
+    }
 
     a {
       text-decoration: none;
@@ -421,24 +440,11 @@ object {
 
       &:active {
         background-color: transparent;
+
         h3 {
           background-color: $primary;
         }
       }
-    }
-
-    div:hover, div:focus {
-        img {
-          opacity: 50%;
-        }
-
-        a {
-          color: $links;
-        }
-    }
-
-    img {
-      transition: all ($transtime / 1.5) ease-in-out;
     }
 
     h3 {

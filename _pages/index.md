@@ -13,8 +13,10 @@ For now, there’s no index or navigational aids: you’ll need to follow a link
 
 ## Jump to 
 
-[[Selected work]]<br>
-[[What's at the top of my mind]]<br>
-[[How I built this site]]<br>
-[[About]]<br>
-<br>
+> [[Selected work]]
+
+> [[What's at the top of my mind]]
+
+> [[How I built this site]]
+
+> [[About]]

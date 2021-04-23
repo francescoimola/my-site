@@ -2,10 +2,11 @@
 layout: default
 ---
 <div class="box">
-  <div>
+  <section>
     {{ content }}
-  </div>
-  <div class="side">
+    <footer><hr>{%- include footer.html -%}</footer>
+  </section>
+  <section class="side">
     {%- include jump-to.html -%}
-  </div>
+  </section>
 </div>

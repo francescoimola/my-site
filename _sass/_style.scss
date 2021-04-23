@@ -29,9 +29,11 @@ Apple Color Emoji,
 Segoe UI Emoji,
 Segoe UI Symbol;
 
+$mono-family: "DM Mono",
+monospace;
+
 /* //Debug
-*{ border: 1px solid pink; } 
- */
+*{ border: 1px solid pink; }  */
 
 * {
   box-sizing: border-box;
@@ -57,12 +59,7 @@ body {
   font-weight: 500;
   line-height: $line-h;
   color: $primary;
-  text-transform: none;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  flex-direction: column;
-  overflow-x: hidden;
+  overflow: initial;
   -webkit-animation: fadeIn ease $transtime;
   animation: fadeIn ease $transtime;
 }
@@ -71,7 +68,24 @@ body {
   padding-right: $line-h;
   padding-left: $line-h;
   max-width: 100vw;
-  overflow: hidden;
+
+  .box {
+    display: grid;
+    grid-gap: $gridgap;
+    margin-bottom: $line-h;
+  
+    @media (min-width: 769px) {
+      grid-template-columns: 3fr 1fr;
+    }
+  
+    div p:last-child {
+      margin-bottom: 0;
+    }
+  
+    & div p {
+      margin-top: 0;
+    }
+  }
 }
 
 p {
@@ -229,55 +243,12 @@ hr {
 }
 
 nav {
-  padding-top: $line-h;
-  padding-left: $page-margins;
-  padding-right: $page-margins;
-  display: grid;
-  grid-gap: $rootsize * 1.8;
-
-  @media screen and (max-width: 768px) {
-    & {
-      display: block;
-    }
-  }
-
-  @media screen and (min-width: 769px) {
-    & {
-      grid-template-columns: 3fr 1fr;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: unset;
-
-    &:hover,
-    &:focus {
-      color: $links;
-      text-decoration: none;
-    }
-
-    &:active {
-      background-color: $primary;
-    }
-  }
-
+  display: inline-block;
+  font-family: $mono-family;
+  padding: $line-h $page-margins ($line-h / 2.5) $page-margins;
   h1 {
-    float: left;
-    margin: 0;
+    margin-left: 0.1em;
   }
-
-  p {
-    float: right;
-    margin: 0;
-  }
-}
-
-.undernav {
-  padding-right: $line-h;
-  padding-left: $line-h;
-  width: 101%;
-  margin-left: -0.5%;
 }
 
 blockquote {
@@ -335,10 +306,18 @@ object {
 }
 
 .side {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 50vh;
+
+  padding-left: $rootsize;
+
   h3 {
     margin: initial;
     margin-bottom: $line-h / 2;
   }
+
   div {
     font-size: 0.7em;
     font-size: $small;
@@ -354,6 +333,7 @@ object {
 
 #masonry {
   margin-top: $line-h / 2;
+
   .column {
     float: left;
   }
@@ -459,28 +439,6 @@ object {
     content: "";
     display: block;
     clear: both;
-  }
-}
-
-.box {
-  display: grid;
-  grid-gap: $gridgap;
-
-  @media (min-width: 769px) {
-    grid-template-columns: 3fr 1fr;
-  }
-
-  div p:last-child {
-    margin-bottom: 0;
-  }
-
-}
-
-.wrapper .box {
-  margin-bottom: $line-h;
-
-  & div p {
-    margin-top: 0;
   }
 }
 

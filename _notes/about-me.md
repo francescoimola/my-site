@@ -2,7 +2,9 @@
 title: About
 permalink: /about
 ---
-I'm Francesco Imola, an artist, editor, designer, and curator based in London. I hold a Bachelor’s degree in Digital Arts from University of Greenwich, where I now work—managing social media, curating events, and designing frameworks to help students make work abiding by UK Covid-19 legislations.
+I (he/they) am an artist, designer, and curator based in London working with software and code to examine self-exposure on the web.
+
+I hold a Bachelor’s degree in Digital Arts from University of Greenwich, where I now work—managing social media, curating events, and designing frameworks to help students make work abiding by UK Covid-19 legislations.
 
 Recently, I worked on a few self-initiated projects: [explore them here](/selectedwork){: .internal-link}. You might also be interested in [[what's at the top of my mind]].
 
@@ -12,4 +14,6 @@ My work has been featured on [Harbor Review](https://www.harbor-review.com/), [F
 
 <img src="./assets/profile_img/profileimage.png">
 
-If you have any questions or would like to contact me, you can find me on [Twitter](https://twitter.com/frn_imola) and [Are.na](https://www.are.na/francesco-imola-2o2ng4qooxm). If you want to dig deeper, [read my CV](https://www.notion.so/franimola/CV-Francesco-Imola-f0a37e5eb86d4a5995750428663502d5).
+My work is supported by the generosity of the people who believe in its value. Please consider [buying me a coffe](https://ko-fi.com/francescoimola).
+
+If you have any questions or would like to contact me, you can find me on [Twitter](https://twitter.com/frn_imola) and [Are.na](https://www.are.na/francesco-imola-2o2ng4qooxm). 

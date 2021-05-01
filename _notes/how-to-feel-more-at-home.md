@@ -40,12 +40,3 @@ Creative Commons Attribution-ShareAlike 4.0 International License
 
 <br>
 ↩  Back to [[Selected Work]]
-
-<div class="siema">
-  <img src="assets/hftmah/htfmah3.png">
-  <img src="assets/hftmah/htfmah2.png">
-  <img src="assets/hftmah/htfmah1.png">
-</div>
-
-<button class="prev">prev</button>
-<button class="next">next</button>

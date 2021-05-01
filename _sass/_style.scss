@@ -71,18 +71,38 @@ body {
 
   .box {
     display: grid;
-    grid-gap: $gridgap;
+    grid-gap: 0;
     margin-bottom: $line-h;
+
+    .widefooter {
+      display: none;
+      visibility: hidden;
+    }
   
     @media (min-width: 769px) {
       grid-template-columns: 3fr 1fr;
+      grid-gap: $gridgap;
+
+      .mobilefooter {
+        display: none;
+        visibility: hidden;
+      }
+
+      .widefooter {
+        display: initial;
+        visibility: visible;
+      }
     }
-  
-    div p:last-child {
+
+    section br {
       margin-bottom: 0;
     }
   
-    & div p {
+    section p:last-child {
+      margin-bottom: 0;
+    }
+  
+    & section p {
       margin-top: 0;
     }
   }
@@ -118,7 +138,6 @@ h3 {
   }
 
   &.mentiontitle {
-    vertical-align: top;
     margin-top: 0.5em;
 
     &::before {
@@ -245,7 +264,7 @@ hr {
 nav {
   display: inline-block;
   font-family: $mono-family;
-  padding: $line-h $page-margins ($line-h / 2.5) $page-margins;
+  padding: $line-h $page-margins $line-h $page-margins;
   h1 {
     margin-left: 0.1em;
   }
@@ -306,12 +325,8 @@ object {
 }
 
 .side {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  height: 50vh;
-
-  padding-left: $rootsize;
+  position: unset;
+  height: auto;
 
   h3 {
     margin: initial;
@@ -326,8 +341,16 @@ object {
 }
 
 @media (min-width: 769px) {
-  .side div {
-    font-size: $smaller;
+  .side {
+    padding-left: $rootsize;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
+    height: 50vh;
+
+    div {
+      font-size: $smaller;
+    }
   }
 }
 
@@ -377,7 +400,7 @@ object {
 
   div {
     margin-top: 0;
-    margin-bottom: calc(1px + 2vw);
+    margin-bottom: 4%;
     transition: all ($transtime / 1.5) ease-in-out;
 
     div:hover,
@@ -395,11 +418,13 @@ object {
 
     a {
       display: block;
-      margin-right: 4%;
+      margin-right: 0.6em;
+      padding: 0 0 0.2em 0;
       text-decoration: none;
       border: none;
       color: unset;
-      background-color: unset;
+      background-color: $color-box-background;
+      border-radius: $border-radius;
 
       &:after {
         display: none;
@@ -407,14 +432,17 @@ object {
 
       &:active {
         background-color: transparent;
-
-        h3 {
-          background-color: $primary;
-        }
       }
     }
 
+    img {
+      width: 100%;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
     h3 {
+      padding-left: 0.5em;
       font-size: $smaller;
       font-weight: 700;
       margin-top: $line-h / 4;
@@ -426,6 +454,7 @@ object {
     }
 
     p {
+      padding-left: 0.5em;  
       letter-spacing: 0.02em;
       line-height: $line-h;
       font-size: $smaller;
@@ -458,12 +487,12 @@ object {
     grid-template-columns: 3fr 1fr;
   }
 
-  div p:last-child {
-    margin-bottom: 0;
+  section p:first-child {
+    margin-top: 0;
   }
 
-  div p:first-child {
-    margin-top: 0;
+  section p:last-child {
+    margin-bottom: 0;
   }
 
   img {
@@ -501,6 +530,10 @@ object {
       color: $lighter;
     }
   }
+}
+
+.siema {
+  max-width: 100%;
 }
 
 .callout {

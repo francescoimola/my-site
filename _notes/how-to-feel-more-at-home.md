@@ -7,12 +7,17 @@ Webwork, part of an [ongoing project](https://www.are.na/francesco-imola-2o2ng4q
 
 <a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank">
     <img loading="lazy" 
-    data-src="assets/hftmah/htfmah.png"
+    data-src="assets/hftmah/htfmah1.png"
     class="lazyload"/></a>
 
 <a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank">
     <img loading="lazy" 
-    data-src="assets/hftmah/htfmah(1).png"
+    data-src="assets/hftmah/htfmah2.png"
+    class="lazyload"/></a>
+
+<a class="imga" href="https://francescoimola.github.io/htfmat/" target="_blank">
+    <img loading="lazy" 
+    data-src="assets/hftmah/htfmah3.png"
     class="lazyload"/></a>
 
 ### Links
@@ -35,3 +40,12 @@ Creative Commons Attribution-ShareAlike 4.0 International License
 
 <br>
 ↩  Back to [[Selected Work]]
+
+<div class="siema">
+  <img src="assets/hftmah/htfmah3.png">
+  <img src="assets/hftmah/htfmah2.png">
+  <img src="assets/hftmah/htfmah1.png">
+</div>
+
+<button class="prev">prev</button>
+<button class="next">next</button>

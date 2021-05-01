@@ -1,21 +1,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-  {%- include head.html -%}
-  <body>
-      <nav>{%- include nav.html -%}</nav>
-      <div class="wrapper">
-        <main>{{ content }}</main>
-      </div>
-      <!-- Lazyloads images (when called by class="lazyload") -->
-      <script type="text/javascript" src="js/lazysizes.min.js" async=""></script>
-      <!-- Framework to create Masonry -->
-      <script type="text/javascript" src="js/salvattore.min.js"></script>
-      <!-- Makes div clickable -->
-      <script>
-      $(".backlink-box").click(function() {
-        window.location = $(this).find("a").attr("href"); 
-        return false;
-      });
-      </script>
-  </body>
+{%- include head.html -%}
+<body>
+  <nav>{%- include nav.html -%}</nav>
+  <div class="wrapper">
+    <main>{{ content }}</main>
+  </div>
+  <!-- Lazyloads images (when called by class="lazyload") -->
+  <script type="text/javascript" src="js/lazysizes.min.js" async=""></script>
+  <!-- Framework to create Masonry -->
+  <script type="text/javascript" src="js/salvattore.min.js"></script>
+  <!-- Initializes Siema -->
+  <script src="js/siema.min.js"></script>
+  <script>
+    const mySiema = new Siema({
+      duration: 200,
+      easing: 'ease-in-out',
+      perPage: 1,
+      loop: true,
+    });
+    document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+    document.querySelector('.next').addEventListener('click', () => mySiema.next());
+  </script>
+  <!-- Makes div clickable -->
+  <script>
+    $(".backlink-box").click(function () {
+      window.location = $(this).find("a").attr("href");
+      return false;
+    });
+  </script>
+</body>
+
 </html>

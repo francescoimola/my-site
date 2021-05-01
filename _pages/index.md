@@ -10,4 +10,6 @@ While the majority of this site is made up of notes, they are not its entirety. 
 
 For now, there's no index or navigational aid: you’ll need to follow a link to some starting point. [[now|Welcome]] &#128075;
 
+<br>
 
+## Selected Projects

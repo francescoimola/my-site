@@ -1,22 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 {%- include head.html -%}
 <body>
   <nav>{%- include nav.html -%}</nav>
-  <div class="wrapper">
-    <main>{{ content }}</main>
-  </div>
-  <!-- Lazyloads images (when called by class="lazyload") -->
-  <script type="text/javascript" src="js/lazysizes.min.js" async=""></script>
-  <!-- Framework to create Masonry -->
-  <script type="text/javascript" src="js/salvattore.min.js"></script>
-  <!-- Makes div clickable -->
-  <script>
-    $(".backlink-box").click(function () {
-      window.location = $(this).find("a").attr("href");
-      return false;
-    });
-  </script>
+  <main class="wrapper">{{ content }}</main>
+  {%- include js.html -%}
 </body>
-
 </html>

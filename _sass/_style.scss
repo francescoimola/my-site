@@ -316,8 +316,6 @@ img {
     a {
       display: block;
       margin-right: 0.6em;
-      padding: 0 0 0.2em 0;
-      background-color: $color-box-background;
       border-radius: $border-radius;
 
       &:after {
@@ -328,30 +326,23 @@ img {
         background-color: transparent;
       }
 
-      img {
-        width: 100%;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-
       h3 {
-        margin: ($line-h / 4) auto ($line-h / 4) 0.5em;
-        font-size: $small;
+        margin: ($line-h / 6) auto ($line-h / 4) 0;
 
         &:before {
           display: none;
         }
       }
 
-      p {
-        margin: 0 auto ($line-h / 2) 0.5em;
-        color: $primary;
-      }
-
       &:hover,
       &:focus {
         img {opacity: 80%;}
       }
+    }
+
+    p {
+      margin: 0 auto ($line-h / 2) 0;
+      color: $lighter;
     }
   }
 

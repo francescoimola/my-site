@@ -7,10 +7,10 @@ $lighter: mix($site-background, white, 50%);
 
 // Measurements
 $rootsize: 1em;
+$bigger: 1.2em;
 $line-h: $rootsize+($rootsize * 0.25);
 $page-margins: $line-h * 0.9;
-$small: calc(10.5px + 1.5vw);
-$smaller: calc(11px + 0.3vw);
+$small: #{"min(max(16px, 1.5vw), 24px);"};
 $gridgap: $rootsize * 2;
 $under-line: $rootsize * 0.08;
 $border-radius: $rootsize * 0.25;
@@ -42,8 +42,8 @@ monospace;
 
 html {
   line-height: 1.15;
-  font-size: 42px;
-  font-size: #{"min(max(16px, 4vw), 32px);"};
+  font-size: 32px;
+  font-size: #{"min(max(18px, 1.5vw), 28px);"};
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -65,47 +65,9 @@ body {
 }
 
 .wrapper {
-  padding-right: $line-h;
-  padding-left: $line-h;
+  padding-right: $line-h * 4;
+  padding-left: $line-h * 4;
   max-width: 100vw;
-
-  .box {
-    display: grid;
-    grid-gap: 0;
-    margin-bottom: $line-h;
-
-    .widefooter {
-      display: none;
-      visibility: hidden;
-    }
-  
-    @media (min-width: 769px) {
-      grid-template-columns: 3fr 1fr;
-      grid-gap: $gridgap;
-
-      .mobilefooter {
-        display: none;
-        visibility: hidden;
-      }
-
-      .widefooter {
-        display: initial;
-        visibility: visible;
-      }
-    }
-
-    section br {
-      margin-bottom: 0;
-    }
-  
-    section p:last-child {
-      margin-bottom: 0;
-    }
-  
-    & section p {
-      margin-top: 0;
-    }
-  }
 }
 
 p {
@@ -123,9 +85,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
+  font-size: $bigger;
   line-height: initial;
-  font-size: inherit;
   font-weight: 500;
   font-style: normal;
   overflow-wrap: break-word;
@@ -204,7 +165,7 @@ a {
 
   &:after {
     position: relative;
-    font-size: calc(7px + 0.5vw);
+    font-size: calc(6px + 0.5vw);
     font-family: "Font Awesome 5 Free";
     content: "\00a0\00a0\f360""";
     line-height: 0;
@@ -244,7 +205,7 @@ footer {
 
   p {
     line-height: $line-h * 1.5;
-    font-size: $smaller;
+    font-size: $small;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -262,11 +223,12 @@ hr {
 }
 
 nav {
-  display: inline-block;
   font-family: $mono-family;
-  padding: $line-h $page-margins $line-h $page-margins;
+  margin: $line-h 0;
+
   h1 {
-    margin-left: 0.1em;
+    font-size: 4em;
+    margin: 0;
   }
 }
 
@@ -275,7 +237,7 @@ blockquote {
   margin-right: 0;
   margin-bottom: $rootsize;
   padding: $rootsize / 1.25;
-  font-size: 0.85em;
+  font-size: $small;
   background: $color-box-background;
   border-radius: $border-radius;
 
@@ -289,25 +251,15 @@ blockquote {
   }
 }
 
-ul {
+ul,
+ol {
   margin: 0 0 $rootsize 0;
+  line-height: $line-h * 1.2;
 }
 
 code {
   border-radius: $border-radius;
   font-size: $small;
-}
-
-iframe {
-  overflow: hidden;
-  border-radius: $border-radius;
-  margin-bottom: $line-h / 2;
-
-  @supports (scrollbar-width: none) {
-    & {
-      scrollbar-width: none;
-    }
-  }
 }
 
 img {
@@ -317,41 +269,6 @@ img {
   border-radius: $border-radius;
   -webkit-animation: fadeIn ease 0.8s;
   animation: fadeIn ease 0.8s;
-}
-
-object {
-  width: 100%;
-  height: 15em;
-}
-
-.side {
-  position: unset;
-  height: auto;
-
-  h3 {
-    margin: initial;
-    margin-bottom: $line-h / 2;
-  }
-
-  div {
-    font-size: 0.7em;
-    font-size: $small;
-    line-height: $line-h;
-  }
-}
-
-@media (min-width: 769px) {
-  .side {
-    padding-left: $rootsize;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1em;
-    height: 50vh;
-
-    div {
-      font-size: $smaller;
-    }
-  }
 }
 
 .masonry {
@@ -377,13 +294,6 @@ object {
     &[data-columns]::before {
       content: "1 .column.size-1of1";
     }
-
-    & div {
-      width: 104.5%;
-      height: auto;
-      font-size: $small;
-      padding-bottom: calc(1px + 2vw);
-    }
   }
 
   @media screen and (min-width: 770px) and (max-width: 1599px) {
@@ -399,30 +309,14 @@ object {
   }
 
   div {
-    margin-top: 0;
-    margin-bottom: 4%;
+    margin: 0 auto 1em 0;
+    font-size: $small;
     transition: all ($transtime / 1.5) ease-in-out;
-
-    div:hover,
-    div:focus {
-      transform: scale(1.04);
-
-      img {
-        opacity: 50%;
-      }
-
-      a {
-        color: $links;
-      }
-    }
 
     a {
       display: block;
       margin-right: 0.6em;
       padding: 0 0 0.2em 0;
-      text-decoration: none;
-      border: none;
-      color: unset;
       background-color: $color-box-background;
       border-radius: $border-radius;
 
@@ -433,33 +327,31 @@ object {
       &:active {
         background-color: transparent;
       }
-    }
 
-    img {
-      width: 100%;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    h3 {
-      padding-left: 0.5em;
-      font-size: $smaller;
-      font-weight: 700;
-      margin-top: $line-h / 4;
-      margin-bottom: $line-h / 6;
-
-      &:before {
-        display: none;
+      img {
+        width: 100%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
       }
-    }
 
-    p {
-      padding-left: 0.5em;  
-      letter-spacing: 0.02em;
-      line-height: $line-h;
-      font-size: $smaller;
-      color: $lighter;
-      margin-bottom: $line-h / 2;
+      h3 {
+        margin: ($line-h / 4) auto ($line-h / 4) 0.5em;
+        font-size: $small;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      p {
+        margin: 0 auto ($line-h / 2) 0.5em;
+        color: $primary;
+      }
+
+      &:hover,
+      &:focus {
+        img {opacity: 80%;}
+      }
     }
   }
 
@@ -471,34 +363,15 @@ object {
   }
 }
 
-.mentiongrid {
+.mygrid {
   display: grid;
   grid-gap: $rootsize;
   grid-template-columns: repeat(1fr);
 }
 
-.notes-entry-container {
-  display: grid;
-  grid-gap: $gridgap;
-  margin-bottom: ($margin / 2);
-  padding: 0;
-
-  @media (min-width: 769px) {
-    grid-template-columns: 3fr 1fr;
-  }
-
-  section p:first-child {
-    margin-top: 0;
-  }
-
-  section p:last-child {
-    margin-bottom: 0;
-  }
-
-  img {
-    margin-top: $line-h / 1.5;
-    margin-bottom: $line-h / 4;
-  }
+.notes-entry-container img {
+  margin-top: $line-h / 1.5;
+  margin-bottom: $line-h / 4;
 }
 
 .backlink-box {

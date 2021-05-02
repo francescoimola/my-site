@@ -5,28 +5,24 @@ layout: default
 <article>
   <h2>{{ page.title }}</h2>
   <div class="notes-entry-container">
-    <section>
+    <div>
       {{ content }}
-      <footer><hr>{%- include footer.html -%}</footer>
-    </section>
-
-    <section class="side">
-          <h3 class="mentiontitle">Notes mentioning this note</h3>
-          {%- if page.backlinks.size > 0 -%}
-            <div class="mentiongrid">
-              {%- for backlink in page.backlinks -%}
-                <div class="backlink-box">
-                  <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a><br>
-                  <div>{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
-                </div>
-              {%- endfor -%}
-            </div>
-          {%- else -%}
-            <div><p>There are no notes linking to this note.</p>
-            </div>
-          {%- endif -%}
-        <br>
-        {%- include jump-to.html -%}
     </div>
-  </section
+    <h3 class="mentiontitle">Notes mentioning this note</h3>
+    {%- if page.backlinks.size > 0 -%}
+      <div class="mygrid">
+        {%- for backlink in page.backlinks -%}
+          <div class="backlink-box">
+            <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a><br>
+            <div>{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div>
+        <p>There are no notes linking to this note.</p>
+      </div>
+    {%- endif -%}
+    {%- include jump-to.html -%}
+  </div
 </article>

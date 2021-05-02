@@ -2,8 +2,11 @@
 <html lang="en">
 {%- include head.html -%}
 <body>
-  <nav>{%- include nav.html -%}</nav>
-  <main class="wrapper">{{ content }}</main>
+  <div class="wrapper">
+    <nav>{%- include nav.html -%}</nav>
+    <main>{{ content }}</main>
+    <footer><hr>{%- include footer.html -%}</footer>
+  </div>
   {%- include js.html -%}
 </body>
 </html>

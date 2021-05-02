@@ -1,3 +1,8 @@
-<h1>
-    <a class="internal-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
-</h1>
+{%- if page.id == "home" -%}
+    <h1>
+        <a class="internal-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </h1>
+{%- else -%}
+    {% include breadcrumbs.html %}
+    <br>
+{%- endif -%}

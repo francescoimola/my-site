@@ -1,14 +1,8 @@
 ---
 layout: default
 ---
-<div class="box">
-  <section>
-    {{ content }}
-    {%- include masonry.html -%}
-    <footer class="widefooter"><hr>{%- include footer.html -%}</footer>
-  </section>
-  <section class="side">
-    {%- include jump-to.html -%}
-  </section>
-  <footer class="mobilefooter"><hr>{%- include footer.html -%}</footer>
+<div>
+{{ content }}
+  {%- include masonry.html -%}
+  {%- include jump-to.html -%}
 </div>

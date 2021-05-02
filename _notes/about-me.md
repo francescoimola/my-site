@@ -1,5 +1,5 @@
 ---
-title: About
+title: About me
 permalink: /about
 ---
 I (he/they) am an artist, designer, and curator based in London working with software and code to examine self-exposure on the web.

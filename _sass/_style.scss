@@ -65,9 +65,18 @@ body {
 }
 
 .wrapper {
-  padding-right: $line-h * 4;
-  padding-left: $line-h * 4;
+  padding-right: $line-h;
+  padding-left: $line-h;
   max-width: 100vw;
+
+  @media screen and (min-width: 813px) {
+    padding-right: $line-h * 4;
+    padding-left: $line-h * 4;
+  }
+}
+
+main {
+  margin-top: -($line-h / 2);
 }
 
 p {
@@ -115,6 +124,30 @@ em {
 
 strong {
   font-weight: 700;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+
+  th {
+    display: none;
+    visibility: hidden;
+  }
+
+  td,
+  td * {
+    vertical-align: top;
+    text-align: left;
+  }
+
+  td[headers="title"] {
+    padding-left: 1em;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 a {
@@ -269,89 +302,6 @@ img {
   border-radius: $border-radius;
   -webkit-animation: fadeIn ease 0.8s;
   animation: fadeIn ease 0.8s;
-}
-
-.masonry {
-  margin-top: $line-h / 2;
-
-  .column {
-    float: left;
-  }
-
-  .size-1of1 {
-    width: 100%;
-  }
-
-  .size-1of2 {
-    width: 50%;
-  }
-
-  .size-1of3 {
-    width: 33.333%;
-  }
-
-  @media screen and (max-width: 769px) {
-    &[data-columns]::before {
-      content: "1 .column.size-1of1";
-    }
-  }
-
-  @media screen and (min-width: 770px) and (max-width: 1599px) {
-    &[data-columns]::before {
-      content: "2 .column.size-1of2";
-    }
-  }
-
-  @media screen and (min-width: 1600px) {
-    &[data-columns]::before {
-      content: "3 .column.size-1of3";
-    }
-  }
-
-  div {
-    margin: 0 auto 1em 0;
-    font-size: $small;
-    transition: all ($transtime / 1.5) ease-in-out;
-
-    a {
-      display: block;
-      margin-right: 0.6em;
-      border-radius: $border-radius;
-
-      &:after {
-        display: none;
-      }
-
-      &:active {
-        background-color: transparent;
-      }
-
-      h3 {
-        margin: ($line-h / 6) auto ($line-h / 4) 0;
-
-        &:before {
-          display: none;
-        }
-      }
-
-      &:hover,
-      &:focus {
-        img {opacity: 80%;}
-      }
-    }
-
-    p {
-      margin: 0 auto ($line-h / 2) 0;
-      color: $lighter;
-    }
-  }
-
-  /* clearfix */
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
 }
 
 .mygrid {

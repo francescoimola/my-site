@@ -71,8 +71,8 @@ body {
   overflow-x: hidden;
 
   @media screen and (min-width: 813px) {
-    padding-right: $line-h * 4;
-    padding-left: $line-h * 4;
+    padding-right: $line-h * 10;
+    padding-left: $line-h * 10;
   }
 }
 
@@ -237,7 +237,7 @@ nav {
   margin: $line-h 0;
 
   h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     margin: 0;
   }
 }
@@ -273,13 +273,10 @@ code {
 }
 
 img {
-  max-width: 100%;
-  min-height: 100%;
   display: block;
   object-fit: cover;
-  /*  max-width: 100%;
-  height: auto;
-  object-fit: cover; */
+  max-width:100%;
+  max-height:100%; 
   border-radius: $border-radius;
   -webkit-animation: fadeIn ease 0.8s;
   animation: fadeIn ease 0.8s;
@@ -324,86 +321,6 @@ img {
     div {
       color: $lighter;
     }
-  }
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1em 0;
-  grid-template-areas:
-    "htfmat htfmat"
-    "feedyour feedyour"
-    "everythingyou everythingyou";
-
-  div {
-    background-color: $color-box-background;
-    border-radius: $border-radius;
-    gap: 0 1em;
-    
-    p {
-      margin: 0;
-    }
-
-    img {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-  }
-
-  .htfmat {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "one two";
-    grid-area: htfmat;
-  }
-
-  .one {
-    grid-area: one;
-  }
-
-  .two {
-    grid-area: two;
-    align-self: center;
-  }
-
-  .feedyour {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "three four";
-    grid-area: feedyour;
-  }
-
-  .three {
-    grid-area: three;
-  }
-
-  .four {
-    grid-area: four;
-    align-self: center;
-  }
-
-  .everythingyou {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "five six";
-    grid-area: everythingyou;
-  }
-
-  .five {
-    grid-area: five;
-  }
-
-  .six {
-    grid-area: six;
-    align-self: center;
   }
 }
 

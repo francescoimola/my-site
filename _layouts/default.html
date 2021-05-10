@@ -4,7 +4,11 @@
 <body>
   <div class="wrapper">
     <nav>{%- include nav.html -%}</nav>
+    {%- if page.id == "home" -%}
+    <main class=".home_main">{{ content }}</main>
+    {%- else -%}
     <main>{{ content }}</main>
+    {%- endif -%}
     <footer><hr>{%- include footer.html -%}</footer>
   </div>
   {%- include js.html -%}

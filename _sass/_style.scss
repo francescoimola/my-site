@@ -365,6 +365,21 @@ img {
     margin: ($rootsize / 4) 0.5em 0 0;
     font-size: $small;
     transition: color ($transtime / 2) ease-in-out;
+
+    span::after {
+      content: "\a";
+      white-space: pre;
+
+      @media screen and (max-width: 812px) {
+        content: ", ";
+        white-space: initial;
+      }
+    }
+
+    span:last-child::after {
+      content: "";
+      white-space: initial;
+    }
   }
 
   img {

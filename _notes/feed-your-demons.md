@@ -6,7 +6,6 @@ Cross-referencing mythology, pop culture, the supernatural, and digital selfhood
 
 Feed Your Demons and Meet the Ally is curated by Magda Żołędź (of [ONE Project](https://one-project.co.uk/)) and Francesco Imola. The exhibition was presented on 2nd July 2 2020 with an online opening featuring interviews, Q&As, and workshops with artists in the show.
 
-
 <br>
 <img loading="lazy" 
     data-src="assets\feedyourdemons\feed-your-demons.png"

@@ -1,24 +1,30 @@
 ---
-title: Everything You See In In The Past, 2020
+title: Ray-Glow, 2021
 permalink: /rayglow
 ---
-In a time where offline life has become so intertwined with the online, how are artists and curators responding to digital culture?
+This site was built for the 18th session of [Sunday Sites](https://sundaysites.cafe/). The "theme" for this session was _Weather_. 
 
-_Everything You See Is In The Past_ is a curatorial research project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators. The project began in September 2019 and culminated in May 2020 with an exhibition and accompanying catalogue.
+<img alt="Screenshot of work in action" loading="lazy" data-src="assets\rayglow\Screenshot.png" class="lazyload"/>
 
-<img alt="'Everything You See Is In The Past' Exhibition Catalogue as a Slideshow GIF" loading="lazy" data-src="https://d2w9rnfcy7mm78.cloudfront.net/7407935/original_d983f2c3d43ce6f59903dc7488a6c164.gif?1590326044?bc=0" class="lazyload"/>
-_Exhibition Catalogue (Slideshow GIF)_
+<img alt="Another screenshot of work in action" loading="lazy" data-src="assets\rayglow\Screenshot_1.png" class="lazyload"/>
 
-<img alt="Screenshot of the exhibition homepage" loading="lazy" data-src="assets/everythingyousee/exhibition-homepage.png" class="lazyload"/>
-_Exhibition homepage_
+<small>_Both above: Screenshots of the work in action_</small>
 
-<img alt="Screenshot of the opening event" loading="lazy" data-src="assets/everythingyousee/opening-event.png" class="lazyload"/>
-_Still from the opening event on Zoom, 28 March 2020_ 
+<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+  <iframe
+    src="https://glitch.com/embed/#!/embed/ray-glow?path=style.css&previewSize=0"
+    title="ray-glow on Glitch"
+    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<small>_Source code_</small>
 
 ### Links
 
-[Explore the exhibition catalogue](https://arena-attachments.s3.amazonaws.com/7413063/c6f7ebaf91a84dd94ae368676d6010a2.pdf?1590356387)
-[Project Timeline](https://there.am/eysiitp-project-portfolio-francesco-imola/)<br>
-[Literature Review](https://there.am/eysiitp-project-portfolio-francesco-imola/survey-of-literature/)<br>
-[Practice Review](https://there.am/eysiitp-project-portfolio-francesco-imola/practice-review/)
-[Further Documentation](https://there.am/eysiitp-project-portfolio-francesco-imola/research-practice-application/)<br>
+[Visit the work](https://ray-glow.glitch.me/)
+
+### Medium 
+
+Built using HTML and [p5.js](https://p5js.org/)

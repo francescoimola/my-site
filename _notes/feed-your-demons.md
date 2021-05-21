@@ -6,18 +6,14 @@ Cross-referencing mythology, pop culture, the supernatural, and digital selfhood
 
 Feed Your Demons and Meet the Ally is curated by Magda Żołędź (of [ONE Project](https://one-project.co.uk/)) and Francesco Imola. The exhibition was presented on 2nd July 2 2020 with an online opening featuring interviews, Q&As, and workshops with artists in the show.
 
-<br>
-<img loading="lazy" 
-    data-src="assets\feedyourdemons\feed-your-demons.png"
-    class="lazyload"/>
+![The exhibition website, section on participating artists](){: data-src="assets\feedyourdemons\sitescreenshot.png" .lazyload loading="lazy"}
+<small>The exhibition website, section on participating artists</small>
 
-<img loading="lazy" 
-    data-src="assets\feedyourdemons\arenachannel.png"
-    class="lazyload"/>
+![The exhibition folder, extracted from a ZIP file](){: data-src="assets\feedyourdemons\feed-your-demons.png" .lazyload loading="lazy"}
+<small>The exhibition folder, extracted from a ZIP file</small>
 
-<img loading="lazy" 
-    data-src="assets\feedyourdemons\sitescreenshot.png"
-    class="lazyload"/>
+![Mockup of the Feed Your Demons and Meet the Ally Are.na channel](){: data-src="assets\feedyourdemons\arenachannel.png" .lazyload loading="lazy"}
+<small>The exhibition's Are.na channel</small>
 
 ### Links
 
@@ -27,11 +23,4 @@ The exhibition has ended, but you can still [request the ZIP file via email](mai
 
 [Explore the Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/feed-your-demons-and-meet-the-ally)
 
-Listen to the exhibition soundtrack
-
-<iframe src="https://open.spotify.com/embed/playlist/5xeTdrVePvbb53AIGXFMOC" width="100%" height="250em" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-### Method
-
-Curation, Writing, Web Design
 

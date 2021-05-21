@@ -8,7 +8,7 @@ $lighter: mix($site-background, white, 50%);
 // Measurements
 $size: #{"min(max(16px, 1.5vw), 28px);"};
 $rootsize: 1em;
-$line-h: $rootsize+($rootsize * 0.25);
+$line-h: $rootsize+($rootsize * 0.30);
 $small: #{"min(max(14px, 1.25vw), 28px);"};
 $under-line: $rootsize * 0.08;
 $border-radius: $rootsize * 0.25;
@@ -202,7 +202,7 @@ a {
 
   &:after {
     position: relative;
-    font-size: calc(6px + 0.5vw);
+    font-size: calc(6px + 0.2vw);
     font-family: "Font Awesome 5 Free";
     content: "\00a0\00a0\f360""";
     line-height: 0;
@@ -346,6 +346,7 @@ img {
   background: $color-box-background;
   border-radius: $border-radius;
   padding: 0.65em;
+  cursor: default;
   overflow: hidden;
   transition: ($transtime / 1.5) ease-in-out;
 

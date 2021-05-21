@@ -18,9 +18,6 @@ permalink:  pretty
 relative_permalinks:  false
 encoding: utf-8
 
-plugins:
-  - jekyll-last-modified-at
-
 highlighter: none
 
 sass:

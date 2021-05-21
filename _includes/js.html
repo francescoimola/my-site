@@ -6,7 +6,7 @@
 <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/stackoverflow-dark.min.css">
 <!--  Run Highlight.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js" async=""></script>
 <script>
     hljs.highlightAll();
 </script>
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="js/lazysizes.min.js" async=""></script>
 <!-- Makes div clickable -->
 <script>
-    $(".backlink-box").click(function () {
+    $(".backlink-box").not(".works").click(function () {
         window.location = $(this).find("a").attr("href");
         return false;
     });

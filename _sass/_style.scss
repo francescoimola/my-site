@@ -73,18 +73,18 @@ body {
   overflow-x: hidden;
 
   @media screen and (max-width: 812px) {
-    padding-right: $line-h;
-    padding-left: $line-h;
+    padding-right: $line-h * 0.6;
+    padding-left: $line-h * 0.6;
   }
 
   @media screen and (min-width: 812px) and (max-width: 1036px) {
-    padding-right: $line-h * 4;
-    padding-left: $line-h * 4;
+    padding-right: $line-h * 3.6;
+    padding-left: $line-h * 3.6;
   }
 
   @media screen and (min-width: 1036px) {
-    padding-right: $line-h * 10;
-    padding-left: $line-h * 10;
+    padding-right: $line-h * 9.6;
+    padding-left: $line-h * 9.6;
   }
 }
 
@@ -334,19 +334,8 @@ figure {
   grid-template-columns: 1fr;
 }
 
-.grid-child {
-  a {
-    @media screen and (max-width: 812px) {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      color: $links;
-    }
-  }
-
-  img {
-    margin-bottom: $line-h / 4;
-  }
+.grid-child img {
+  margin-bottom: $line-h / 4;
 }
 
 .notes-entry-container img {

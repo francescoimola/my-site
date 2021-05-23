@@ -8,13 +8,13 @@ layout: default
     <div>
       {{ content }}
     </div>
-    <h3 class="mentiontitle">Notes mentioning this note</h3>
+    <h2 class="mentiontitle" role="complementary">Notes mentioning this note</h2>
     {%- if page.backlinks.size > 0 -%}
       <div class="mygrid">
         {%- for backlink in page.backlinks -%}
-          <div class="backlink-box">
-            <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a><br>
-            <div>{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
+          <div class="grid-child" tabindex="0" role="link">
+            <h3><a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a></h3>
+            <div aria-hidden="true">{{ backlink.excerpt | strip_html | truncatewords: 25 }}</div>
           </div>
         {%- endfor -%}
       </div>

@@ -2,7 +2,6 @@
 title: How to feel more at home, 2020
 permalink: /feelmoreathome
 ---
-
 Half webwork half expanded poem, this work is part of an [ongoing observation](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home), exploring and articulating personal ideas of home, what (and who) makes one, and how to find meaning living in-between homes.
 
 ![Screenshot of the work in action](){: data-src="assets/hftmah/htfmah1.png" .lazyload loading="lazy"}

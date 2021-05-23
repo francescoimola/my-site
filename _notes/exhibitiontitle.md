@@ -5,6 +5,6 @@ This Twitter bot generated a new exhibition title for a fictional art exhibition
 
 ![Mockup of tweets from the Twitter bot](){: data-src="assets\exhibit_title\mockup.png" .lazyload loading="lazy"}
 
-This works is inspired by [another exhibition title generator](http://www.mit.edu/~ruchill/lazycurator.submit.html) built by Rebecca Uchill & Ben Guaraldi.
+This work is inspired by [another exhibition title generator](http://www.mit.edu/~ruchill/lazycurator.submit.html) built by Rebecca Uchill & Ben Guaraldi.
 
 [Read the tweets](https://twitter.com/exhibit_title)

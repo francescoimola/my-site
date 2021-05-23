@@ -1,6 +1,6 @@
 ---
-title: Net Art & Co., Back catalogue 2017-2021
-permalink: /netart1721
+title: Other Works of Net Art, 2017-2021
+permalink: /morenetart
 ---
 <style>
     h3 {
@@ -8,9 +8,7 @@ permalink: /netart1721
     }
 </style>
 
-Here are collected some of the works of internet art I built between 2017 and 2021. A few of them still work, while others don't and are to be considered derecated. Those sites that work are best viewed on a desktop browser—sorry, mobile users! 
-
-I built most of these sites without the proper technical skills to exactly do what I had in mind, and I did so using several tools, although my weapon of choice has often been [p5.js](https://p5js.org/). I did my best to document how I made each of them below.
+Here are some of the works of internet art I built between 2017 and 2021. As for the case of most internet artworks out there, a few of these sites still work, while others—now deprecated—don't. 
 
 <small>Unless, otherwhise stated, each work listed below is un-licensed under a [CC0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/). I dedicate any and all copyright interest of the work to the public domain and I make this dedication for the benefit of the public at large. I intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.</small>
 

@@ -11,7 +11,6 @@ $rootsize: 1em;
 $line-h: $rootsize+($rootsize * 0.30);
 $small: #{"min(max(14px, 1.25vw), 28px);"};
 $under-line: $rootsize * 0.08;
-$border-radius: $rootsize * 0.25;
 
 // Time
 $transtime: 0.5s;
@@ -98,19 +97,16 @@ p {
   font-style: normal;
   line-height: inherit;
   margin-top: $line-h / 2;
-  margin-bottom: $line-h / 1.5;
+  margin-bottom: $line-h;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   line-height: initial;
   font-weight: $bweight;
   font-style: normal;
-  margin-top: 0;
+  margin: $line-h 0 $line-h/2 0;
 }
 
 h1 {
@@ -128,7 +124,10 @@ h3 {
 h4,
 h5,
 h6 {
-  font-size: $rootsize;
+  line-height: initial;
+  font-weight: initial;
+  font-style: normal;
+  margin: $line-h 0 $line-h/2 0;
 }
 
 
@@ -235,6 +234,7 @@ small {
 }
 
 footer {
+  overflow: hidden;
   margin-top: $rootsize;
   margin-bottom: $line-h;
 }
@@ -293,7 +293,6 @@ blockquote {
   padding: $rootsize / 1.25;
   font-size: $small;
   background: $color-box-background;
-  border-radius: $border-radius;
 
   &+& {
     margin-top: -($rootsize / 2);
@@ -312,7 +311,6 @@ ol {
 }
 
 code {
-  border-radius: $border-radius;
   font-size: $small;
 }
 
@@ -321,39 +319,23 @@ img {
   object-fit: cover;
   max-width: 100%;
   max-height: 100%;
-  border-radius: $border-radius;
   -webkit-animation: fadeIn ease $transtime;
   animation: fadeIn ease $transtime;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 .mygrid {
   display: grid;
-  grid-gap: $rootsize / 1.5;
+  grid-gap: $rootsize;
   grid-template-columns: 1fr;
-
-  h3 {
-    margin: 0;
-  }
 }
 
-.notes-entry-container img {
-  margin-top: $line-h / 1.5;
-  margin-bottom: $line-h / 4;
-}
-
-.backlink-box {
-  display: block;
-  background: $color-box-background;
-  border-radius: $border-radius;
-  padding: 0.65em;
-  cursor: default;
-  overflow: hidden;
-  transition: ($transtime / 1.5) ease-in-out;
-
-  h3 {
-    display: block;
-    margin: 0 0.5em 0 0;
-
+.grid-child {
+  a {
     @media screen and (max-width: 812px) {
       white-space: nowrap;
       overflow: hidden;
@@ -362,56 +344,14 @@ img {
     }
   }
 
-  div {
-    margin: ($rootsize / 4) 0.5em 0 0;
-    font-size: $small;
-    transition: color ($transtime / 2) ease-in-out;
-
-    span::after {
-      content: "\a";
-      white-space: pre;
-
-      @media screen and (max-width: 812px) {
-        content: ", ";
-        white-space: initial;
-      }
-    }
-
-    span:last-child::after {
-      content: "";
-      white-space: initial;
-    }
-  }
-
   img {
-    display: block;
-    margin: 0 0 0.5em 0;
-
-    @media screen and (min-width: 812px) {
-      float: left;
-      max-width: 50%;
-      margin: 0 1em 0 0;
-    }
+    margin-bottom: $line-h / 4;
   }
+}
 
-  &:hover,
-  &:focus,
-  &:active {
-    cursor: pointer;
-    transform: scale(1.015);
-
-    a,
-    h3 {
-      color: $primary;
-      text-decoration: underline;
-      -webkit-text-decoration-color: $links;
-      text-decoration-color: $links;
-    }
-
-    div {
-      color: $lighter;
-    }
-  }
+.notes-entry-container img {
+  margin-top: $line-h / 1.5;
+  margin-bottom: $line-h / 4;
 }
 
 .nobr {
@@ -421,7 +361,6 @@ img {
 .callout {
   padding: 3em 1em;
   background: #F5F7FF;
-  border-radius: 0.25em;
 }
 
 .invalid-link {

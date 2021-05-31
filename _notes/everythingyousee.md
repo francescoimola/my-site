@@ -1,5 +1,5 @@
 ---
-title: Everything You See Is In The Past, 2020
+title: Everything You See Is In The Past
 ---
 A curatorial research project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators. 
 

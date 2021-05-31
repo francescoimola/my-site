@@ -1,22 +1,21 @@
 //Colors
 $site-background: #031026;
-$primary: mix($site-background, white, 12%);
+$primary: mix($site-background, white, 14%);
 $links: #1ea3e6;
 $color-box-background: mix($site-background, white, 88%);
 $lighter: mix($site-background, white, 50%);
 
 // Measurements
-$size: #{"min(max(16px, 1.5vw), 28px);"};
+$size: #{"min(max(18px, 1vw), 20px);"};
 $rootsize: 1em;
-$line-h: $rootsize+($rootsize * 0.30);
-$small: #{"min(max(14px, 1.25vw), 28px);"};
-$under-line: $rootsize * 0.08;
+$line-h: $rootsize+($rootsize * 0.40);
+$small: #{"min(max(14px, 1vw), 16px);"};
 
 // Time
-$transtime: 0.5s;
+$transtime: 0.3s;
 
 // Font Family
-$font-family: "DM Sans",
+$font-family: "Poppins",
 -apple-system,
 BlinkMacSystemFont,
 Segoe UI,
@@ -28,8 +27,9 @@ Segoe UI Symbol;
 $mono-family: "DM Mono",
 monospace;
 
-$nweight: 400;
-$bweight: 500;
+$regular: 400;
+$bold: 700;
+$extra-bold: 800;
 
 /* 
 //Debug
@@ -41,98 +41,44 @@ $bweight: 500;
 }
 
 html {
-  line-height: 1.15;
-  font-size: 32px;
-  font-size: $size;
   min-height: 100vh;
+  font-size: $size;
   margin: 0;
   padding: 0;
 }
 
 body {
   background-color: $site-background;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 0.8em;
+  max-width: 42em;
   font-size: $rootsize;
   font-family: $font-family;
   font-display: swap;
-  font-weight: $nweight;
   line-height: $line-h;
   color: $primary;
-  overflow: initial;
-  -webkit-animation: fadeIn ease $transtime;
-  animation: fadeIn ease $transtime;
   overflow-wrap: break-word;
   text-rendering: auto;
-}
-
-.wrapper {
-  padding-right: $line-h;
-  padding-left: $line-h;
-  max-width: 100vw;
-  overflow-x: hidden;
-
-  @media screen and (max-width: 812px) {
-    padding-right: $line-h * 0.6;
-    padding-left: $line-h * 0.6;
-  }
-
-  @media screen and (min-width: 812px) and (max-width: 1036px) {
-    padding-right: $line-h * 3.6;
-    padding-left: $line-h * 3.6;
-  }
-
-  @media screen and (min-width: 1036px) {
-    padding-right: $line-h * 9.6;
-    padding-left: $line-h * 9.6;
-  }
-}
-
-.home_main {
-  margin-top: -($line-h / 2);
-}
-
-p {
-  font-weight: $nweight;
-  font-style: normal;
-  line-height: inherit;
-  margin-top: $line-h / 2;
-  margin-bottom: $line-h;
 }
 
 h1,
 h2,
 h3 {
-  line-height: initial;
-  font-weight: $bweight;
-  font-style: normal;
-  margin: $line-h 0 $line-h/2 0;
+  font-weight: $bold;
+  line-height: $line-h * 0.8;
 }
 
 h1 {
-  font-size: $rootsize * 1.75;
+  font-size: 2.8em;
+  line-height: 80%;
 }
 
 h2 {
-  font-size: $rootsize * 1.4;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: $rootsize * 1.15;
-}
-
-h4,
-h5,
-h6 {
-  line-height: initial;
-  font-weight: initial;
-  font-style: normal;
-  margin: $line-h 0 $line-h/2 0;
-}
-
-
-h3.mentiontitle {
-  margin-top: $line-h * 2;
+  font-size: 1.2em;
 }
 
 i,
@@ -140,60 +86,27 @@ em {
   font-style: italic;
 }
 
-iframe {
-  margin: 0 0 $line-h 0;
-}
-
-
-/*Add the correct font weight in Chrome, Edge, and Safari*/
-
 b,
 strong {
   font-weight: bolder;
-  font-weight: $bweight;
+  font-weight: $bold;
 }
 
 a {
-  text-decoration: none;
-
-  @supports (-webkit-text-decoration-skip: ink) {
-    & {
-      -webkit-text-decoration-skip: ink;
-    }
-  }
-
-  @supports (text-decoration-skip-ink: auto) {
-    & {
-      -webkit-text-decoration-skip: ink;
-      text-decoration-skip-ink: auto;
-    }
-  }
-
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
   color: $links;
   -webkit-text-decoration-color: $links;
   text-decoration-color: $links;
-
-  @supports (text-decoration-thickness: 1px) {
-    & {
-      text-decoration-thickness: $under-line;
-    }
-  }
-
-  @supports (text-underline-offset: 0.10em) {
-    & {
-      text-underline-offset: 0.10em;
-    }
-  }
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.10em;
+  transition: all ($transtime / 2) ease-in-out;
 
   &:hover,
   &:focus {
     color: $primary;
-    text-decoration: underline;
-    -webkit-text-decoration-color: $links;
-    text-decoration-color: $links;
   }
-
-  transition: all ($transtime / 2) ease-in-out;
 
   &:active {
     background-color: $links;
@@ -211,17 +124,8 @@ a {
     margin-left: -0.05em;
   }
 
-  &.internal-link:after,
-  &.imga:after {
+  &.internal-link:after {
     display: none;
-  }
-
-  img {
-    transition: opacity ($transtime / 2) ease-in-out;
-  }
-
-  img:active {
-    opacity: 50%;
   }
 }
 
@@ -229,89 +133,40 @@ small {
   font-size: $small;
   color: $lighter;
   line-height: $line-h;
-  margin: 0;
-  padding: 0;
 }
 
 footer {
-  overflow: hidden;
-  margin-top: $rootsize;
-  margin-bottom: $line-h;
-}
-
-hr {
-  width: 100%;
-  border: $under-line dotted $lighter;
-  border-style: none none dotted;
-  height: auto;
-  margin-bottom: $line-h / 2;
-  box-sizing: content-box;
-  -webkit-animation: fadeIn ease ($transtime*2);
-  animation: fadeIn ease ($transtime*2);
+  margin: ($line-h * 2) 0 $line-h;
 }
 
 nav {
-  font-family: $mono-family;
-  margin: $line-h 0 ($line-h * 1.2) 0;
-
-  h1 {
-    font-size: 3.5em;
-    margin: 0;
-
-    @media screen and (max-width: 376px) {
-      font-size: 1.6em;
-    }
-
-    @media screen and (min-width: 376px) and (max-width: 566px) {
-      font-size: 2em;
-    }
-
-    @media screen and (min-width: 566px) and (max-width: 812px) {
-      font-size: 3em;
-    }
-
-    @media screen and (min-width: 812px) {
-      font-size: 4em;
-    }
-  }
-
+  margin: $line-h 0;
+  
   #breadcrumbs {
 
     h1,
     h2 {
       display: inline;
-      font-size: unset;
       margin: unset;
+      font-size: unset;
+      font-weight: $regular;
     }
   }
 }
 
 blockquote {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: $rootsize;
+  margin: 0;
   padding: $rootsize / 1.25;
-  font-size: $small;
   background: $color-box-background;
 
-  &+& {
-    margin-top: -($rootsize / 2);
-  }
-
-  p {
+  p:first-child {
     margin: 0;
-    padding: 0;
   }
 }
 
 ul,
 ol {
-  margin: 0 0 $rootsize 0;
   line-height: $line-h * 1.2;
-}
-
-code {
-  font-size: $small;
 }
 
 img {
@@ -326,21 +181,6 @@ img {
 figure {
   margin: 0;
   padding: 0;
-}
-
-.mygrid {
-  display: grid;
-  grid-gap: $rootsize;
-  grid-template-columns: 1fr;
-}
-
-.grid-child img {
-  margin-bottom: $line-h / 4;
-}
-
-.notes-entry-container img {
-  margin-top: $line-h / 1.5;
-  margin-bottom: $line-h / 4;
 }
 
 .nobr {
@@ -360,25 +200,4 @@ figure {
 .invalid-link-brackets {
   color: mix($site-background, white, 90%);
   cursor: help;
-}
-
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }

@@ -4,25 +4,20 @@ layout: default
 
 <article>
   <h2>{{ page.title }}</h2>
-  <div class="notes-entry-container">
-    <div>
-      {{ content }}
-    </div>
-    <h2 class="mentiontitle" role="complementary">Notes mentioning this note</h2>
+    {{ content }}
+    <br>
     {%- if page.backlinks.size > 0 -%}
-      <div class="mygrid">
+      <section role="feed">
+      <h2>Notes mentioning this note</h2>
         {%- for backlink in page.backlinks -%}
-          <div class="grid-child" tabindex="0" role="link">
-            <h3><a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a></h3>
-            <div aria-hidden="true">{{ backlink.excerpt | strip_html | truncatewords: 25 }}</div>
+          <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+          <span aria-hidden="true">— {{ backlink.excerpt | strip_html | truncatewords: 22 }}</span>
           </div>
         {%- endfor -%}
-      </div>
+      </section>
     {%- else -%}
-      <div>
+      <h2>Notes mentioning this note</h2>
         <p>There are no notes linking to this note.</p>
-      </div>
     {%- endif -%}
     {%- include jump-to.html -%}
-  </div
 </article>

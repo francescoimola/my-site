@@ -4,7 +4,7 @@ permalink: /about
 ---
 I (he/they) am an artist, designer, and curator based in London working with software and code to examine self-exposure on the web.
 
-I hold a Bachelor’s degree in Digital Arts from University of Greenwich, where I now work—managing social media, curating events, and designing frameworks to help students make work abiding by UK Covid-19 legislations.
+I hold a Bachelor's degree in Digital Arts from University of Greenwich, where I now work—managing social media, curating events, and designing frameworks to help students make work abiding by UK Covid-19 legislations.
 
 Recently, I worked on a few self-initiated projects: [explore them here](/){: .internal-link}. You might also be interested in [[what's at the top of my mind]].
 

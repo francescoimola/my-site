@@ -1,10 +1,10 @@
 ---
-title: Other Works of Net Art, 2017-2021
-permalink: /morenetart
+title: Inactive works of Net Art
+permalink: /netart
 ---
-Here are some of the works of internet art I built between 2017 and 2021. As for the case of most internet artworks out there, a few of these sites still work, while others—now deprecated—don't. 
+Here are some of the works of internet art I built between 2017 and 2021, all of which are not developed anymore. A few of these sites still work, while others don't. And that's considered more of a feature than a bug, because these experiments in creative coding help me—primarily—learn. And...you get to see what sort of strange webpages can be built in only a few hours of [bogding](https://www.urbandictionary.com/define.php?term=bodge) code together.
 
-<small>Unless otherwise stated, each work listed here is un-licensed under a [CC0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/). I dedicate all copyright interests of the work to the public domain, and I make this dedication to benefit the public at large. I intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.</small>
+Unless otherwise stated, each work listed here is un-licensed under a [CC0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/). I dedicate all copyright interests of the work to the public domain, and I make this dedication to benefit the public at large. I intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.
 
 ## Ray-Glow, 2021
 

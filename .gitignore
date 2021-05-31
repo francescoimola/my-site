@@ -1,9 +1,6 @@
 # Generated website directory
 _site/
 
-# Posts drafts
-_drafts/
-
 # Sass cache
 .sass-cache/
 
@@ -11,15 +8,5 @@ _drafts/
 .jekyll-cache
 .jekyll-metadata
 
-# Installed Node Packages
-node_modules
-
-#Stylelint Config 
-.stylelintrc.json
-
-# Yarn Clean Config
-.yarnclean
-
-# Webhint report
-hint-report
-
+# VSCode Settings 
+.vscode

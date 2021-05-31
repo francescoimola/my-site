@@ -9,7 +9,7 @@ $lighter: mix($site-background, white, 50%);
 $size: #{"min(max(18px, 1vw), 20px);"};
 $rootsize: 1em;
 $line-h: $rootsize+($rootsize * 0.40);
-$small: #{"min(max(14px, 1vw), 16px);"};
+$small: #{"min(max(14px, 0.5vw), 16px);"};
 
 // Time
 $transtime: 0.3s;
@@ -65,12 +65,12 @@ h1,
 h2,
 h3 {
   font-weight: $bold;
-  line-height: $line-h * 0.8;
+  line-height: $line-h * 0.7;
+  margin: ($line-h / 2) 0;
 }
 
 h1 {
   font-size: 2.8em;
-  line-height: 80%;
 }
 
 h2 {
@@ -167,7 +167,11 @@ blockquote {
 ul,
 ol {
   line-height: $line-h * 1.2;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0 0 0 1em;
 }
+
 
 img {
   display: block;
@@ -176,11 +180,6 @@ img {
   max-height: 100%;
   -webkit-animation: fadeIn ease $transtime;
   animation: fadeIn ease $transtime;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
 }
 
 .nobr {

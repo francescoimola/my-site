@@ -1,5 +1,6 @@
 ---
 title: Three Years
+permalink: /three-years
 ---
 In 2019, I downloaded my entire Twitter archive of over a thousand tweets spanning nearly three years. I used this vast amount of data to create a book, install it in an exhibition, and perform an uninterrupted 2:30 hrs live reading. As a believer in the power of journaling, I was interested in how presenting data as a stream of consciousness could tell the story of where it came from and the person (me) behind the tweets. Plus, Twitter made it so easy to download your data that I could not resist playing with it. 
 

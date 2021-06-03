@@ -10,3 +10,6 @@ _site/
 
 # VSCode Settings 
 .vscode
+
+# Drafts 
+_drafts

@@ -1,5 +1,6 @@
 ---
 title: What's at the top of my mind
+permalink: /top-of-my-mind
 ---
 People often ask me what I’m doing, so here's a public declaration of priorities.
 

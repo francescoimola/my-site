@@ -1,5 +1,6 @@
 ---
-title: Exhibition Title Bot, 2020
+title: Exhibition Title Bot
+permalink: /exhibition-title
 ---
 This Twitter bot generated a new exhibition title for a fictional art exhibition every day for two years. It stopped posting in spring 2021 after successfully writing more than 500 titles. I built the bot using the [Bright Spiral editor](https://www.brightspiral.com/tracery/)—written in [Tracery](https://tracery.io/)—and [Cheap Bots Done Quick](https://cheapbotsdonequick.com/) to automate the posting. 
 

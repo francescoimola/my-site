@@ -1,9 +1,12 @@
 ---
 title: Everything You See Is In The Past
+permalink: /everything-you-see
 ---
 A curatorial research project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators. 
 
 The project began in September 2019 and culminated in May 2020 with an exhibition and accompanying catalogue featuring works from Enes Alba, Atom Chen, Dario Bucheli, and Perce Jerrom, and interviews with Lisa Barnard, Pita Arreola-Burns and Elliott Burns, Valentina Peri, Ghislaine Boddington, and Walter Corneli. Explore the [documentation of the curatorial process](https://www.are.na/francesco-imola-2o2ng4qooxm/eysiitp-project-portfolio-francesco-imola).
+
+The name for this project pays homage to a [work](http://www.everythingyouseeisinthepast.com/) and [exhibition](http://www.postmastersart.com/archive/rozendaal13/rozendaal13.html) by the same name by artist Rafaël Rozendaal.
 
 ![Screenshot of the opening event](){: data-src="assets/everythingyousee/opening.png" .lazyload loading="lazy"}
 <small>_Still from the online opening event_</small>

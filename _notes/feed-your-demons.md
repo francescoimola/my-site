@@ -1,6 +1,6 @@
 ---
 title: Feed Your Demons and Meet the Ally, 2020
-permalink: /feedyourdemons
+permalink: /feed-your-demons
 ---
 Cross-referencing mythology, pop culture, the supernatural, and digital selfhood, the works presented in this ZIP-compressed exhibition explore fears, desires, and obstacles artists face within themselves in times of crisis and isolation.
 

@@ -12,9 +12,6 @@ Feed Your Demons and Meet the Ally is curated by Magda Żołędź (of [ONE Proje
 ![The exhibition folder, extracted from a ZIP file](){: data-src="assets\feedyourdemons\feed-your-demons.png" .lazyload loading="lazy"}
 <small>The exhibition folder, extracted from a ZIP file</small>
 
-![Mockup of the Feed Your Demons and Meet the Ally Are.na channel](){: data-src="assets\feedyourdemons\arenachannel.png" .lazyload loading="lazy"}
-<small>The exhibition's Are.na channel</small>
-
 ### Links
 
 * The exhibition has ended, but you can still [request the ZIP file via email](mailto:frn.imola@gmail.com?subject=Feed%20Your%20Demons%20and%20Meet%20the%20Ally%20-%20ZIP%20File&body=Hello!)

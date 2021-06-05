@@ -9,7 +9,7 @@ Half webwork half expanded poem, this work is part of an [ongoing observation](h
 ![Screenshot of the work in action](){: data-src="assets/hftmah/htfmah2.png" .lazyload loading="lazy"}
 <small>_Both above: Screenshots of the work in action_</small>
 
-I built this site using [p5.js](https://p5js.org/), [Tone.js](https://tonejs.github.io/), and [Tonal](https://github.com/tonaljs/tonal). I tested it on desktop Firefox and Chrome, and mobile iOS Chrome, and it might not work as intended on other devices/browsers
+I built this site using [p5.js](https://p5js.org/), [Tone.js](https://tonejs.github.io/), and [Tonal](https://github.com/tonaljs/tonal). It was tested on desktop Firefox and Chrome, and mobile iOS Chrome. It might not work as intended on other devices or browsers
 
 ### Links
 

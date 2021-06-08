@@ -6,9 +6,13 @@ In 2019, I downloaded my entire Twitter archive of over a thousand tweets spanni
 
 Materialising the new media into old media, I wrote a book called Three Years containing the thousands of tweets I had published in the three years before the book was assembled. Or maybe the book wrote itself, becoming a testament to the performativity of the archive.
 
-Three Years was launched—and read—on 23 March 2019 at the Heritage Gallery (of University of Greenwich Galleries). And it was displayed as part of [528](http://www.greenwichunigalleries.co.uk/fivetoeight/), the group show I co-curated with my other exceptional students at the University of Greenwich. 
+Three Years was launched—and read—on 23 March 2019 at the Heritage Gallery (of University of Greenwich Galleries). And it was displayed as part of [528](http://www.greenwichunigalleries.co.uk/fivetoeight/), the group show I co-curated with fellow students at the University of Greenwich. 
 
 ![Book Mockup](){: data-src="assets\three_years\mockup.png" .lazyload loading="lazy"}
+
+### Read 
+
+[PDF](assets/three_years/Three_Years.pdf#view=FitV&pagemode=thumbs)
 
 ### A few extra info
 
@@ -17,14 +21,10 @@ Three Years was launched—and read—on 23 March 2019 at the Heritage Gallery (
 ![Collage of the book's installation display from concept to creation and exhibition](){: data-src="assets\three_years\installation.jpg" .lazyload loading="lazy"}
 <small>The book's installation display from concept to creation and exhibition</small>
 
-* I designed the book from scratch, and it was my first attempt at book design. I am still incredibly proud of what I have achieved making full use of the limited skills I had at the time. Since then, I have gone to create plenty more physical designs, including numerous posters, booklets, signage, and an [[Everything You See Is In The Past|exhibition catalogue]].
+* I designed the book from scratch. It was my first attempt at book design, and I'm still incredibly proud of what I have achieved, making full use of the limited skills I had at the time. Since then, I have created plenty more physical designs, including numerous posters, booklets, signage, and [[Everything You See Is In The Past|exhibition catalogues]].
 
-![Early print of the book](){: data-src="assets\three_years\early_print.jpg" .lazyload loading="lazy"}
-<small>A very early prototype</small>
-
-### Read 
-
-[PDF](assets/three_years/Three_Years.pdf#view=FitV&pagemode=thumbs)
+![Early print (prototype) of the book](){: data-src="assets\three_years\early_print.jpg" .lazyload loading="lazy"}
+<small>A very early prototype of the book</small>
 
 ### Purchase paperback
 

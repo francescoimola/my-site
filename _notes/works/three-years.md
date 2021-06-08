@@ -10,16 +10,23 @@ Three Years was launched—and read—on 23 March 2019 at the Heritage Gallery (
 
 ![Book Mockup](){: data-src="assets\three_years\mockup.png" .lazyload loading="lazy"}
 
-### A few technical bits
+### A few extra info
 
-* To display the book, I handmade a custom single-bookshelf from a wooden pole and installed it on a plinth. You can see a glimpse of it in the image below.
+* To display the book, I handmade a custom single-bookshelf from a wooden pole and installed it on a plinth.
+
+![Collage of the book's installation display from concept to creation and exhibition](){: data-src="assets\three_years\installation.jpg" .lazyload loading="lazy"}
+<small>The book's installation display from concept to creation and exhibition</small>
+
 * I designed the book from scratch, and it was my first attempt at book design. I am still incredibly proud of what I have achieved making full use of the limited skills I had at the time. Since then, I have gone to create plenty more physical designs, including numerous posters, booklets, signage, and an [[Everything You See Is In The Past|exhibition catalogue]].
+
+![Early print of the book](){: data-src="assets\three_years\early_print.jpg" .lazyload loading="lazy"}
+<small>A very early prototype</small>
 
 ### Read 
 
 [PDF](assets/three_years/Three_Years.pdf#view=FitV&pagemode=thumbs)
 
-### Purchase
+### Purchase paperback
 
 * [Blackwells](https://blackwells.co.uk/bookshop/product/Three-Years-by-Imola-Francesco/9780244761820) (UK)
 * [Lulu](https://www.lulu.com/en/gb/shop/francesco-imola/three-years/paperback/product-14q2wqw6.html?page=1&pageSize=4) (UK)

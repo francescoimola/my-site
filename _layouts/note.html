@@ -7,15 +7,15 @@ layout: default
     {{ content }}
     <br>
     {%- if page.backlinks.size > 0 -%}
-      <section role="feed">
-      <h2>Notes mentioning this note</h2>
+      <details open role="feed">
+      <summary><h2>Notes mentioning this note</h2></summary>
         {%- for backlink in page.backlinks -%}
         <ul>
           <li><a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
             <span aria-hidden="true">— {{ backlink.excerpt | strip_html | truncatewords: 22 }}</span></li>
         <ul>
         {%- endfor -%}
-      </section>
+      </details>
     {%- else -%}
       <h2>Notes mentioning this note</h2>
         <p>There are no notes linking to this note.</p>

@@ -45,6 +45,7 @@ html {
   font-size: $size;
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
 }
 
 body {
@@ -66,7 +67,7 @@ h2,
 h3 {
   font-weight: $bold;
   line-height: $line-h * 0.7;
-  margin: ($line-h / 2) 0;
+  margin: $line-h 0 ($line-h / 2);
 }
 
 h1 {
@@ -129,6 +130,7 @@ a {
 }
 
 small {
+  display: block;
   font-size: $small;
   color: $lighter;
   line-height: $line-h;
@@ -138,18 +140,14 @@ footer {
   margin: ($line-h * 2) 0 $line-h;
 }
 
-nav {
-  margin: $line-h 0;
-  
-  #breadcrumbs {
+nav #breadcrumbs {
+  margin-top: $line-h / 2;
 
-    h1,
-    h2 {
-      display: inline;
-      margin: unset;
-      font-size: unset;
-      font-weight: $regular;
-    }
+  h1,
+  h2 {
+    display: inline;
+    font-size: $small;
+    font-weight: $regular;
   }
 }
 
@@ -171,8 +169,12 @@ ol {
   padding: 0 0 0 1em;
 }
 
+article h2:first-of-type {
+  margin-top: $line-h / 2;
+}
 
 img {
+  margin: ($line-h * 1.5) 0;
   display: block;
   object-fit: cover;
   max-width: 100%;
@@ -180,10 +182,28 @@ img {
   -webkit-animation: fadeIn ease $transtime;
   animation: fadeIn ease $transtime;
   border-radius: 0.2em;
+
+  &+small {
+    margin-top: -($line-h * 1.5);
+  }
+}
+
+// Fix stilying issues with details and summary. IE will ignore these settings.
+@supports not (-ms-ime-align: auto) {
+
+  details summary {
+    cursor: pointer;
+    margin: $line-h 0;
+  }
+
+  details summary h2:first-of-type,
+  details summary h3:first-of-type {
+    display: inline;
+  }
 }
 
 .nobr {
-  white-space:nowrap; 
+  white-space: nowrap;
 }
 
 .callout {

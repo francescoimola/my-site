@@ -1,4 +1,4 @@
 ---
 title: How I built this site
-permalink: /thissite
+permalink: /how-I-built-this-site
 ---

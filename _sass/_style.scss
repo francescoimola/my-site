@@ -88,7 +88,6 @@ em {
 
 b,
 strong {
-  font-weight: bolder;
   font-weight: $bold;
 }
 
@@ -167,7 +166,7 @@ blockquote {
 ul,
 ol {
   line-height: $line-h * 1.2;
-  list-style-position: inside;
+  list-style-position: outside;
   margin: 0;
   padding: 0 0 0 1em;
 }
@@ -180,6 +179,7 @@ img {
   max-height: 100%;
   -webkit-animation: fadeIn ease $transtime;
   animation: fadeIn ease $transtime;
+  border-radius: 0.2em;
 }
 
 .nobr {

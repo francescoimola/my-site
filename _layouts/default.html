@@ -2,21 +2,31 @@
 <html lang="en">
   {%- include head.html -%}
   <body>
+    {% if page.id == "home" %}
+    <div class="column left">
       <nav>
-        {% if page.id == "home" %}
-          <h1>{{ site.title }}</h1>
-        {% else %}
-          {%- include breadcrumbs.html -%}
-          <br>
-        {% endif %}
+        <h1>{{ site.title }}</h1>
       </nav>
-      {% if page.id == "home" %}
-          <main>{{ content }}</main>
-        {% else %}
-          <main>{{ content }}</main>
-          <footer>
-            <small>My work is supported by the generosity of the people who believe in its value. Please consider <a href="https://ko-fi.com/francescoimola" target="_blank">buying me a coffe</a>.</small>
-          </footer>
-        {% endif %}
+      <main>
+        <div class="cropper">
+          <div class="framed"></div>
+        </div>
+        {{ content }}
+      </main>
+    </div>
+    <div class="column right" style="right: 0;"></div>
+    </div>
+    {% else %}
+    <div class="column left">
+      <nav>{%- include breadcrumbs.html -%}</nav>
+      <main>{{ content }}</main>
+      <footer>
+        <small>My work is supported by the generosity of the people who believe in its value. Please consider <a
+            href="https://ko-fi.com/francescoimola" target="_blank">buying me a coffe</a>.</small>
+      </footer>
+    </div>
+    <div class="column right" style="right: 0;"></div>
+    </div>
+    {% endif %}
   </body>
 </html>

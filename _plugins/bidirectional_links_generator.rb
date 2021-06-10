@@ -18,7 +18,7 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         title_from_filename = File.basename(
           note_potentially_linked_to.basename,
           File.extname(note_potentially_linked_to.basename)
-        ).gsub('_', ' ').gsub('-', ' ').capitalize
+        ).gsub('_', ' ').capitalize
 
         # Replace double-bracketed links with label using note title
         # [[A note about cats|this is a link to the note about cats]]

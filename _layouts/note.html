@@ -10,10 +10,8 @@ layout: default
       <details open role="feed">
       <summary><h2>Notes mentioning this note</h2></summary>
         {%- for backlink in page.backlinks -%}
-        <ul>
-          <li><a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
-            <span aria-hidden="true">— {{ backlink.excerpt | strip_html | truncatewords: 22 }}</span></li>
-        <ul>
+            <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+            <br><span aria-hidden="true">{{ backlink.excerpt | strip_html | truncatewords: 22 }}</span>
         {%- endfor -%}
       </details>
     {%- else -%}

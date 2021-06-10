@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  {%- include head.html -%}
-  <body>
-    {% if page.id == "home" %}
-    <div class="column left">
-      <nav>
-        <h1>{{ site.title }}</h1>
-      </nav>
-      <main>
-        <div class="cropper">
-          <div class="framed"></div>
-        </div>
-        {{ content }}
-      </main>
+{%- include head.html -%}
+<body>
+  {% if page.id == "home" %}
+  <div class="column left">
+    <div class="cropper">
+      <div class="framed"></div>
     </div>
-    <div class="column right" style="right: 0;"></div>
-    </div>
-    {% else %}
-    <div class="column left">
-      <nav>{%- include breadcrumbs.html -%}</nav>
-      <main>{{ content }}</main>
-      <footer>
-        <small>My work is supported by the generosity of the people who believe in its value. Please consider <a
-            href="https://ko-fi.com/francescoimola" target="_blank">buying me a coffe</a>.</small>
-      </footer>
-    </div>
-    <div class="column right" style="right: 0;"></div>
-    </div>
-    {% endif %}
-  </body>
+    <nav>
+      <h1>{{ site.title }}</h1>
+    </nav>
+    <main>{{ content }}</main>
+  </div>
+  <div class="column right" style="right: 0;"></div>
+  </div>
+  {% else %}
+  <div class="column left">
+    <nav>{%- include breadcrumbs.html -%}</nav>
+    <main>{{ content }}</main>
+    <footer>
+      <small>My work is supported by the generosity of the people who believe in its value. Please consider <a
+          href="https://ko-fi.com/francescoimola" target="_blank">buying me a coffe</a>.</small>
+    </footer>
+  </div>
+  <div class="column right" style="right: 0;"></div>
+  </div>
+  {% endif %}
+</body>
 </html>

@@ -1,15 +1,15 @@
 //Colors
-$site-background: #031026;
+$site-background: hsl(218, 85%, 8%);
 $primary: mix($site-background, white, 14%);
 $links: #1ea3e6;
 $color-box-background: mix($site-background, white, 88%);
 $lighter: mix($site-background, white, 50%);
 
 // Measurements
-$size: #{"min(max(18px, 1vw), 20px);"};
+$size: #{"min(max(16px, 1.2vw), 20px);"};
 $rootsize: 1em;
 $line-h: $rootsize+($rootsize * 0.40);
-$small: #{"min(max(14px, 0.5vw), 16px);"};
+$small: #{"min(max(14px, 0.6vw), 16px);"};
 
 // Time
 $transtime: 0.3s;
@@ -60,78 +60,47 @@ body {
   color: $primary;
   overflow-wrap: break-word;
   text-rendering: auto;
+  background: 
+  radial-gradient(circle at 82.94% 53.18%, #c8c5b1, transparent 22%),
+  radial-gradient(circle at 81.12% 41%, #1ea0e6, transparent 33%),
+  radial-gradient(circle at 89.71% 66.71%, #03122b, transparent 98%),
+  radial-gradient(circle at 65.43% 98.51%, #2a7acf, transparent 46%),
+  radial-gradient(circle at 0.13% 76.18%, #94abb8, transparent 50%),
+  radial-gradient(circle at 50% 50%, #010e38, #010e38 100%),
+  url("assets/noise.svg");
+  background-repeat: no-repeat;
 }
 
 // Create two equal columns that float next to each other 
-.column {
+.wrapper {
   margin: 0;
-  height: 100vh;
+  background-color: $site-background;
   width: 50%;
-  position: fixed;
-  z-index: 1;
+  height: 100vh;
+  position: relative;
   top: 0;
-}
-
-// Control the left side 
-.left {
+  z-index: 1;
   overflow-y: scroll;
-  left: 0;
-}
-
-// Control the right side 
-.right {
-  background-image: $site-background;
-  background:
-    radial-gradient(at 49% 50%, hsla(211, 66%, 49%, 1) 0, transparent 48%),
-    radial-gradient(at 57% 57%, hsla(201, 80%, 51%, 1) 0, transparent 31%),
-    radial-gradient(at 80% 66%, hsla(218, 86%, 9%, 1) 0, transparent 47%),
-    radial-gradient(at 97% 58%, hsla(201, 20%, 65%, 1) 0, transparent 78%),
-    radial-gradient(at 34% 43%, hsla(52, 17%, 74%, 1) 0, transparent 91%),
-    url("assets/noise.svg");
-}
-
-.framed {
-  display: none;
-  visibility: hidden;
-  background-image: $site-background;
-  background:
-    radial-gradient(at 49% 50%, hsla(211, 66%, 49%, 1) 0, transparent 48%),
-    radial-gradient(at 57% 57%, hsla(201, 80%, 51%, 1) 0, transparent 31%),
-    radial-gradient(at 80% 66%, hsla(218, 86%, 9%, 1) 0, transparent 47%),
-    radial-gradient(at 97% 58%, hsla(201, 20%, 65%, 1) 0, transparent 78%),
-    radial-gradient(at 34% 43%, hsla(52, 17%, 74%, 1) 0, transparent 91%),
-    url("assets/noise.svg");
-  background-size: contain;
-}
-
-.cropper {
-  display: none;
-  visibility: hidden;
-  width: 100%;
-  height: 50vh;
-  overflow: hidden;
+  opacity: 0.99;
 }
 
 @media screen and (max-width: 926px) {
-  .column {
-    position: unset;
+  .wrapper {
     width: 100%;
+    height: auto;
+    margin-top: $rootsize * 15;
+    overflow-y: hidden;
   }
-  .right {
-    display: none;
-    visibility: hidden;
-  }
-  .cropper {
-    display: block;
-    visibility: visible;
-    position: relative;
-  }
-  .framed {
-    display: block;
-    visibility: visible;
-    position: relative;
-    width: 100%;
-    height: 100%;
+
+  body {
+    background: 
+    radial-gradient(circle at 27.28% 32.75%, #c8c5b1, transparent 22%),
+    radial-gradient(circle at 21.94% 19.89%, #1ea0e6, transparent 33%),
+    radial-gradient(circle at 28.91% 36.81%, #94abb8, transparent 20%),
+    radial-gradient(circle at 8.14% 4.06%, #03122b, transparent 98%),
+    radial-gradient(circle at 60.16% 87.14%, #2a7acf, transparent 46%),
+    radial-gradient(circle at 50% 50%, #010e38, #010e38 100%),
+    url("assets/noise.svg");
   }
 }
 

@@ -9,7 +9,8 @@
     </nav>
     <main>{{ content }}</main>
   </div>
-  <div class="gradient"></div>
+  <div class="wrapper">{%- include selprojects.html -%}</div>
+  <div class="wrapper">{%- include jump-to.html -%}</div>
   {% else %}
   <div class="wrapper">
     <nav>{%- include breadcrumbs.html -%}</nav>
@@ -19,7 +20,6 @@
           href="https://ko-fi.com/francescoimola" target="_blank">buying me a coffe</a>.</small>
     </footer>
   </div>
-  <div class="gradient"></div>
   {% endif %}
 </body>
 </html>

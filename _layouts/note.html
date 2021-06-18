@@ -4,19 +4,5 @@ layout: default
 
 <article>
   <h2>{{ page.title }}</h2>
-    {{ content }}
-    <br>
-    {%- if page.backlinks.size > 0 -%}
-      <details open role="feed">
-      <summary><h2>Notes mentioning this note</h2></summary>
-        {%- for backlink in page.backlinks -%}
-            <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
-            <br><span aria-hidden="true">{{ backlink.excerpt | strip_html | truncatewords: 22 }}</span>
-        {%- endfor -%}
-      </details>
-    {%- else -%}
-      <h2>Notes mentioning this note</h2>
-        <p>There are no notes linking to this note.</p>
-    {%- endif -%}
-    {%- include jump-to.html -%}
+  {{ content }}
 </article>

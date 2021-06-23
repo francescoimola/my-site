@@ -2,24 +2,45 @@
 <html lang="en">
 {%- include head.html -%}
 <body>
+
   {% if page.id == "home" %}
-  <div class="wrapper">
-    <nav>
-      <h1>{{ site.title }}</h1>
-    </nav>
-    <main>{{ content }}</main>
-  </div>
-  <div class="gradient"></div>
+
+    <div class="wrapper">
+      <nav><h1>{{ site.title }}</h1></nav>
+      <main>{{ content }}</main>
+    </div>
+    <div class="wrapper">{%- include selprojects.html -%}</div>
+    <div class="wrapper">{%- include jump-to.html -%}</div>
+
   {% else %}
-  <div class="wrapper">
-    <nav>{%- include breadcrumbs.html -%}</nav>
-    <main>{{ content }}</main>
-    <footer>
-      <small>My work is supported by the generosity of the people who believe in its value. Please consider <a
-          href="https://ko-fi.com/francescoimola" target="_blank">buying me a coffe</a>.</small>
-    </footer>
-  </div>
-  <div class="gradient"></div>
+
+    <div class="wrapper">
+      <nav>{%- include breadcrumbs.html -%}</nav>
+      <main>{{ content }}</main>
+    </div>
+    <div class="wrapper">
+
+      {%- if page.backlinks.size > 0 -%}
+
+        <details open role="feed">
+          <summary>
+            <h2>Notes mentioning this note</h2>
+          </summary>
+
+          {%- for backlink in page.backlinks -%}
+
+          <a class="internal-link"
+            href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+          <p aria-hidden="true">{{ backlink.excerpt | strip_html | truncatewords: 20 }}</p>
+          
+          {%- endfor -%}
+        </details>
+
+      {%- else -%}
+        <h2 class="custom_margin">Notes mentioning this note</h2>
+        <p>There are no notes linking to this note.</p>
+      {%- endif -%}
+    </div>
   {% endif %}
 </body>
 </html>

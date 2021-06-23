@@ -31,10 +31,8 @@ $regular: 400;
 $bold: 700;
 $extra-bold: 800;
 
-/*  
 //Debug
-*{ border: 1px solid pink; }  
-*/
+/* *{ border: 1px solid pink; }   */
 
 * {
   box-sizing: border-box;
@@ -53,59 +51,45 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100vw;
+  min-height: 100%;
   font-size: $rootsize;
   font-family: $font-family;
   font-display: swap;
   line-height: $line-h;
   color: $primary;
+  overflow-y: scroll;
+  overflow-x: hidden; 
   overflow-wrap: break-word;
   text-rendering: auto;
-  background: 
-  radial-gradient(circle at 82.94% 53.18%, #c8c5b1, transparent 22%),
-  radial-gradient(circle at 81.12% 41%, #1ea0e6, transparent 33%),
-  radial-gradient(circle at 89.71% 66.71%, #03122b, transparent 98%),
-  radial-gradient(circle at 65.43% 98.51%, #2a7acf, transparent 46%),
-  radial-gradient(circle at 0.13% 76.18%, #94abb8, transparent 50%),
-  radial-gradient(circle at 50% 50%, #010e38, #010e38 100%),
-  url("assets/noise.svg");
+  background:
+    radial-gradient(circle at 82.94% 53.18%, #c8c5b1, transparent 22%),
+    radial-gradient(circle at 81.12% 41%, #1ea0e6, transparent 33%),
+    radial-gradient(circle at 89.71% 66.71%, #03122b, transparent 98%),
+    radial-gradient(circle at 65.43% 98.51%, #2a7acf, transparent 46%),
+    radial-gradient(circle at 0.13% 76.18%, #94abb8, transparent 50%),
+    radial-gradient(circle at 50% 50%, #010e38, #010e38 100%),
+    url("assets/noise.svg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-// Create two equal columns that float next to each other 
 .wrapper {
-  margin: 0;
+  margin: $line-h / 2;
+  padding: ($rootsize/2) $rootsize;
   background-color: $site-background;
-  width: 50%;
-  height: 100vh;
-  position: relative;
-  top: 0;
+  border-radius: 0.8em;
+  width: 50vw;
   z-index: 1;
-  overflow-y: scroll;
-  opacity: 0.99;
 }
 
 @media screen and (max-width: 926px) {
   .wrapper {
-    width: 100%;
-    height: auto;
-    margin-top: $rootsize * 15;
-    overflow-y: hidden;
-  }
-
-  body {
-    background: 
-    radial-gradient(circle at 27.28% 32.75%, #c8c5b1, transparent 22%),
-    radial-gradient(circle at 21.94% 19.89%, #1ea0e6, transparent 33%),
-    radial-gradient(circle at 28.91% 36.81%, #94abb8, transparent 20%),
-    radial-gradient(circle at 8.14% 4.06%, #03122b, transparent 98%),
-    radial-gradient(circle at 60.16% 87.14%, #2a7acf, transparent 46%),
-    radial-gradient(circle at 50% 50%, #010e38, #010e38 100%),
-    url("assets/noise.svg");
+    width: auto;
   }
 }
 
-main {
-  padding: 0 $rootsize 2em;
+p {
+  margin-bottom: $line-h;
 }
 
 h1,
@@ -117,11 +101,15 @@ h3 {
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 2em;
 }
 
 h2 {
   font-size: 2em;
+
+  &.custom_margin {
+    margin: ($line-h / 4) 0;
+  }
 }
 
 h3 {
@@ -146,7 +134,7 @@ a {
   -webkit-text-decoration-color: $links;
   text-decoration-color: $links;
   text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.10em;
+  text-underline-offset: 0.15em;
   transition: all ($transtime / 2) ease-in-out;
 
   &:hover,
@@ -173,6 +161,11 @@ a {
   &.internal-link:after {
     display: none;
   }
+
+  &:visited {
+    -webkit-text-decoration-color: #e6931e;
+    text-decoration-color: #e6931e;
+  }
 }
 
 small {
@@ -188,9 +181,18 @@ footer {
 }
 
 nav {
-  padding: $rootsize $rootsize 0;
+  user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
   h1 {
-    margin: $line-h / 4 auto 0;
+    margin: ($line-h / 4) 0;
   }
 
   #breadcrumbs {
@@ -202,6 +204,11 @@ nav {
       font-size: $small;
       font-weight: $regular;
     }
+  }
+
+  a:visited {
+    -webkit-text-decoration-color: $links;
+    text-decoration-color: $links;
   }
 }
 
@@ -219,7 +226,7 @@ ul,
 ol {
   line-height: $line-h * 1.2;
   list-style-position: outside;
-  margin: 0;
+  margin: 0 0 $rootsize;
   padding: 0 0 0 1em;
 }
 
@@ -248,16 +255,30 @@ img {
   details summary {
     cursor: pointer;
     margin: $line-h 0;
-  }
-
-  details summary h2:first-of-type,
-  details summary h3:first-of-type {
-    display: inline;
-  }
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
 }
 
-.nobr {
+details summary h2:first-of-type,
+details summary h3:first-of-type {
+  display: inline;
+}
+}
+
+nobr {
   white-space: nowrap;
+}
+
+div.custom_margin {
+  margin: $line-h 0;
 }
 
 .callout {

@@ -6,9 +6,7 @@
   {% if page.id == "home" %}
 
     <div class="wrapper">
-      <nav>
-        <h1>{{ site.title }}</h1>
-      </nav>
+      <nav><h1>{{ site.title }}</h1></nav>
       <main>{{ content }}</main>
     </div>
     <div class="wrapper">{%- include selprojects.html -%}</div>
@@ -43,11 +41,6 @@
         <p>There are no notes linking to this note.</p>
       {%- endif -%}
     </div>
-      <!--<footer>
-          <small>My work is supported by the generosity of the people who believe in its value. Please consider <a
-            href="https://ko-fi.com/francescoimola" target="_blank">buying me a coffe</a>.</small>
-      </footer> -->
-
   {% endif %}
 </body>
 </html>

@@ -1,5 +1,5 @@
 //Colors
-$site-background: hsl(218, 85%, 8%);
+$site-background: #031026;
 $primary: mix($site-background, white, 14%);
 $links: #1ea3e6;
 $color-box-background: mix($site-background, white, 88%);
@@ -23,6 +23,15 @@ sans-serif,
 Apple Color Emoji,
 Segoe UI Emoji,
 Segoe UI Symbol;
+
+@font-face {
+  font-family: "Karrik-regular";
+  src:  url("assets/webfonts/WOFF/Karrik-Regular.woff") format("woff"),
+        url("assets/webfonts/WOFF2/Karrik-Regular.woff2") format("woff2"),
+        url("assets/webfonts/TFF/Karrik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 $mono-family: "DM Mono",
 monospace;
@@ -57,34 +66,70 @@ body {
   font-display: swap;
   line-height: $line-h;
   color: $primary;
-  overflow-y: scroll;
   overflow-x: hidden; 
   overflow-wrap: break-word;
   text-rendering: auto;
-  background:
-    radial-gradient(circle at 82.94% 53.18%, #c8c5b1, transparent 22%),
-    radial-gradient(circle at 81.12% 41%, #1ea0e6, transparent 33%),
-    radial-gradient(circle at 89.71% 66.71%, #03122b, transparent 98%),
-    radial-gradient(circle at 65.43% 98.51%, #2a7acf, transparent 46%),
-    radial-gradient(circle at 0.13% 76.18%, #94abb8, transparent 50%),
-    radial-gradient(circle at 50% 50%, #010e38, #010e38 100%),
-    url("assets/noise.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: $color-box-background;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0% 0%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "one two"
+    "one two";
 }
 
 .wrapper {
-  margin: $line-h / 2;
-  padding: ($rootsize/2) $rootsize;
+  padding: ($line-h / 2) $rootsize;
   background-color: $site-background;
-  border-radius: 0.8em;
   width: 50vw;
-  z-index: 1;
+  height: auto;
+  border: 0.1em solid $primary;
 }
 
-@media screen and (max-width: 926px) {
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+} 
+
+@media screen and (max-width: 834px) {
   .wrapper {
     width: auto;
+  }
+  body {
+    display: block;
+  }
+}
+
+.two {
+
+  grid-area: two;
+  width: 100%;
+}
+
+.one { grid-area: one; }
+
+@media all and (-ms-high-contrast:none) {
+  .body {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+  }
+
+  .two {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+
+  .one {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
   }
 }
 
@@ -98,6 +143,7 @@ h3 {
   font-weight: $bold;
   line-height: $line-h * 0.7;
   margin: $line-h 0 ($line-h / 2);
+  font-family: "Karrik-regular";
 }
 
 h1 {
@@ -181,16 +227,6 @@ footer {
 }
 
 nav {
-  user-select: none;
-    /* supported by Chrome and Opera */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
   h1 {
     margin: ($line-h / 4) 0;
   }
@@ -255,16 +291,6 @@ img {
   details summary {
     cursor: pointer;
     margin: $line-h 0;
-    user-select: none;
-    /* supported by Chrome and Opera */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
 }
 
 details summary h2:first-of-type,

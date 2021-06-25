@@ -2,31 +2,33 @@
 <html lang="en">
 {%- include head.html -%}
 
-<body>
+<body class="parent">
 
   {% if page.id == "home" %}
-    <div class="one">
-      <div class="wrapper sticky">
+    <div class="item">
+      <div class="box sticky" style="z-index: 1;">
         <nav>
           <h1>{{ site.title }}</h1>
         </nav>
         <main>{{ content }}</main>
       </div>
+      <div class="box">{%- include bemyguest.html -%}</div>
     </div>
-    <div class="two">
-        <div class="wrapper">{%- include thissite.html -%}</div>
-        <div class="wrapper right">{%- include selprojects.html -%}</div>
+    <div class="item">
+        <div class="box">{%- include thissite.html -%}</div>
+        <div class="box right">{%- include selprojects.html -%}</div>
+        <div class="box">{%- include cv.html -%}</div>
     </div>
 
   {% else %}
   <div class="one">
-    <div class="wrapper sticky">
+    <div class="box sticky">
       <nav>{%- include breadcrumbs.html -%}</nav>
       <main>{{ content }}</main>
     </div>
   </div>
   <div class="two">
-    <div class="wrapper">
+    <div class="box">
 
       {%- if page.backlinks.size > 0 -%}
 

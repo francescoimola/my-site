@@ -26,9 +26,9 @@ Segoe UI Symbol;
 
 @font-face {
   font-family: "Karrik-regular";
-  src:  url("assets/webfonts/WOFF/Karrik-Regular.woff") format("woff"),
-        url("assets/webfonts/WOFF2/Karrik-Regular.woff2") format("woff2"),
-        url("assets/webfonts/TFF/Karrik-Regular.ttf") format("truetype");
+  src: url("assets/webfonts/WOFF/Karrik-Regular.woff") format("woff"),
+    url("assets/webfonts/WOFF2/Karrik-Regular.woff2") format("woff2"),
+    url("assets/webfonts/TFF/Karrik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -66,71 +66,26 @@ body {
   font-display: swap;
   line-height: $line-h;
   color: $primary;
-  overflow-x: hidden; 
+  overflow-y: scroll;
+  overflow-x: hidden;
   overflow-wrap: break-word;
   text-rendering: auto;
   background: $color-box-background;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0% 0%;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "one two"
-    "one two";
 }
 
-.wrapper {
+.box {
   padding: ($line-h / 2) $rootsize;
   background-color: $site-background;
-  width: 50vw;
+  width: auto;
   height: auto;
-  border: 0.1em solid $primary;
+  border: 0.3em solid $primary;
+  border-style: inset;
 }
 
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-} 
-
-@media screen and (max-width: 834px) {
-  .wrapper {
-    width: auto;
-  }
-  body {
-    display: block;
-  }
-}
-
-.two {
-
-  grid-area: two;
-  width: 100%;
-}
-
-.one { grid-area: one; }
-
-@media all and (-ms-high-contrast:none) {
-  .body {
-    display: -ms-grid;
-    -ms-grid-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-  }
-
-  .two {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-  }
-
-  .one {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
 }
 
 p {
@@ -270,6 +225,14 @@ article h2:first-of-type {
   margin-top: $line-h / 2;
 }
 
+nobr {
+  white-space: nowrap;
+}
+
+input {
+  margin-right: 0.4em
+}
+
 img {
   margin: ($line-h * 1.5) 0;
   display: block;
@@ -291,20 +254,64 @@ img {
   details summary {
     cursor: pointer;
     margin: $line-h 0;
-}
+  }
 
-details summary h2:first-of-type,
-details summary h3:first-of-type {
-  display: inline;
-}
-}
-
-nobr {
-  white-space: nowrap;
+  details summary h2:first-of-type,
+  details summary h3:first-of-type {
+    display: inline;
+  }
 }
 
 div.custom_margin {
   margin: $line-h 0;
+}
+
+.parent {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+
+  .item:nth-child(1) {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 50%;
+    min-width: 50%;
+  }
+
+  .item:nth-child(2) {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    min-width: 50%;
+  }
 }
 
 .callout {
@@ -320,4 +327,26 @@ div.custom_margin {
 .invalid-link-brackets {
   color: mix($site-background, white, 90%);
   cursor: help;
+}
+
+@media screen and (max-width: 834px) {
+  .box {
+    width: auto;
+  }
+
+  .sticky {
+    position: initial;
+  }
+
+  .parent {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    .item:nth-child(1),
+    .item:nth-child(2) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 }

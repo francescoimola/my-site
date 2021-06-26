@@ -386,7 +386,8 @@ label {
     }
   }
 
-  .custom_box {
+  .box, .custom_box {
     height: auto;
+    min-height: unset;
   }
 }

@@ -4,8 +4,6 @@ title: Home
 id: home
 permalink: /
 ---
-I am an artist, designer, curator, and event programmer based in London. 
+[[What's at the top of my mind|Welcome]] &#128075; I'm Francesco, an artist, creative technologist, designer, and curator-in-training. I recently finished my digital arts degree at University of Greenwich, where I now organise educational and community-building events, design multimedia content, write, and co-design frameworks to help film students make work during Covid-19.
 
-This site is a living public digital space: here I gather my work, ideas, hobbies, goals, and passions. While the majority of this site is made up of notes, they are not its entirety. This is a greenhouse where new ideas grow, a workshop where I create new things, and my portfolio of past and WIP projects.
-
-For now, there's no index or navigational aid: you’ll need to follow a link to some starting point. <span><nobr>[[What's at the top of my mind|Welcome]] &#128075;</nobr></span>
+Recently, I also worked on a few self-initiated projects. Among them a [[How to feel more at home|webwork]] articulating personal ideas of home, a [[Feed Your Demons and Meet the Ally|show]] exploring desires and obstacles faced by artists in isolation, and several [digital collections](https://www.are.na/francesco-imola-2o2ng4qooxm).

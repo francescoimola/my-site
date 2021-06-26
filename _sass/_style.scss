@@ -40,16 +40,16 @@ $regular: 400;
 $bold: 700;
 $extra-bold: 800;
 
-//Debug
-/* *{ border: 1px solid pink; }   */
+/* //Debug
+*{ border: 1px solid pink; }  */
 
 * {
   box-sizing: border-box;
   z-index: 0;
+  border-color: $primary;
 }
 
 html {
-  min-height: 100vh;
   font-size: $size;
   margin: 0;
   padding: 0;
@@ -60,7 +60,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100vw;
-  min-height: 100%;
+  height: 100vh;
   font-size: $rootsize;
   font-family: $font-family;
   font-display: swap;
@@ -70,25 +70,28 @@ body {
   overflow-x: hidden;
   overflow-wrap: break-word;
   text-rendering: auto;
-  background: $color-box-background;
 }
 
 .box {
-  padding: ($line-h / 2) $rootsize;
+  padding: ($line-h / 4) $rootsize;
   background-color: $site-background;
   width: auto;
-  height: auto;
+  min-height: 50vh;
   border: 0.3em solid $primary;
   border-style: inset;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.custom_box {
+  padding: ($line-h / 4) $rootsize;
+  background-color: $site-background;
+  width: auto;
+  height: 100%;
+  border: 0.3em solid $primary;
+  border-style: inset;
 }
 
 p {
+  display: block;
   margin-bottom: $line-h;
 }
 
@@ -182,9 +185,6 @@ footer {
 }
 
 nav {
-  h1 {
-    margin: ($line-h / 4) 0;
-  }
 
   #breadcrumbs {
     margin-top: $line-h / 2;
@@ -230,12 +230,13 @@ nobr {
 }
 
 input {
-  margin-right: 0.4em
+  margin: 0 0.4em 0;
 }
 
 img {
   margin: ($line-h * 1.5) 0;
   display: block;
+  -o-object-fit: cover;
   object-fit: cover;
   max-width: 100%;
   max-height: 100%;
@@ -252,12 +253,18 @@ img {
 @supports not (-ms-ime-align: auto) {
 
   details summary {
-    cursor: pointer;
     margin: $line-h 0;
+
+    h1,
+    h2 {
+      cursor: pointer;
+    }
   }
 
+  details summary h1:first-of-type,
   details summary h2:first-of-type,
-  details summary h3:first-of-type {
+  details summary h3:first-of-type,
+  details summary nav {
     display: inline;
   }
 }
@@ -267,29 +274,43 @@ div.custom_margin {
 }
 
 .parent {
+  display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
   align-content: stretch;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
 
   .item:nth-child(1) {
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
@@ -301,9 +322,13 @@ div.custom_margin {
   }
 
   .item:nth-child(2) {
-    -webkit-order: 2;
-    -ms-flex-order: 2;
-    order: 2;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
@@ -314,9 +339,30 @@ div.custom_margin {
   }
 }
 
-.callout {
-  padding: 3em 1em;
-  background: #F5F7FF;
+/*
+  Legacy Firefox implementation treats all flex containers
+  as inline-block elements.
+*/
+
+@-moz-document url-prefix() {
+  .parent {
+    width: 100%;
+    -moz-box-sizing: border-box;
+  }
+
+}
+
+.crosshair {
+  cursor: crosshair;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+input,
+label {
+  cursor: pointer;
 }
 
 .invalid-link {
@@ -330,17 +376,7 @@ div.custom_margin {
 }
 
 @media screen and (max-width: 834px) {
-  .box {
-    width: auto;
-  }
-
-  .sticky {
-    position: initial;
-  }
-
   .parent {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     .item:nth-child(1),

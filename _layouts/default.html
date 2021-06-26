@@ -2,32 +2,35 @@
 <html lang="en">
 {%- include head.html -%}
 
-<body class="parent">
+<body class="parent crosshair">
 
   {% if page.id == "home" %}
-    <div class="item">
-      <div class="box sticky" style="z-index: 1;">
+  <div class="item">
+    <details class="box">
+      <summary>
         <nav>
           <h1>{{ site.title }}</h1>
         </nav>
-        <main>{{ content }}</main>
-      </div>
-      <div class="box">{%- include bemyguest.html -%}</div>
-    </div>
-    <div class="item">
-        <div class="box">{%- include thissite.html -%}</div>
-        <div class="box right">{%- include selprojects.html -%}</div>
-        <div class="box">{%- include cv.html -%}</div>
-    </div>
+      </summary>
+      <main>{{ content }}</main>
+    </details>
+    <div class="box">{%- include bemyguest.html -%}</div>
+    <div class="box">{%- include selprojects.html -%}</div>
+    <div class="box">{%- include thissite.html -%}</div>
+  </div>
+  <div class="item">
+  <div class="custom_box" aria-hidden="true">{%- include inabox.html -%}</div>
+    <div class="box">{%- include cv.html -%}</div>
+    <div class="box">{%- include contact.html -%}</div>
+  </div>
 
   {% else %}
-  <div class="one">
-    <div class="box sticky">
-      <nav>{%- include breadcrumbs.html -%}</nav>
-      <main>{{ content }}</main>
-    </div>
+  <div class="item box">
+    <nav>{%- include breadcrumbs.html -%}</nav>
+    <main>{{ content }}</main>
   </div>
-  <div class="two">
+  <div class="item">
+  <div class="custom_box" aria-hidden="true">{%- include inabox.html -%}</div>
     <div class="box">
 
       {%- if page.backlinks.size > 0 -%}

@@ -180,6 +180,12 @@ small {
   line-height: $line-h;
 }
 
+// Style smaller, custom bits of text
+.small {
+  font-size: $small;
+  line-height: $line-h;
+}
+
 // Site navigation
 nav {
 
@@ -373,36 +379,62 @@ img {
 }
 
 // Create table to display homepage title and first paragraphs at "opposite" sides of the viewport
-table {
+table.homepage {
   height: 100vh;
   text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0;
 
-  .tg {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  
-  .tg td {
+  .homepage td {
     border-style: transparent;
     border-width: 0;
     overflow: hidden;
   }
-  
-  .tg th {
+
+  .homepage th {
     border-style: transparent;
     border-width: 0;
     font-weight: unset;
     overflow: hidden;
   }
-  
-  .tg-0lax {
+
+  .homepage-0lax {
     vertical-align: top;
   }
-  
-  .tg-1lax {
+
+  .homepage-1lax {
     vertical-align: bottom;
     font-size: $rootsize * 1.4;
     line-height: $line-h;
+  }
+}
+
+// TABLE EXPERIMENT
+table.layout {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: inherit;
+  vertical-align: top;
+  text-align: left;
+  border-style: hidden;
+
+  td {
+    border: 0.08em solid $primary;
+    overflow: hidden;
+    padding: 2vw 0;
+    vertical-align: top;
+
+    &.description {
+      padding-right: 2vw;
+    }
+
+    &.content {
+      padding-left: 2vw;
+    }
+
+    &.first {
+      padding-top: 0;
+    }
   }
 }
 
@@ -427,7 +459,8 @@ table {
     }
   }
 
-  .tg, .tg col {
+  table,
+  table col {
     width: auto;
   }
 }

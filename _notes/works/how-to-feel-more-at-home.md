@@ -2,7 +2,34 @@
 title: How to feel more at home
 permalink: /feel-more-at-home
 ---
-Half webwork half expanded poem, this work is part of an [ongoing observation](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home), exploring and articulating personal ideas of home, what (and who) makes one, and how to find meaning living in-between homes.
+<div class="layout-wrap"><table class="layout">
+<tbody>
+  <tr>
+    <td class="description first">About</td>
+    <td class="content first">
+    This website incorporates an expanded poem, a series of mobile photograps, and interactive semi-generative audiovisual elements into a singular landing page. This work was born out of a desire to explore and articulate personal ideas of home, what (and who) makes one, and how to find meaning living in-between homes. It is inspired and expanded by an <a href="https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home" target="_blank">Are.na channel</a> by the same title that I started in 2020.
+    </td>
+  </tr>
+  <tr>
+    <td class="description">Images</td>
+    <td class="content">[IMAGE.jpg]</td>
+  </tr>
+  <tr>
+    <td class="description">Links</td>
+    <td class="content">[LINK to Something]</td>
+  </tr>
+  <tr>
+    <td class="description">License</td>
+    <td class="content">[Some LICENSE]</td>
+  </tr>
+</tbody>
+</table></div>
+
+
+
+
+
+
 
 ![Screenshot of the site](){: data-src="assets/hftmah/htfmah1.png" .lazyload loading="lazy"}
 

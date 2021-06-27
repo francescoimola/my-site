@@ -2,58 +2,66 @@
 <html lang="en">
 {%- include head.html -%}
 
-<body class="parent crosshair">
+<body class="crosshair">
 
   {% if page.id == "home" %}
-  <div class="item">
-    <details class="box">
-      <summary>
-        <nav>
-          <h1>{{ site.title }}</h1>
-        </nav>
-      </summary>
-      <main>{{ content }}</main>
-    </details>
-    <div class="box">{%- include bemyguest.html -%}</div>
-    <div class="box">{%- include selprojects.html -%}</div>
-    <div class="box">{%- include thissite.html -%}</div>
-  </div>
-  <div class="item">
-  <div class="custom_box" aria-hidden="true">{%- include inabox.html -%}</div>
-    <div class="box">{%- include cv.html -%}</div>
-    <div class="box">{%- include contact.html -%}</div>
-  </div>
+  <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-0lax">
+          <nav>
+            <h1>{{ site.title }}</h1>
+          </nav>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-1lax">
+          <main>{{ content }}</main>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-  {% else %}
-  <div class="item box">
-    <nav>{%- include breadcrumbs.html -%}</nav>
-    <main>{{ content }}</main>
-  </div>
-  <div class="item">
-  <div class="custom_box" aria-hidden="true">{%- include inabox.html -%}</div>
-    <div class="box">
-
-      {%- if page.backlinks.size > 0 -%}
-
-      <details open role="feed">
-        <summary>
-          <h2>Notes mentioning this note</h2>
-        </summary>
-
-        {%- for backlink in page.backlinks -%}
-
-        <a class="internal-link"
-          href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
-        <p aria-hidden="true">{{ backlink.excerpt | strip_html | truncatewords: 20 }}</p>
-
-        {%- endfor -%}
-      </details>
-
-      {%- else -%}
-      <h2 class="custom_margin">Notes mentioning this note</h2>
-      <p>There are no notes linking to this note.</p>
-      {%- endif -%}
+  <div class="parent">
+    <div class="item">
+      <div class="box">{%- include selprojects.html -%}</div>
+      <div class="box">{%- include experiments.html -%}</div>
+      <div class="box">{%- include bemyguest.html -%}</div>
     </div>
+    <div class="item">
+      <div class="box">{%- include thissite.html -%}</div>
+      <div class="box">{%- include cv.html -%}</div>
+      <div class="box">{%- include contact.html -%}</div>
+    </div>
+  </div>
+  {% else %}
+  <nav>{%- include breadcrumbs.html -%}</nav>
+  <main>{{ content }}</main>
+  <br>
+  <div class="box">
+
+    {%- if page.backlinks.size > 0 -%}
+
+    <details open role="feed">
+      <summary>
+        <h2>Notes mentioning this note</h2>
+      </summary>
+
+      {%- for backlink in page.backlinks -%}
+
+      <a class="internal-link"
+        href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+      <p aria-hidden="true">{{ backlink.excerpt | strip_html | truncatewords: 20 }}</p>
+
+      {%- endfor -%}
+    </details>
+
+    {%- else -%}
+    <h2>Notes mentioning this note</h2>
+    <p>There are no notes linking to this note.</p>
+    {%- endif -%}
   </div>
   {% endif %}
 </body>

@@ -163,7 +163,7 @@ a {
 .box {
   padding: $rootsize / 10 $rootsize;
   margin-bottom: $rootsize;
-  background-color: $boxbkg;
+  border: 1px solid $primary;
   width: auto;
   min-height: auto;
 
@@ -236,8 +236,12 @@ nobr {
 
 // Checkboxes
 input {
-  margin: 0 0.4em 0;
+  margin: 0 0.4em $rootsize / 2;
   cursor: pointer;
+}
+
+.last {
+  margin-bottom: $line-h * 1.2;
 }
 
 // Images
@@ -258,12 +262,14 @@ img {
 // Fix stilying issues with details and summary. IE will ignore these settings.
 @supports not (-ms-ime-align: auto) {
 
-  details summary {
-    margin: $line-h 0;
+  details {
+    summary {
+      margin: $line-h 0;
 
-    h1,
-    h2 {
-      cursor: pointer;
+      h1,
+      h2 {
+        cursor: pointer;
+      }
     }
   }
 
@@ -430,7 +436,7 @@ table.layout {
 
     &.content {
       padding-left: 2vw;
-      
+
       ul {
         margin-bottom: 0;
       }

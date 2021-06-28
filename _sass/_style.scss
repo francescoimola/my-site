@@ -66,6 +66,15 @@ body {
   overflow-x: hidden;
   overflow-wrap: break-word;
   text-rendering: auto;
+
+  // This class changes the cursor to crosshair
+  &.crosshair {
+    cursor: crosshair;
+
+    &:active {
+      cursor: auto;
+    }
+  }
 }
 
 // Headers
@@ -361,11 +370,6 @@ img {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-}
-
-// This class changes the cursor to crosshair
-.crosshair {
-  cursor: crosshair;
 }
 
 // This one changes it to a pointer

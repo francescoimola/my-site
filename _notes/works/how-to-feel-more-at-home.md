@@ -1,13 +1,12 @@
 ---
 title: How to feel more at home
 permalink: /feel-more-at-home
-excerpt_separator: <!--end-->
 ---
 {%- include no_captions.html -%}
 
 {% capture about %}
 {% capture content %}
-This website incorporates an expanded poem, a series of mobile photograps, and interactive semi-generative audiovisual elements into a singular landing page. This work was born out of a desire to explore and articulate personal ideas of home, what (and who) makes one, and how to find meaning living in-between homes. It is inspired and expanded by an [Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home) by the same title that I started in 2020.
+This website incorporates an expanded poem, a series of mobile photographs, and interactive semi-generative audiovisual elements into a singular landing page. This work was born out of a desire to explore and articulate personal ideas of home, what (and who) makes one, and how to find meaning living in-between homes. It is inspired and expanded by an [Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home) by the same title that I started in 2020.
 
 I built this site using [p5.js](https://p5js.org/), [Tone.js](https://tonejs.github.io/), and [Tonal](https://github.com/tonaljs/tonal). It might not work as intended on devices or browsers other than desktop Firefox and Chrome, and mobile iOS Chrome.
 {% endcapture %}

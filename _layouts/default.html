@@ -42,8 +42,8 @@
     <!-- Notes Pages -->
     <nav>{%- include breadcrumbs.html -%}</nav>
     <main>{{ content }}</main>
-    <div class="box" style="margin: 2em 0;">
-      {%- if page.backlinks.size > 0 -%}
+    <div class="box notes" style="margin: 2em 0;">
+      {% if page.backlinks.size > 0 %}
 
       <!-- If there are backlinks, display this -->
       <details open role="feed">
@@ -61,7 +61,7 @@
       <!-- If there are NO backlinks, then display this -->
       <h2>Notes mentioning this note</h2>
       <p>There are no notes linking to this note.</p>
-      {%- endif -%}
+      {% endif %}
     </div>
     <!-- End Notes Pages -->
   {% endif %}

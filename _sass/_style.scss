@@ -527,7 +527,7 @@ table.work {
     &.content {
       padding-left: 2vw;
 
-      ul {
+      ul, p:last-of-type {
         margin-bottom: 0;
       }
     }

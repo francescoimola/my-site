@@ -1,7 +1,10 @@
 ---
 title: The Exhibition Title Bot
 permalink: /exhibition-title
+excerpt_separator: <!--end-->
 ---
+
+
 This Twitter bot generated a new exhibition title for a fictional art exhibition every day for two years. It stopped posting in spring 2021 after successfully writing more than 500 titles. I built the bot using the [Bright Spiral editor](https://www.brightspiral.com/tracery/) and [Cheap Bots Done Quick](https://cheapbotsdonequick.com/) to automate the posting. 
 
 ![Single tweet from the bot reading "Apposite Softheartedness"](){: data-src="assets\exhibit_title\exhibition-title.png" .lazyload loading="lazy"}

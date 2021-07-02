@@ -20,6 +20,9 @@ encoding: utf-8
 
 highlighter: none
 
+plugins:
+  - jekyll-last-modified-at
+
 sass:
   sass_dir: _sass
   style: :compressed

@@ -1,9 +1,7 @@
 ### Welcome to the source code for my WIP digital garden & portfolio
+This site's front-end is based on Jekyll. It is coded in Markdown, HTML, CSS, adn Ruby. JS-free so far.
 
-The front-end is based on Jekyll. The rest of the site is coded in Markdown, HTML, and CSS only.
-
-The site includes few plugins wrote by Maxime Vaillancourt for his Jekyll template, from which this repo is forked. However, it has been since heavily customised.
+The repo was originally forked from Maxime Vaillancourt's [Jekyll template](https://github.com/maximevaillancourt/digital-garden-jekyll-template) and it includes some of his plugins. However, the original template has been since heavily customised. 
 
 ### License
-
 Source code is available under the [MIT license](LICENSE.md).

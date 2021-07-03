@@ -1,15 +1,17 @@
 ---
-title: What's at the top of my mind
+title: What’s at the top of my mind
 permalink: /top-of-my-mind
 ---
-People often ask me what I’m doing, so here's a public declaration of priorities.
+People often ask me what I’m doing, so here’s what’s on my plate.
 
-* I am spending most of my time working on Marketing, Communications and Events for [University of Greenwich](https://www.gre.ac.uk/)'s Film & TV Programmes.
-* <del>Worring</del> Thinking about which exhibitions I am seeing next, as soon as the UK lockdown eases and musems & galleries can reopen.
-* Tranferring blog posts, essays, and other less important content from my previous Squarespace site to here.
-* Learning German, slowly, using the vast amount of resources on YouTube.
+* Spending my weekdays juggling projects in design, marketing, communications, and events for [University of Greenwich’s Film & TV Programmes](https://www.gre.ac.uk/subjects/media-arts).
+* Studying and practicing curating as part of [Node Center](https://nodecenter.net/) International Curatorial Programme, which I started in June this year.
+* Tending to my [Are.na channels](https://www.are.na/francesco-imola-2o2ng4qooxm/).
+* <del>Worring</del> Thinking about which exhibitions to visit next, now that the UK has eased COVID restrictions.
+* Transferring blog posts, essays, and other older content from my previous Squarespace site to here.
 
-### What I'm reading
+### What I’m reading
 
-* Are.na Annual 2021 – Are.na
-* The Curator's Handbook - Adrian George
+* The Curator’s Handbook - Adrian George
+* The School of Life: An Emotional Education - Alain de Botton
+* Who’s Afraid of Contemporary Art? - Jessica Cerasi and Kyung An

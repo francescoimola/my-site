@@ -447,6 +447,12 @@ table.work {
   text-align: left;
   border-style: hidden;
 
+  tr:nth-child(4), 
+  tr:nth-child(5), {
+    display: none;
+    visibility: hidden;
+  }
+
   td {
     border: $border-line solid $primary;
     overflow: hidden;

@@ -1,6 +1,6 @@
 ---
 title: The Exhibition Title Bot
-permalink: /exhibition-title
+excerpt_separator: <!-- excerpt-end -->
 ---
 {%- include no_captions.html -%}
 

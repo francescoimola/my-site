@@ -1,6 +1,6 @@
 ---
 title: How to feel more at home
-permalink: /feel-more-at-home
+excerpt_separator: <!-- excerpt-end -->
 ---
 {%- include no_captions.html -%}
 

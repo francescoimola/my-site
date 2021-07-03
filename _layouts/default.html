@@ -50,11 +50,11 @@
         <summary>
           <h2>Notes mentioning this note</h2>
         </summary>
-        {%- for backlink in page.backlinks -%}
+        {% for backlink in page.backlinks %}
         <a class="internal-link"
           href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
         <p>{{ backlink.excerpt | strip_html | truncatewords: 20 }}</p>
-        {%- endfor -%}
+        {% endfor %}
       </details>
       {%- else -%}
 

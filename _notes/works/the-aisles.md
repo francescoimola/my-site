@@ -2,7 +2,7 @@
 title: In The Aisles
 excerpt_separator: <!-- excerpt-end -->
 ---
-{%- include no_captions.html -%}
+
 
 {% capture about %}
 {% capture content %}

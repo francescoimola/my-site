@@ -14,6 +14,6 @@ This static site's front-end is based on [Jekyll](https://jekyllrb.com/). It is 
 This repo was originally forked from Maxime Vaillancourt's [Jekyll template](https://github.com/maximevaillancourt/digital-garden-jekyll-template) and it includes some of his plugins. However, the template has been since heavily customised. 
 
 ### License
-Source code is available under the [MIT license](LICENSE.md).
+Source code is available under the [MIT license](LICENSE).
 
 

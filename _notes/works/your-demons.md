@@ -6,7 +6,7 @@ excerpt_separator: <!-- excerpt-end -->
 {% capture content %}
 Cross-referencing mythology, pop culture, the supernatural, and digital selfhood, the works presented in this ZIP-compressed exhibition explore fears, desires, and obstacles artists face within themselves in times of crisis and isolation.
 
-Feed Your Demons and Meet the Ally is curated by Magda Żołędź—of [ONE Project](https://one-project.co.uk/)—and Francesco Imola. The exhibition was presented on 2nd July 2020 with an online opening featuring interviews, Q&As, and workshops with artists in the show.
+Feed Your Demons and Meet the Ally is curated by Magda Żołędź—of [ONE Project](https://one-project.co.uk/)—and I. We opened the exhibition on 2nd July 2020 with an online opening featuring interviews, Q&As, and workshops with artists in the show.
 {% endcapture %}
 {{ content | markdownify }}
 {% endcapture %}

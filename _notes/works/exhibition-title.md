@@ -1,15 +1,14 @@
 ---
-title: The Exhibition Title Bot
+title: Exhibition Title Bot
 excerpt_separator: <!-- excerpt-end -->
 ---
 
 
 {% capture about %}
 {% capture content %}
-This Twitter bot generated a new exhibition title for a fictional art exhibition every day for two years. It stopped posting in spring 2021 after successfully writing more than 500 titles.
+Exhibition Title Bot is an autonomous program that generated a new exhibition title for a fictional art exhibition every day for two years. It stopped posting in spring 2021 after successfully writing more than 500 titles.
 
-I built the bot using the [Bright Spiral editor](https://www.brightspiral.com/tracery/) and [Cheap Bots Done Quick](https://cheapbotsdonequick.com/) to automate the posting. 
-This work is inspired by [another exhibition title generator](http://www.mit.edu/~ruchill/lazycurator.submit.html) built by Rebecca Uchill & Ben Guaraldi.
+I built the bot using the [Bright Spiral editor](https://www.brightspiral.com/tracery/) and [Cheap Bots Done Quick](https://cheapbotsdonequick.com/) to automate the posting. This work is inspired by [another exhibition title generator](http://www.mit.edu/~ruchill/lazycurator.submit.html) built by Rebecca Uchill & Ben Guaraldi.
 {% endcapture %}
 {{ content | markdownify }}
 {% endcapture %}

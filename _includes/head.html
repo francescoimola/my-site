@@ -1,38 +1,61 @@
 <head>
   <meta charset="UTF-8">
   <title>
-    {%- if page.id == "home" -%}
+    {% if page.id == "home" %}
       {{ site.title }}
-    {%- else -%}
+    {% else -%}
       {{ page.title }} &mdash; {{ site.title }}
-    {%- endif -%}
+    {% endif %}
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.00" />
-  <meta name="description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description | truncate: 150}}{% elsif post.content %}{{ post.content | markdownify | strip_html | truncatewords: 50 }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
-  {%- if page.excerpt -%}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" />
-  {%- else -%}
-  <meta property="og:description" content="{{ site.title | strip_html | strip_newlines | truncate: 160 }}" />
-  {%- endif -%}
-  {%- if page.title -%}
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:type" content="article">
-  {%- else -%}
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description | truncate: 150 }}" />
+  {% elsif post.content %}
+  <meta property="og:description" content="{{ post.content | markdownify | strip_html | truncatewords: 50 }}" />
+  {% else %}
+  <meta property="og:description" content="{{ site.title }}" />
+  {% endif %}
+  {% if page.id == "home" %}
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:type" content="website">
-  {%- endif -%}
-  {%- if page.date -%}
+  {% elsif page.title %}
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="article">
+  {% else %}
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  {% endif %}
+  <meta property="og:locale" content="en_GB" />
+  {% if page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="article:author" content="{{ site.url }}/">
-  {%- endif -%}
+  {% endif %}
+  {% if page.id == "home" %}
+  <meta property="og:url" content="https://www.francescoimola.com/" />
+  {% else %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  {%- if page.image -%}
+  {% endif %}
+  {% if page.image %}
   <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-  {%- endif -%}
+  {% else %}
+  <meta property="og:image" content="https://raw.githubusercontent.com/francescoimola/my-site/master/assets/profile_img/profileimage.png">
+  {% endif %}
+  {% if page.id == "home" %}
+  <link rel="canonical" href="https://www.francescoimola.com" />
+  {% else %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-  <link rel="icon" type="image/png; charset=utf-8" href="data:image/png;base64,iVBORw0KGgo=">
+  {% endif %}
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <!-- This favicon was generated using the following graphics from Twitter Twemoji:
+    - Graphics Title: 1f9d1-200d-1f4bb.svg
+    - Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
+    - Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f9d1-200d-1f4bb.svg
+    - Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/) -->
   {%- include styles.html -%}
   <!-- Lazyloads images (when called by class="lazyload") -->
   <script type="text/javascript" src="js/lazysizes.min.js"></script>

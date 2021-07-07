@@ -436,6 +436,10 @@ table.homepage {
     vertical-align: bottom;
     font-size: $rootsize * 1.4;
     line-height: $line-h;
+
+    @media screen and ($query) {
+      font-size: $rootsize * 1.15;
+    }
   }
 }
 
@@ -455,7 +459,7 @@ table.work {
   }
 
   td {
-    border: $border-line solid $primary;
+    border: $border-line solid transparent;
     overflow: hidden;
     padding: 2vw 0;
     vertical-align: top;
@@ -485,78 +489,15 @@ table.work {
       p:last-of-type {
         margin-bottom: 0;
       }
-
-      // Style scrollable image gallery
-      .container {
-        display: inline-flex;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        -webkit-overflow-scrolling: touch;
-
-        span.fullscreen {
-          position: fixed;
-          height: 100%;
-          width: 100%;
-          z-index: 2;
-          background-color: rgba(0, 0, 0, 0.8);
-          top: 0;
-          left: 0;
-          opacity: 0;
-          visibility: hidden;
-
-          & img {
-            position: fixed;
-            margin: 0;
-            padding: 0;
-            max-height: 90%;
-            max-width: 90%;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 0 15em black;
-            opacity: 100%;
-          }
-        }
-
-        div.image {
-          flex: 0 0 auto;
-
-          img {
-            margin: 0 $rootsize 0 0;
-            height: 15em;
-            width: auto;
-            cursor: zoom-in;
-          }
-
-          small {
-            margin: 0.5em 0;
-          }
-
-          &:focus-within+span.fullscreen {
-            visibility: visible;
-            opacity: 1;
-            z-index: 3;
-            cursor: zoom-out;
-          }
-        }
-      }
     }
 
     @media screen and ($query) {
       & {
         display: inline-block;
-        border: 0;
 
         &.content {
           padding-left: 0;
           padding-bottom: $line-h;
-          border-bottom: $border-line solid $primary;
-        }
-
-        &.content.last {
-          border-bottom: 0 solid $primary;
-          margin-bottom: 0;
         }
       }
     }
@@ -567,6 +508,61 @@ table.work {
     &,
     & col {
       width: auto;
+    }
+  }
+}
+
+// Style scrollable image gallery
+div.container {
+  display: inline-flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+
+  span.fullscreen {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    & img {
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      max-height: 90%;
+      max-width: 90%;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 15em black;
+      opacity: 100%;
+    }
+  }
+
+  div.image {
+    flex: 0 0 auto;
+
+    img {
+      margin: 0 $rootsize 0 0;
+      width: 80vw;
+      cursor: zoom-in;
+    }
+
+    small {
+      margin: 0.5em 0;
+    }
+
+    &:focus-within+span.fullscreen {
+      visibility: visible;
+      opacity: 1;
+      z-index: 3;
+      cursor: zoom-out;
     }
   }
 }

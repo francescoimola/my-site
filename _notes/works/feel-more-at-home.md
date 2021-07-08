@@ -19,7 +19,7 @@ I built this site using [p5.js](https://p5js.org/), [Tone.js](https://tonejs.git
 
 {% capture links %}
 {% capture content %}
-- [Visit the work](http://https://francescoimola.github.io/htfmat/)
+- [Visit the work](https://https://francescoimola.github.io/htfmat/)
 - [Check out the code](https://github.com/francescoimola/htfmat)
 - [Explore the Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home)
 {% endcapture %}

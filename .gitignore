@@ -11,5 +11,6 @@ _site/
 # VSCode Settings 
 .vscode
 
-# Drafts 
+# Drafts and others
 _drafts
+.hintrc

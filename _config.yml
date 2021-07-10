@@ -1,5 +1,5 @@
 title:  Francesco Imola
-include:  ["_pages"]
+include:  ["_pages", "_notes"]
 exclude:  [".jekyll-cache", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub

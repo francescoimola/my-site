@@ -3,7 +3,7 @@ title: What's at the top of my mind
 ---
 People often ask me what I'm doing, so here's what's on my plate.
 
-* I just coded and designed the UX for an interactive site/listening experience hosting Magda Zoledz's sound compositions, which is featured in [OTHER-ED], a short series of live events led by artists.
+* I just coded and designed the UX for an interactive site/listening experience hosting Magda Zoledz's sound compositions, which is featured in [OTHER-ED](https://drive.google.com/file/d/1SWOHBzEUf6t3G0ehsl_wDKW9mYH2OryD/view?usp=sharing), a short series of live events led by artists.
 * I am spending my weekdays juggling projects in design, marketing, communications, and events for [University of Greenwich's Film & TV Programmes](https://www.gre.ac.uk/subjects/media-arts).
 * Developing my curatorial practice thanks to [Node Center](https://nodecenter.net/). Until 2022, I am part of their International Curatorial Programme, which I am thoroughly enjoying so far.
 * Tending to my [Are.na channels](https://www.are.na/francesco-imola-2o2ng4qooxm/).

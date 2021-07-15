@@ -191,6 +191,13 @@ a {
   }
 }
 
+canvas {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  z-index: -1;
+}
+
 // Syle drop-down boxes
 .box {
   padding: $rootsize / 10 $rootsize;

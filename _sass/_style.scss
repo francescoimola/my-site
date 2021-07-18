@@ -169,9 +169,8 @@ a {
   // Add pseudo-element when links point outside the site
   &:after {
     position: relative;
-    font-size: calc(6px + 0.2vw);
-    font-family: "Font Awesome 5 Free";
-    content: "\00a0\00a0\f360""";
+    font-size: calc(6px + 0.4vw);
+    content: "\00a0\00a0\279A""";
     line-height: 0;
     color: $light;
     padding-right: 0.3em;

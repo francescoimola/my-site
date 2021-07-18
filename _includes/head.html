@@ -5,21 +5,13 @@
     &mdash; {{ site.title }} {% endif %}
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.00" />
-  <meta
-    name="description"
-    content="{% if page.description %}{{ page.description | truncate: 150}}{% elsif post.content %}{{ post.content | markdownify | strip_html | truncatewords: 50 }}{% else %}{{ site.title }}{% endif %}"
-  />
+  <meta name="description"
+    content="{% if page.description %}{{ page.description | truncate: 150}}{% elsif post.content %}{{ post.content | markdownify | strip_html | truncatewords: 50 }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   {% if page.description %}
-  <meta
-    property="og:description"
-    content="{{ page.description | truncate: 150 }}"
-  />
+  <meta property="og:description" content="{{ page.description | truncate: 150 }}" />
   {% elsif post.content %}
-  <meta
-    property="og:description"
-    content="{{ post.content | markdownify | strip_html | truncatewords: 50 }}"
-  />
+  <meta property="og:description" content="{{ post.content | markdownify | strip_html | truncatewords: 50 }}" />
   {% else %}
   <meta property="og:description" content="{{ site.title }}" />
   {% endif %} {% if page.id == "home" %}
@@ -34,10 +26,7 @@
   {% endif %}
   <meta property="og:locale" content="en_GB" />
   {% if page.date %}
-  <meta
-    property="article:published_time"
-    content="{{ page.date | date_to_xmlschema }}"
-  />
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
   <meta property="article:author" content="{{ site.url }}/" />
   {% endif %} {% if page.id == "home" %}
   <meta property="og:url" content="https://www.francescoimola.com/" />
@@ -46,44 +35,18 @@
   {% endif %} {% if page.image %}
   <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
   {% else %}
-  <meta
-    property="og:image"
-    content="https://raw.githubusercontent.com/francescoimola/my-site/master/assets/profile_img/profileimage.png"
-  />
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/francescoimola/my-site/master/assets/profile_img/profileimage.png" />
   {% endif %} {% if page.id == "home" %}
   <link rel="canonical" href="https://www.francescoimola.com" />
   {% else %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   {% endif %}
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="/assets/favicon/apple-touch-icon.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="/assets/favicon/favicon-32x32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="/assets/favicon/favicon-16x16.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="192x192"
-    href="assets/favicon/android-chrome-192x192.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="512x512"
-    href="assets/favicon/android-chrome-512x512.png"
-  />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
   <!-- This favicon was generated using the following graphics from Twitter Twemoji:
     - Graphics Title: 1f9d1-200d-1f4bb.svg
@@ -92,13 +55,8 @@
     - Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/) -->
   {%- include styles.html -%}
   <!-- Lazyloads images (when called by class="lazyload") -->
-  <script type="text/javascript" src="js/lazysizes.min.js"></script>
+  <script async type="text/javascript" src="js/lazysizes.min.js"></script>
   <!-- P5.js -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
-    integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script src="js/sketch.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js" integrity="sha256-EM2Tq3gRziyMygZmrj4gW6uMcSj5t6z+De0+eNSyfWM=" crossorigin="anonymous"></script>
+  <link rel="preload" href="js/sketch.js" as="script">
 </head>

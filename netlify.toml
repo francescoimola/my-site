@@ -6,7 +6,6 @@
 for = "/*"
 
 [headers.values]
-  Content-Security-Policy = "default-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; script-src 'self' js/lazysizes.min.js js/sketch.js https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js js/sketch.js; style-src 'self'"
           Referrer-Policy = "same-origin"
 Strict-Transport-Security = "max-age=15768000"
    X-Content-Type-Options = "nosniff"

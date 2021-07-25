@@ -5,9 +5,6 @@
 <!--  Load GoogleFont -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=fallback" rel="stylesheet preload" as="font">
 <!--  Load Stylesheet -->
-<link rel="preload" href="assets/webfonts/TFF/Karrik-Regular.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="assets/webfonts/WOFF/Karrik-Regular.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="assets/webfonts/WOFF2/Karrik-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css" media="screen" onload="this.media='all'; this.onload=null;">

@@ -42,17 +42,20 @@
   {% else %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   {% endif %}
+
+  <link rel="icon" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
+  <link rel="icon" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
   <!-- This favicon was generated using the following graphics from Twitter Twemoji:
     - Graphics Title: 1f9d1-200d-1f4bb.svg
     - Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
     - Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f9d1-200d-1f4bb.svg
     - Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/) -->
+    
   {%- include styles.html -%}
   <!-- Lazyloads images (when called by class="lazyload") -->
   <script async type="text/javascript" src="js/lazysizes.min.js"></script>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{%- include head.html -%}
-<body class="crosshair">
-  {% if page.id == "home" %}
+  {%- include head.html -%}
+  <body class="crosshair">
+    {% if page.id == "home" %}
 
     <!-- Homepage -->
     <table class="homepage">
@@ -37,12 +37,12 @@
     </div>
     <!-- End Homepage -->
 
-  {% else %}
+    {% else %}
 
     <!-- Notes Pages -->
     <nav>{%- include breadcrumbs.html -%}</nav>
     <main>{{ content }}</main>
-    <div class="box notes" style="margin: 2em 0;">
+    <div class="box notes" style="margin: 2em 0">
       {% if page.backlinks.size > 0 %}
 
       <!-- If there are backlinks, display this -->
@@ -51,8 +51,11 @@
           <h2>Notes mentioning this note</h2>
         </summary>
         {% for backlink in page.backlinks %}
-        <a class="internal-link"
-          href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a>
+        <a
+          class="internal-link"
+          href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}"
+          >{{ backlink.title }}</a
+        >
         <p>{{ backlink.excerpt | strip_html | truncatewords: 20 }}</p>
         {% endfor %}
       </details>
@@ -64,10 +67,12 @@
       {% endif %}
     </div>
     <!-- End Notes Pages -->
-  {% endif %}
+    {% endif %}
 
-  <!-- Footer -->
-  <footer>{%- include footer.html -%}</footer>
-  <!-- End Footer -->
-</body>
+    <!-- Footer -->
+    <footer>{%- include footer.html -%}</footer>
+    <!-- End Footer -->
+    <!--  Load Stylesheet -->
+    <link rel="stylesheet" href="/styles.css" media="screen" />
+  </body>
 </html>

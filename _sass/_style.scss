@@ -29,6 +29,7 @@ Segoe UI Symbol;
     url("assets/webfonts/TFF/Karrik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 $regular: 400;
@@ -188,13 +189,6 @@ a {
   label {
     cursor: pointer;
   }
-}
-
-canvas {
-  position: fixed;
-  top: 0; 
-  left: 0;
-  z-index: -1;
 }
 
 // Syle drop-down boxes

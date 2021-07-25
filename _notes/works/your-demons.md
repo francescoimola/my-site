@@ -26,7 +26,7 @@ Feed Your Demons and Meet the Ally is curated by Magda Żołędź—of [ONE Proj
 {% endcapture %}
 
 {% capture license %}
-Documentation of this exhibition, excluding the artists' works, is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0 License</a>.
+Documentation of this exhibition, excluding the artists' works, is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener" rel="noreferrer">CC BY-NC 4.0 License</a>.
 {% endcapture %}
 
 {%- include workpage_table.html text=about

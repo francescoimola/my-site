@@ -10,6 +10,8 @@ Jekyll::Hooks.register [:pages, :notes], :post_convert do |doc|
     parsed_doc = Nokogiri::HTML(doc.content)
     parsed_doc.css("a:not(.internal-link)").each do |link|
       link.set_attribute('target', 'blank')
+      link.set_attribute('rel', 'noopener')
+      link.set_attribute('rel', 'noreferrer')
     end
     doc.content = parsed_doc.to_html
   end

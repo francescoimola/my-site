@@ -27,7 +27,7 @@ I built this site using [p5.js](https://p5js.org/), [Tone.js](https://tonejs.git
 {% endcapture %}
 
 {% capture license %}
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" rel="noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 {% endcapture %}
 
 

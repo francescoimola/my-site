@@ -23,7 +23,7 @@ Segoe UI Emoji,
 Segoe UI Symbol;
 
 @font-face {
-  font-family: "headers-font";
+  font-family: "Karrik-Regular";
   src: url("assets/webfonts/WOFF/Karrik-Regular.woff") format("woff"),
     url("assets/webfonts/WOFF2/Karrik-Regular.woff2") format("woff2"),
     url("assets/webfonts/TFF/Karrik-Regular.ttf") format("truetype");
@@ -102,7 +102,7 @@ h2,
 h3 {
   line-height: $line-h * 0.7;
   margin: $line-h 0 ($line-h / 2);
-  font-family: "headers-font";
+  font-family: "Karrik-Regular";
 }
 
 h1 {

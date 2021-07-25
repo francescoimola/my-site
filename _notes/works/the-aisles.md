@@ -27,7 +27,7 @@ Crucial to the experience are the extracts from the story, interrupted by numero
 {% endcapture %}
 
 {% capture license %}
-Un-licensed under a <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 Public Domain Dedication</a>. I dedicate all copyright interests of this work to the public domain.
+Un-licensed under a <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener" rel="noreferrer">CC0 Public Domain Dedication</a>. I dedicate all copyright interests of this work to the public domain.
 {% endcapture %}
 
 {%- include workpage_table.html text=about

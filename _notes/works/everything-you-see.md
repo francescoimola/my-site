@@ -26,7 +26,7 @@ The catalogue includes an essay by the curator and interviews and Q&As with Lisa
 {% endcapture %}
 
 {% capture license %}
-This exhibition and its catalogue, excluding the artists' works, are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+This exhibition and its catalogue, excluding the artists' works, are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" rel="noreferrer">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 {% endcapture %}
 
 {%- include workpage_table.html text=about

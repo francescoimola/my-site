@@ -71,15 +71,6 @@ body {
   overflow-wrap: break-word;
   text-rendering: auto;
 
-  // This class changes the cursor to crosshair
-  &.crosshair {
-    cursor: crosshair;
-
-    &:active {
-      cursor: auto;
-    }
-  }
-
   @media screen and ($query) {
 
     // Shorten padding
@@ -185,7 +176,7 @@ a {
     display: none;
   }
 
-  // Change cursor type when a link contain a checkbox. Hovering on the checkbox will display a "pointer" cursor
+  // Change cursor type when a link contains a checkbox. Hovering on the checkbox will display a "pointer" cursor
   input,
   label {
     cursor: pointer;

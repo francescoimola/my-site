@@ -12,8 +12,8 @@ Feed Your Demons and Meet the Ally is curated by Magda Żołędź—of [ONE Proj
 {% endcapture %}
 
 {% capture images %}
-{%- include table_images.html url="assets\feedyourdemons\site.png" alt="The exhibition website, section on participating artists" caption="The exhibition website' section on participating artists" -%}
-{%- include table_images.html url="assets\feedyourdemons\feed-your-demons.png" alt="The exhibition folder, extracted from a ZIP file" caption="The exhibition folder, extracted from a ZIP file"-%}
+{%- include table_images.html url="assets/feedyourdemons/site.png" alt="The exhibition website, section on participating artists" caption="The exhibition website' section on participating artists" -%}
+{%- include table_images.html url="assets/feedyourdemons/feed-your-demons.png" alt="The exhibition folder, extracted from a ZIP file" caption="The exhibition folder, extracted from a ZIP file"-%}
 {% endcapture %}
 
 {% capture links %}

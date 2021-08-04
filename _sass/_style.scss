@@ -16,9 +16,9 @@ $border-line: 0.08em;
 
 @font-face {
   font-family: "Karrik-Regular";
-  src: url("assets/webfonts/WOFF/Karrik-Regular.woff") format("woff"),
-    url("assets/webfonts/WOFF2/Karrik-Regular.woff2") format("woff2"),
-    url("assets/webfonts/TFF/Karrik-Regular.ttf") format("truetype");
+  src: url("webfonts/Karrik-Regular.woff") format("woff"),
+    url("webfonts/Karrik-Regular.woff2") format("woff2"),
+    url("webfonts/Karrik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;

@@ -14,8 +14,8 @@ Crucial to the experience are the extracts from the story, interrupted by numero
 {% endcapture %}
 
 {% capture images %}
-{%- include table_images.html url="assets\the_aisles\In-the-Aisles-1.png" alt="Screenshot of the site homepage" -%}
-{%- include table_images.html url="assets\the_aisles\In-the-Aisles-2.png" alt="Screenshot of the site homepage" -%}
+{%- include table_images.html url="assets/the_aisles/In-the-Aisles-1.png" alt="Screenshot of the site homepage" -%}
+{%- include table_images.html url="assets/the_aisles/In-the-Aisles-2.png" alt="Screenshot of the site homepage" -%}
 {% endcapture %}
 
 {% capture links %}

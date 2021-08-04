@@ -14,8 +14,8 @@ I built the bot using the [Bright Spiral editor](https://www.brightspiral.com/tr
 {% endcapture %}
 
 {% capture images %}
-{%- include table_images.html url="assets\exhibit_title\exhibition-title.png" alt="Single tweet from the bot reading 'Apposite Softheartedness'" -%}
-{%- include table_images.html url="assets\exhibit_title\mockup.png" alt="Mockup of tweets from the Twitter bot" -%}
+{%- include table_images.html url="assets/exhibit_title/exhibition-title.png" alt="Single tweet from the bot reading 'Apposite Softheartedness'" -%}
+{%- include table_images.html url="assets/exhibit_title/mockup.png" alt="Mockup of tweets from the Twitter bot" -%}
 {% endcapture %}
 
 {% capture links %}

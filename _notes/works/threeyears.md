@@ -24,8 +24,8 @@ To display the book, I handmade a custom single-bookshelf from a wooden pole in 
 {% endcapture %}
 
 {% capture images %}
-{%- include table_images.html url="assets\three_years\mockup.png" alt="Book Mockup" caption="Book Mockup" -%}
-{%- include table_images.html url="assets\three_years\installation.jpg" alt="Collage of the book's installation display from concept to creation and exhibition" caption="Collage of the book's installation display from concept to creation" -%}
+{%- include table_images.html url="assets/three_years/mockup.png" alt="Book Mockup" caption="Book Mockup" -%}
+{%- include table_images.html url="assets/three_years/installation.jpg" alt="Collage of the book's installation display from concept to creation and exhibition" caption="Collage of the book's installation display from concept to creation" -%}
 {% endcapture %}
 
 {% capture links %}

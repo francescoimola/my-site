@@ -12,8 +12,8 @@ The catalogue includes an essay by the curator and interviews and Q&As with Lisa
 {% endcapture %}
 
 {% capture images %}
-{%- include table_images.html url="assets\everythingyousee\Catalogue-gif.gif" alt="GIF of the exhibition catalogue" caption="GIF of the exhibition catalogue" -%}
-{%- include table_images.html url="assets\everythingyousee\site.png" alt="Screenshot of the exhibition website's homepage" caption="The exhibition website's homepage"-%}
+{%- include table_images.html url="assets/everythingyousee/Catalogue-gif.gif" alt="GIF of the exhibition catalogue" caption="GIF of the exhibition catalogue" -%}
+{%- include table_images.html url="assets/everythingyousee/site.png" alt="Screenshot of the exhibition website's homepage" caption="The exhibition website's homepage"-%}
 {%- include table_images.html url="assets/everythingyousee/opening.png" alt="Still from the online opening event" caption="Still from the online opening event"-%}
 {% endcapture %}
 

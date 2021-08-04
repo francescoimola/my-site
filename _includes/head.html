@@ -79,5 +79,46 @@
     - Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
     - Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f9d1-200d-1f4bb.svg
     - Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/) -->
-  {%- include styles.html -%}
+
+  <!--  Load GoogleFont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet prefetch"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    as="font"
+    crossorigin="anonymous"
+  />
+  <!--  Preload Karrik Fonts -->
+  <link
+    rel="prefetch"
+    href="webfonts/Karrik-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="prefetch"
+    href="webfonts/Karrik-Regular.woff"
+    as="font"
+    type="font/woff"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="prefetch"
+    href="webfonts/Karrik-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <!--  Load Stylesheet -->
+  <link rel="preload" href="sass/style.css" as="style" />
+  <link
+    rel="stylesheet"
+    href="sass/style.css"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript><link rel="stylesheet" href="sass/style.css"></noscript>
 </head>
+

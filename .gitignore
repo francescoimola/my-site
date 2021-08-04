@@ -1,5 +1,8 @@
 # Generated website directory
 _site/
+node_modules/
+package.json
+package-lock.json
 
 # Sass cache
 .sass-cache/

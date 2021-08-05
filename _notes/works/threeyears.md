@@ -60,7 +60,7 @@ To display the book, I handmade a custom single-bookshelf from a wooden pole in 
 {% endcapture %}
 
 {% capture license %}
-<i>Three Years</i> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" rel="noreferrer">CC BY-NC-ND 4.0 license</a>. 
+<i>Three Years</i> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-ND 4.0 license</a>. 
 {% endcapture %}
 
 {%- include workpage_table.html text=about

@@ -150,7 +150,7 @@ video {
 /*1. Prevent adjustments of font size after orientation changes in iOS*/
 html {
   font-size: 18px;
-  font-size: #{"min(max(16px, 1.5vw), 24px);"};
+  font-size: #{"min(max(16px, 1.5vw), 22px);"};
   margin: 0;
   padding: 0;
 
@@ -364,9 +364,9 @@ a {
   min-height: auto;
   content-visibility: auto;
 
-  h2,
-  .s_title {
-    margin-top: $rootsize;
+  h2 {
+    display: inline;
+    margin-top: 0;
   }
 }
 
@@ -491,7 +491,7 @@ img {
       margin: ($line-h - 0.5em) 0;
       padding: 0.5em;
 
-      .s_title {
+      h2 {
         cursor: pointer;
       }
 
@@ -500,11 +500,6 @@ img {
       }
     }
   }
-}
-
-.s_title {
-  font-size: $header-size;
-  font-family: $karrik;
 }
 
 // Create and style the flexbox that contains "boxes" on homepage

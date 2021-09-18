@@ -1,8 +1,8 @@
 // Colors
-$site: #020813;
+$site: hsl(219, 81%, 2%);
 $primary: mix($site, white, 14%);
 $links: #1ea3e6;
-$quotes: mix($site, white, 88%);
+$quotes: mix($site, white, 96%);
 $light: mix($site, white, 50%);
 
 // Measurements
@@ -352,6 +352,7 @@ a {
   input,
   label {
     cursor: pointer;
+    cursor: hand;
   }
 }
 
@@ -363,6 +364,11 @@ a {
   width: auto;
   min-height: auto;
   content-visibility: auto;
+
+  &:hover,
+    &:focus {
+      background: $quotes;
+    }
 
   h2 {
     display: inline;
@@ -449,6 +455,7 @@ nobr {
 input {
   margin: 0 0.4em $rootsize / 2;
   cursor: pointer;
+  cursor: hand;
 }
 
 .last {
@@ -495,10 +502,8 @@ img {
       display: list-item;
       margin: ($line-h - 0.5em) 0;
       padding: 0.5em;
-
-      h2 {
-        cursor: pointer;
-      }
+      cursor: pointer;
+      cursor: hand;
 
       nav {
         display: inline;
@@ -566,6 +571,7 @@ img {
 // This one changes it to a pointer
 .pointer {
   cursor: pointer;
+  cursor: hand;
 }
 
 // Style internal links that point to not-yet-existing pages 

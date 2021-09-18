@@ -370,6 +370,11 @@ a {
   }
 }
 
+.notes h2 {
+  display: revert;
+  margin-top: 1em;
+}
+
 // Style <small> tag
 small {
   display: block;

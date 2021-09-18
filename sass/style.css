@@ -307,6 +307,11 @@ a label {
   margin-top: 0;
 }
 
+.notes h2 {
+  display: revert;
+  margin-top: 1em;
+}
+
 small {
   display: block;
   font-size: min(max(14px, 1.5vw), 16px);;

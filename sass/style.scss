@@ -353,7 +353,6 @@ a {
   input,
   label {
     cursor: pointer;
-    cursor: hand;
   }
 }
 
@@ -379,7 +378,6 @@ a {
 
 .notes h2 {
   display: revert;
-  margin-top: 1em;
 }
 
 // Style <small> tag
@@ -456,7 +454,6 @@ nobr {
 input {
   margin: 0 0.4em $rootsize / 2;
   cursor: pointer;
-  cursor: hand;
 }
 
 .last {
@@ -501,10 +498,9 @@ img {
     summary {
       /*Add the correct display in all browsers*/
       display: list-item;
-      margin: ($line-h - 0.5em) 0;
+      margin: 1em 0;
       padding: 0.5em;
       cursor: pointer;
-      cursor: hand;
 
       nav {
         display: inline;
@@ -572,7 +568,6 @@ img {
 // This one changes it to a pointer
 .pointer {
   cursor: pointer;
-  cursor: hand;
 }
 
 // Style internal links that point to not-yet-existing pages 

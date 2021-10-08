@@ -4,7 +4,7 @@ excerpt_separator: <!-- excerpt-end -->
 ---
 {% capture about %}
 {% capture content %}
-How to feel more at home is a website incorporating an expanded poem, a series of photographs, and interactive semi-generative audiovisual elements into a singular landing page. This work was born out of a desire to explore and articulate personal ideas of home, what (and who) makes one, and how to find meaning living in-between homes. It is inspired and expanded by an [Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home) by the same title that I started in 2020.
+How to feel more at home is a website incorporating an expanded poem, a series of photographs, and interactive semi-generative audiovisual elements into a singular landing page. This work was born out of a desire to explore and articulate personal ideas of home, what (and who) makes one, and how to find meaning living in-between homes. It is inspired and expanded by an [Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home) by the same title that I started in 2020. 
 
 I built this site using [p5.js](https://p5js.org/), [Tone.js](https://tonejs.github.io/), and [Tonal](https://github.com/tonaljs/tonal).
 {% endcapture %}
@@ -20,6 +20,7 @@ I built this site using [p5.js](https://p5js.org/), [Tone.js](https://tonejs.git
 {% capture links %}
 {% capture content %}
 - [Visit the work](https://francescoimola.github.io/htfmat/)
+- [Read a review of the work by Special Special](https://specialspecial.com/blogs/journal/show-and-tell-25-br-how-to-feel-more-at-home-by-francesco-imola?mc_cid=ddb7142c58&mc_eid=fde6fb5af8)
 - [Check out the code](https://github.com/francescoimola/htfmat)
 - [Explore the Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home)
 {% endcapture %}

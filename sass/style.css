@@ -292,7 +292,6 @@ a.internal-link:after {
 a input,
 a label {
   cursor: pointer;
-  cursor: hand;
 }
 
 .box {
@@ -315,7 +314,6 @@ a label {
 
 .notes h2 {
   display: revert;
-  margin-top: 1em;
 }
 
 small {
@@ -379,7 +377,6 @@ nobr {
 input {
   margin: 0 0.4em 0.5em;
   cursor: pointer;
-  cursor: hand;
 }
 
 .last {
@@ -418,10 +415,9 @@ img + small {
   details summary {
     /*Add the correct display in all browsers*/
     display: list-item;
-    margin: 0.9em 0;
+    margin: 1em 0;
     padding: 0.5em;
     cursor: pointer;
-    cursor: hand;
   }
   details summary nav {
     display: inline;
@@ -477,7 +473,6 @@ img + small {
 
 .pointer {
   cursor: pointer;
-  cursor: hand;
 }
 
 .invalid-link {

@@ -3,8 +3,10 @@ title: Unrealised exhibitions
 ---
 Here are listed some of the ideas for exhibitions I have been thinking about. Most of them are only seeds, while a few I describe more in detail. Some will never be realised. Still, I find it important to share these ideas with you.
 
-## Yearning to feel more at home
-Home. Is it a place, a space, a feeling, a practice, or an active state of state of being in the world?
+## Prendiamoci cura 
+Prendiamoci cura (from Italian, meaning _let's tend_—to something or someone) is a project exploring art and creative practices associated with belonging, or feeling at home, in digital spaces by way of tending to digital gardens, gaming, cultivating interests, and being (virtually) in the proximity of others. How can these practices help build a sense of self? What does it mean to tend to a community space on the internet?
+
+Ideally, this woudl take form as an exhibition, or series of interventions, hosted in cafes and coffe shops across _a_ borough of London and it will showcase the work of local artists and creative producers.
 
 ## Common Ground
 A public exhibition that brings people to the farmer's market—and vice-versa.The market stands as an outlet to offer workshops and panels on identity and representation in rural Britain, decolonising foodways, and agriculture's contribution to tackling climate change. How do we give strength to oppressed or marginalised people living in rural areas? And how do we embrace food and ways of cooking that resist subjugation and instead nourish our palate, body, and environment?

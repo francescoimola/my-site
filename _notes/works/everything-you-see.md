@@ -1,6 +1,8 @@
 ---
 title: Everything You See Is In The Past
 excerpt_separator: <!-- excerpt-end -->
+description: A curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators.
+
 ---
 {% capture about %}
 {% capture content %}

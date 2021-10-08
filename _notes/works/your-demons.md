@@ -1,6 +1,7 @@
 ---
 title: Feed Your Demons and Meet the Ally
 excerpt_separator: <!-- excerpt-end -->
+description: An exhibition exploring fears, desires, and obstacles artists face within themselves in times of crisis and isolation.
 ---
 {% capture about %}
 {% capture content %}

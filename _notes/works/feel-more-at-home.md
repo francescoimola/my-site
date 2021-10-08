@@ -1,6 +1,7 @@
 ---
 title: How to feel more at home
 excerpt_separator: <!-- excerpt-end -->
+description: A website incorporating an expanded poem, a series of photographs, and semi-generative audiovisual elements into one interactive landing page. 
 ---
 {% capture about %}
 {% capture content %}

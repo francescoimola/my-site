@@ -1,6 +1,8 @@
 ---
 title: In The Aisles
 excerpt_separator: <!-- excerpt-end -->
+description: An interactive experience built around, and in homage of, the homonymous story by Clemens Meyer.  
+
 ---
 
 

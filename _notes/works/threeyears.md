@@ -1,6 +1,7 @@
 ---
 title: Three Years
 excerpt_separator: <!-- excerpt-end -->
+description: All the tweets, over a thousand of them, from my old Twitter account compiled in a book, installed in an exhibition, and read live uninterruptedly.  
 ---
 <style>
     table.work tr:nth-child(4), table.work tr:nth-child(5) {
@@ -14,7 +15,7 @@ excerpt_separator: <!-- excerpt-end -->
 
 {% capture about %}
 {% capture content %}
-In 2019, I downloaded my entire Twitter archive of over a thousand tweets spanning nearly three years. I used this dataset to write a book, install it in an exhibition, and perform an uninterrupted 2:30 hrs live reading. As a believer in the power of journaling, I was interested in how presenting data as a stream of consciousness could tell the story of how it came to be published on social media.    
+In 2019, I downloaded the entire Twitter archive of over a thousand tweets from my old, now closed, account spanning nearly three years. I used this dataset to write a book, install it in an exhibition, and perform an uninterrupted 2:30 hrs live reading. As a believer in the power of journaling, I was interested in how presenting data as a stream of consciousness could tell the story of how it came to be published on social media.    
 
 Three Years was launched and read live on 23 March 2019 at Heritage Gallery, University of Greenwich Galleries. It was displayed as part of [528](http://www.greenwichunigalleries.co.uk/fivetoeight/), a group show I co-curated with fellow students at the University of Greenwich.
 

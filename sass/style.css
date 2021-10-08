@@ -320,7 +320,7 @@ small {
   display: block;
   font-size: min(max(14px, 1.5vw), 16px);;
   color: #808184;
-  line-height: 1.4em;
+  line-height: 1.61em;
 }
 
 .small {
@@ -633,6 +633,7 @@ div.container div.image img {
 
 div.container div.image small {
   margin: 0.5em 0;
+  max-width: 25em;
 }
 
 div.container div.image:focus-within + span.fullscreen {

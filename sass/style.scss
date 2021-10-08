@@ -385,7 +385,7 @@ small {
   display: block;
   font-size: $small;
   color: $light;
-  line-height: $line-h;
+  line-height: $line-h * 1.15;
 }
 
 // Style smaller, custom bits of text
@@ -730,6 +730,7 @@ div.container {
 
     small {
       margin: 0.5em 0;
+      max-width: 25em;
     }
 
     &:focus-within+span.fullscreen {

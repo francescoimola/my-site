@@ -4,9 +4,9 @@
   <h1><a class="internal-link" href="/">Francesco Imola</a></h1>
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
-      / <h2>{{ page.title }}</h2>
+      &#8594; <h2>{{ page.title }}</h2>
     {% else %}
-      / <h2><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></h2>
+      &#8594; <h2><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></h2>
     {% endif %}
   {% endfor %}
 {%- endif -%}

@@ -196,7 +196,7 @@ a label {
   display: revert;
 }
 
-small {
+small, figcaption {
   display: block;
   font-size: min(max(14px, 1.5vw), 16px);;
   color: #808184;
@@ -263,7 +263,7 @@ img {
   opacity: 100%;
 }
 
-img + small {
+img + figcaption {
   margin-top: -2.1em;
 }
 
@@ -367,6 +367,18 @@ table.homepage .homepage-1lax {
 @media screen and (max-width: 834px) {
   table.homepage .homepage-1lax {
     font-size: 1.15em;
+  }
+}
+
+.split-layout {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+}
+
+@media screen and (max-width: 834px) {
+  .split-layout {
+    display: block;
   }
 }
 

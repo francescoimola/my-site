@@ -273,7 +273,7 @@ a {
 }
 
 // Style <small> tag
-small {
+small, figcaption {
   display: block;
   font-size: $small;
   color: $lighter;
@@ -353,7 +353,7 @@ img {
   opacity: 100%;
 
   // Image caption. Must be written in <small>
-  &+small {
+  &+figcaption {
     margin-top: -($line-h * 1.5);
   }
 }
@@ -469,6 +469,16 @@ table.homepage {
       font-size: $rootsize * 1.15;
     }
   }
+}
+
+.split-layout {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  
+  @media screen and ($query) {
+    display: block;
+  };
 }
 
 /*Add the correct display in IE 10+*/

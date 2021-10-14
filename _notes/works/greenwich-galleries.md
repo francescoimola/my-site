@@ -71,7 +71,7 @@ highlights from that time, alongside the core role(s) I played in the production
 
 <div class="split-layout">
     <figure style="flex: 1.4186">
-        <small>Curation, Graphic & Exhibition Design, Marketing<br><a href="http://www.greenwichunigalleries.co.uk/new-alumni-2019/" target="_blank" rel="noopener noreferrer">New Alumni '19 (2019)</a></small>
+        <small>Curation, Graphic & Exhibition Design, Marketing<br><a href="/new-alumni" class="internal-link">New Alumni '19 (2019)</a></small>
         <img src="assets/greenwichgal/new_alumni.jpg"
             alt="Poster design for New Alumni '19" loading="lazy">
         <figcaption>Poster design for New Alumni '19</figcaption>

@@ -13,9 +13,9 @@ description: Some of the projects I've worked on from my time at University of G
     }
 </style>
 
-Between 2018 and 2020 I assisted the production, install, and documentation of over 100 art and architecture exhibitions
+Between 2018 and 2020 I assisted the production, install, and documentation of over 60 art and architecture exhibitions
 and events at [University of Greenwich Galleries](https://www.greenwichunigalleries.co.uk/). Here are some of the
-highlights from that time, alongside the core role(s) I played in the production/delivery of each project.
+highlights from that time, alongside the core role(s) I played in the production/delivery of each of the listed projects.
 
 <div class="split-layout">
     <figure style="flex: 1.7778">
@@ -23,8 +23,8 @@ highlights from that time, alongside the core role(s) I played in the production
                 href="http://www.greenwichunigalleries.co.uk/sound-image-2018-exhibition/" target="_blank" rel="noopener noreferrer">Art as Problematic Waste
                 (2020)</a></small>
         <img src="assets/greenwichgal/art_as_problematic_waste.png"
-            alt="Installation shot of Default mode network, Mhairi Vari and Pedro Pereira, 2018" loading="lazy">
-        <figcaption>Art as Problematic Waste, Tryptych, Aimo Hyvärinen and David Chapman</figcaption>
+            alt="Installation shot of the Art as Problematic Waste Tryptych video by Aimo Hyvärinen and David Chapman," loading="lazy">
+        <figcaption>Art as Problematic Waste, Tryptych video installation, Aimo Hyvärinen and David Chapman, Project Space</figcaption>
     </figure>
     <figure style="flex: 1.5001">
         <small>Installation and De-installation<br><a href="http://www.greenwichunigalleries.co.uk/phase-iv/" target="_blank" rel="noopener noreferrer">Phase IV:
@@ -32,7 +32,7 @@ highlights from that time, alongside the core role(s) I played in the production
         <img src="assets/greenwichgal/phase_IV.jpg"
             alt="Installation shot of if, then Moses by Berenice Donszelmann. Fabric, zipper and aluminium, 370 × 625cm (floor, two parts)"
             loading="lazy">
-        <figcaption>Installation shot of <i>if, then Moses</i>, Berenice Donszelmann</figcaption>
+        <figcaption>Installation shot of "if, then Moses", Berenice Donszelmann, Stephen Lawrence Gallery</figcaption>
     </figure>
 </div>
 
@@ -59,13 +59,13 @@ highlights from that time, alongside the core role(s) I played in the production
         <small>Pre-Production, Installation, and De-installation<br><a href="http://www.greenwichunigalleries.co.uk/end-of-year-show-2019/" target="_blank" rel="noopener noreferrer">School of Design End of Year Show (2019)</a></small>
         <img src="assets/greenwichgal/end_of_year_show_2019.jpg"
             alt="A gallery with posters, a tv screen, and computers installed" loading="lazy">
-        <figcaption>Project Space, End of Year Show, Film & TV student display</figcaption>
+        <figcaption>Graduate Film & TV students' display, Project Space</figcaption>
     </figure>
     <figure style="flex: 1.3333">
         <small>Curation, Design, Install & De-Install<br><a href="http://www.greenwichunigalleries.co.uk/fivetoeight/" target="_blank" rel="noopener noreferrer">528 (2019)</a></small>
         <img src="assets/greenwichgal/528.jpg" alt="Photograph of works installed in 528 as seen from the entrance of the Heritage Gallery"
             loading="lazy">
-        <figcaption>Installation shot of <a href="/threeyears" class="internal-link">Three Years</a> and works by Fellow students on the Making and Curating module at 528. Heritage Gallery</figcaption>
+        <figcaption>Exhibition view, Heritage Gallery</figcaption>
     </figure>
 </div>
 
@@ -81,7 +81,7 @@ highlights from that time, alongside the core role(s) I played in the production
             href="http://www.greenwichunigalleries.co.uk/sound-image-2018-exhibition/" target="_blank" rel="noopener noreferrer">Sound/Image (2018)</a></small>
     <img src="assets/greenwichgal/default_mode_network.jpg"
         alt="Installation shot of Default mode network, Mhairi Vari and Pedro Pereira, 2018" loading="lazy">
-    <figcaption>Installation shot of Default mode network, Mhairi Vari and Pedro Pereira, 2018</figcaption>
+    <figcaption>Installation shot of "Default mode network", Mhairi Vari and Pedro Pereira, Stephen Lawrence Gallery</figcaption>
 </figure>
 </div>
 
@@ -89,9 +89,8 @@ highlights from that time, alongside the core role(s) I played in the production
 - [Visit the Galleries' website and online archive](http://www.greenwichunigalleries.co.uk/)
 
 ## License
-All photographs are licensed to Francesco Imola under a <a rel="license"
+All images are licensed to University of Greenwich Galleries and Francesco Imola under a <a rel="license"
     href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons
-    Attribution-NonCommercial-ShareAlike 4.0 International License</a> unless otherwise stated. The best effort has been
-taken to ensure artworks and artists are corretly credited. If you find any errors, please <a
+    Attribution-NonCommercial-ShareAlike 4.0 International License</a> unless otherwise stated. Works are licensed to individual artists. The best effort has been taken to ensure artworks and artists are corretly credited. If you find any errors, please <a
     href="mailto:frn.imola@gmail.com?subject=Re%20Credits%20error%20on%20your%20website">let me know</a> and I will
 correct them.

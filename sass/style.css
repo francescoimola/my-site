@@ -8,7 +8,7 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
 
 *:focus {
@@ -196,7 +196,8 @@ a label {
   display: revert;
 }
 
-small, figcaption {
+small,
+figcaption {
   display: block;
   font-size: min(max(14px, 1.5vw), 16px);;
   color: #808184;
@@ -267,6 +268,10 @@ img + figcaption {
   margin-top: -2.1em;
 }
 
+summary {
+  cursor: pointer;
+}
+
 @supports not (-ms-ime-align: auto) {
   details {
     /*Add the correct display in Edge, IE 10+, and Firefox*/
@@ -288,17 +293,18 @@ img + figcaption {
   justify-content: flex-start;
   align-content: stretch;
   align-items: stretch;
-  gap: 1em;
 }
 
 .parent .item {
   width: 50%;
+  margin-right: 1em;
 }
 
 @media screen and (max-width: 834px) {
   .parent .item {
     width: 100%;
     max-width: 100%;
+    margin-right: revert;
   }
 }
 

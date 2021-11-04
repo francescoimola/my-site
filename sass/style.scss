@@ -257,9 +257,9 @@ a {
   content-visibility: auto;
 
   &:hover,
-    &:focus {
-      background: $light;
-    }
+  &:focus {
+    background: $light;
+  }
 
   h2 {
     display: inline;
@@ -273,7 +273,8 @@ a {
 }
 
 // Style <small> tag
-small, figcaption {
+small,
+figcaption {
   display: block;
   font-size: $small;
   color: $lighter;
@@ -282,7 +283,7 @@ small, figcaption {
 
 // Site navigation
 nav {
-  
+
   // Breadcrumbs
   #breadcrumbs {
     margin-top: $line-h / 2;
@@ -358,6 +359,10 @@ img {
   }
 }
 
+summary {
+  cursor: pointer;
+}
+
 // Fix stilying issues with details and summary. IE will ignore these settings.
 @supports not (-ms-ime-align: auto) {
 
@@ -383,17 +388,19 @@ img {
   justify-content: flex-start;
   align-content: stretch;
   align-items: stretch;
-  gap: $rootsize;
 
   // Split width equally
   .item {
     width: 50%;
+    margin-right: $rootsize;
 
     @media screen and ($query) {
+
       // Restyle item on mobiles
       & {
         width: 100%;
         max-width: 100%;
+        margin-right: revert;
       }
     }
   }
@@ -413,6 +420,7 @@ img {
   }
 
   @media screen and ($query) {
+
     // Restyle parent on mobiles
     & {
       flex-wrap: wrap;
@@ -475,10 +483,12 @@ table.homepage {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1em;
-  
+
   @media screen and ($query) {
     display: block;
-  };
+  }
+
+  ;
 }
 
 /*Add the correct display in IE 10+*/

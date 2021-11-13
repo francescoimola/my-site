@@ -25,14 +25,14 @@
     </table>
     <div class="parent">
       <div class="item">
-        <div class="box">{%- include selprojects.html -%}</div>
-        <div class="box">{%- include experiments.html -%}</div>
-        <div class="box">{%- include bemyguest.html -%}</div>
+        {%- include selprojects.html -%}
+        {%- include experiments.html -%}
+        {%- include bemyguest.html -%}
       </div>
       <div class="item">
-        <div class="box">{%- include thissite.html -%}</div>
-        <div class="box">{%- include cv.html -%}</div>
-        <div class="box">{%- include contact.html -%}</div>
+        {%- include thissite.html -%}
+        {%- include cv.html -%}
+        {%- include contact.html -%}
       </div>
     </div>
     <!-- End Homepage -->
@@ -42,7 +42,7 @@
     <!-- Notes Pages -->
     <nav>{%- include breadcrumbs.html -%}</nav>
     <main>{{ content }}</main>
-    <div class="box" style="margin: 2em 0">
+    <div style="margin: 2em 0">
       {% if page.backlinks.size > 0 %}
       <!-- If there are backlinks, display this -->
       

@@ -13,7 +13,7 @@ $border-line: 0.08em;
 $header-size: 1.8em;
 
 //Typefaces
-$inter: "Inter",
+$inter: "Space Grotesk",
 -apple-system,
 BlinkMacSystemFont,
 Segoe UI,
@@ -22,8 +22,7 @@ Apple Color Emoji,
 Segoe UI Emoji,
 Segoe UI Symbol;
 
-$karrik: "Karrik-Regular",
-"Inter",
+$karrik: "Space Grotesk",
 -apple-system,
 BlinkMacSystemFont,
 Segoe UI,
@@ -56,10 +55,10 @@ $query: "max-width: 834px";
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 
-  &:focus {
-    outline: 1px dotted;
+/*   &:focus {
+    background: $light;
   }
-
+ */
   &:active {
     outline: none;
   }
@@ -90,7 +89,7 @@ body {
   color: $primary;
   overflow-y: scroll;
   overflow-x: hidden;
-  overflow-wrap: break-word;
+  word-break: break-word;
 
   // Shorten padding on mobile
   @media screen and ($query) {
@@ -164,6 +163,7 @@ h3 {
   line-height: $line-h * 0.7;
   margin: $line-h 0 ($line-h / 2);
   font-family: $karrik;
+  font-weight: 700;
 }
 
 h1 {
@@ -212,9 +212,9 @@ a {
   text-decoration-thickness: $border-line;
   text-underline-offset: $border-line * 2;
 
-  &:hover,
   &:focus {
     color: $primary;
+    outline: 1px dotted;
   }
 
   // Change underline color for links that have been visited
@@ -247,26 +247,6 @@ a {
   }
 }
 
-// Syle drop-down boxes
-.box {
-  padding: $rootsize / 10 $rootsize;
-  margin-bottom: $rootsize;
-  border: $border-line solid $primary;
-  width: auto;
-  min-height: auto;
-  content-visibility: auto;
-
-  &:hover,
-    &:focus {
-      background: $light;
-    }
-
-  h2 {
-    display: inline;
-    margin-top: 0;
-  }
-}
-
 .notes h2 {
   margin-top: 1em;
   display: revert;
@@ -280,9 +260,13 @@ small {
   line-height: $line-h * 1.15;
 }
 
+small.revert {
+  color: revert;
+}
+
 // Site navigation
 nav {
-  
+
   // Breadcrumbs
   #breadcrumbs {
     margin-top: $line-h / 2;
@@ -364,13 +348,33 @@ img {
   details {
     /*Add the correct display in Edge, IE 10+, and Firefox*/
     display: block;
+    border: $border-line solid $primary;
+    margin-bottom: $rootsize;
+
+    & summary >* {
+      display: inline;
+    }
 
     summary {
-      /*Add the correct display in all browsers*/
-      display: list-item;
-      margin: 1em 0;
-      padding: 0.5em;
+      padding: $rootsize;
       cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        background: $light;
+      }
+
+      &:hover + div.contents {
+        background: $light;
+      }
+    }
+
+    .contents{
+      padding: $rootsize;
+
+      & > h3 {
+        margin-top: 0;
+      }
     }
   }
 }
@@ -390,6 +394,7 @@ img {
     width: 50%;
 
     @media screen and ($query) {
+
       // Restyle item on mobiles
       & {
         width: 100%;
@@ -413,6 +418,7 @@ img {
   }
 
   @media screen and ($query) {
+
     // Restyle parent on mobiles
     & {
       flex-wrap: wrap;

@@ -1,76 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  {%- include head.html -%}
-  <body>
-    {% if page.id == "home" %}
+{%- include head.html -%}
 
-    <!-- Homepage -->
-    <table class="homepage">
-      <thead>
-        <tr>
-          <th style="vertical-align: top;">
-            <nav>
-              <h1>{{ site.title }}</h1>
-            </nav>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="homepage-1lax">
-            <main>{{ content }}</main>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="parent">
-      <div class="item">
-        {%- include selprojects.html -%}
-        {%- include experiments.html -%}
-        {%- include bemyguest.html -%}
-      </div>
-      <div class="item">
-        {%- include thissite.html -%}
-        {%- include cv.html -%}
-        {%- include contact.html -%}
-      </div>
+<body>
+  {% if page.id == "home" %}
+  <!-- Homepage -->
+  <table class="homepage">
+    <thead>
+      <tr>
+        <th style="vertical-align: top;">
+          <nav>
+            <h1>{{ site.title }}</h1>
+          </nav>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="homepage-1lax">
+          <main>{{ content }}</main>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="parent">
+    <div class="item">
+      {%- include selprojects.html -%}
+      {%- include experiments.html -%}
+      {%- include bemyguest.html -%}
     </div>
-    <!-- End Homepage -->
-
-    {% else %}
-
-    <!-- Notes Pages -->
-    <nav>{%- include breadcrumbs.html -%}</nav>
-    <main>{{ content }}</main>
-    <div style="margin: 2em 0">
-      {% if page.backlinks.size > 0 %}
-      <!-- If there are backlinks, display this -->
-      
-      <details open role="feed">
-        <summary><h2>Notes mentioning this note</h2></summary>
-        {% for backlink in page.backlinks %}
-        <a
-          class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}"
-          >{{ backlink.title }}</a
-        >
-        <p style="margin-top: 0.5em;">{{ backlink.description | strip_html | truncatewords: 20 }}</p>
-        {% endfor %}
-      </details>
-      {%- else -%}
-
-      <!-- If there are NO backlinks, then display this -->
-      <div class="notes">
-        <h2>Notes mentioning this note</h2>
-        <p>There are no notes linking to this note.</p>
-      </div>
-      {% endif %}
+    <div class="item">
+      {%- include thissite.html -%}
+      {%- include cv.html -%}
+      {%- include contact.html -%}
     </div>
-    <!-- End Notes Pages -->
-    {% endif %}
+  </div>
+  <!-- End Homepage -->
+  {% else %}
+  <!-- Notes Pages -->
+  <nav>{%- include breadcrumbs.html -%}</nav>
+  <main>{{ content }}</main>
+  {% endif %}
+  <!-- Footer -->
+  <footer>{%- include footer.html -%}</footer>
+  <!-- JS -->
+  <script src="../details.js"></script>
+</body>
 
-    <!-- Footer -->
-    <footer>{%- include footer.html -%}</footer>
-    <!-- End Footer -->
-    <script src="../details.js"></script>
-  </body>
 </html>

@@ -45,14 +45,15 @@ $query: "max-width: 834px";
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     outline: none;
   }
 }
 
 // HTML-wide settings
 html {
-  background-color: $site;
+  background: $site;
   font-size: 18px;
   font-size: #{"min(max(16px, 1.5vw), 22px);"};
   margin: 0;
@@ -63,6 +64,9 @@ html {
   text-size-adjust: 100%;
   text-rendering: auto;
   text-align: left;
+  font-family: $SpaceGrotesk;
+  line-height: $line-h;
+  word-break: break-word;
 }
 
 // Body settings
@@ -70,14 +74,11 @@ body {
   padding: 1vh 15vw;
   max-width: 100vw;
   height: 100vh;
-  font-family: $SpaceGrotesk;
-  line-height: $line-h;
   color: $primary;
   overflow-y: scroll;
   overflow-x: hidden;
-  word-break: break-word;
 
-  // Shorten padding on mobile
+  // Less padding on mobile
   @media screen and ($query) {
     & {
       padding: 1vh 4vw;
@@ -85,17 +86,6 @@ body {
       -webkit-overflow-scrolling: touch;
     }
   }
-}
-
-// Load the Karrik typeface and set it up
-@font-face {
-  font-family: "Karrik-Regular";
-  src: url("../webfonts/Karrik-Regular.woff") format("woff"),
-    url("../webfonts/Karrik-Regular.woff2") format("woff2"),
-    url("../webfonts/Karrik-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
 }
 
 // Prevent `sub` and `sup` elements from affecting the line height in all browsers
@@ -128,6 +118,12 @@ textarea {
   margin: 0;
 }
 
+// Checkboxes
+input {
+  margin: 0 0.4em $rootsize / 2;
+  cursor: pointer;
+}
+
 // Remove the inheritance of text transform in Edge, Firefox, and IE
 button,
 select {
@@ -146,6 +142,7 @@ select {
 h1,
 h2,
 h3 {
+  display: block;
   line-height: $line-h * 0.7;
   margin: $line-h 0 ($line-h / 2);
   font-weight: 700;
@@ -233,11 +230,6 @@ a {
   }
 }
 
-.notes h2 {
-  margin-top: 1em;
-  display: revert;
-}
-
 // Style <small> tag
 small,
 figcaption {
@@ -245,10 +237,10 @@ figcaption {
   font-size: $small;
   color: $lighter;
   line-height: $line-h * 1.15;
-}
 
-small.revert {
-  color: revert;
+  &.revert {
+    color: revert;
+  }
 }
 
 // Site navigation
@@ -307,12 +299,6 @@ nobr {
   white-space: nowrap;
 }
 
-// Checkboxes
-input {
-  margin: 0 0.4em $rootsize / 2;
-  cursor: pointer;
-}
-
 // Images
 img {
   margin: ($line-h * 1.5) 0;
@@ -326,6 +312,63 @@ img {
   // Image caption. Must be written in <small>
   &+figcaption {
     margin-top: -($line-h * 1.5);
+  }
+}
+
+// Style the flexbox div that contains the "details" drop-down boxes on the homepage
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+  margin-top: $line-h/2;
+  margin-bottom: - ($line-h/2);
+
+  @media screen and ($query) {
+
+    // Restyle parent on mobiles
+    & {
+      flex-wrap: wrap;
+    }
+  }
+
+  // Split width equally
+  .item {
+    width: 50%;
+    margin-right: $rootsize;
+
+    @media screen and ($query) {
+      // Restyle item on mobiles
+      & {
+        width: 100%;
+        max-width: 100%;
+        margin-right: revert;
+      }
+    }
+
+    // First-side: Left
+    &:nth-child(1) {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+    }
+
+    // Second-side: Right
+    &:nth-child(2) {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+    }
+  }
+}
+
+// Legacy Firefox implementation of flexbox. Treats all flex containers as inline-block elements.
+@-moz-document url-prefix() {
+  .parent {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -354,7 +397,8 @@ summary {
       padding: $rootsize;
       user-select: none;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background: $light;
       }
     }
@@ -369,65 +413,6 @@ summary {
   }
 }
 
-// Create and style the flexbox that contains "boxes" on homepage
-.parent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: stretch;
-  margin-top: $line-h/2;
-  margin-bottom: - ($line-h/2);
-
-  // Split width equally
-  .item {
-    width: 50%;
-    margin-right: $rootsize;
-
-    @media screen and ($query) {
-
-      // Restyle item on mobiles
-      & {
-        width: 100%;
-        max-width: 100%;
-        margin-right: revert;
-      }
-    }
-  }
-
-  // First-side: Left
-  .item:nth-child(1) {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-  }
-
-  // Second-side: Right
-  .item:nth-child(2) {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-  }
-
-  @media screen and ($query) {
-
-    // Restyle parent on mobiles
-    & {
-      flex-wrap: wrap;
-      gap: 0;
-    }
-  }
-}
-
-// Legacy Firefox implementation of flexbox. Treats all flex containers as inline-block elements.
-@-moz-document url-prefix() {
-  .parent {
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
-
 // Style internal links that point to not-yet-existing pages 
 .invalid-link {
   color: mix($site, white, 80%);
@@ -439,37 +424,7 @@ summary {
   cursor: help;
 }
 
-// Create table to display homepage title and first paragraphs at "opposite" sides of the viewport
-table.homepage {
-  height: 100vh;
-  text-align: left;
-  border-collapse: collapse;
-  border-spacing: 0;
-
-  .homepage td {
-    border-style: transparent;
-    border-width: 0;
-    overflow: hidden;
-  }
-
-  .homepage th {
-    border-style: transparent;
-    border-width: 0;
-    font-weight: unset;
-    overflow: hidden;
-  }
-
-  .homepage-1lax {
-    vertical-align: bottom;
-    font-size: $rootsize * 1.4;
-    line-height: $line-h;
-
-    @media screen and ($query) {
-      font-size: $rootsize * 1.15;
-    }
-  }
-}
-
+//Display two images side by side
 .split-layout {
   display: flex;
   flex-wrap: wrap;
@@ -478,8 +433,6 @@ table.homepage {
   @media screen and ($query) {
     display: block;
   }
-
-  ;
 }
 
 /*Add the correct display in IE 10+*/

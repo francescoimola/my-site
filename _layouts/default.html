@@ -5,24 +5,8 @@
 <body>
   {% if page.id == "home" %}
   <!-- Homepage -->
-  <table class="homepage">
-    <thead>
-      <tr>
-        <th style="vertical-align: top;">
-          <nav>
-            <h1>{{ site.title }}</h1>
-          </nav>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="homepage-1lax">
-          <main>{{ content }}</main>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <nav><h1>{{ site.title }}</h1></nav>
+  <main>{{ content }}</main>
   <div class="parent">
     <div class="item">
       {%- include selprojects.html -%}

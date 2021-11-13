@@ -68,7 +68,6 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         e.content.include?(current_note.url)
       end
 
-
       # Edges: Jekyll
       current_note.data['backlinks'] = notes_linking_to_current_note
 

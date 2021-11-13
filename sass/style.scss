@@ -49,11 +49,11 @@ $query: "max-width: 834px";
   font: inherit;
   vertical-align: baseline;
 
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 
 /*   &:focus {
     background: $light;
@@ -253,7 +253,8 @@ a {
 }
 
 // Style <small> tag
-small {
+small,
+figcaption {
   display: block;
   font-size: $small;
   color: $lighter;
@@ -337,9 +338,13 @@ img {
   opacity: 100%;
 
   // Image caption. Must be written in <small>
-  &+small {
+  &+figcaption {
     margin-top: -($line-h * 1.5);
   }
+}
+
+summary {
+  cursor: pointer;
 }
 
 // Fix stilying issues with details and summary. IE will ignore these settings.
@@ -387,11 +392,11 @@ img {
   justify-content: flex-start;
   align-content: stretch;
   align-items: stretch;
-  gap: $rootsize;
 
   // Split width equally
   .item {
     width: 50%;
+    margin-right: $rootsize;
 
     @media screen and ($query) {
 
@@ -399,6 +404,7 @@ img {
       & {
         width: 100%;
         max-width: 100%;
+        margin-right: revert;
       }
     }
   }
@@ -475,6 +481,18 @@ table.homepage {
       font-size: $rootsize * 1.15;
     }
   }
+}
+
+.split-layout {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+
+  @media screen and ($query) {
+    display: block;
+  }
+
+  ;
 }
 
 /*Add the correct display in IE 10+*/

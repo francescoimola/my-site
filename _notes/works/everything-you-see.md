@@ -1,20 +1,25 @@
 ---
 title: Everything You See Is In The Past
-excerpt_separator: <!-- excerpt-end -->
 description: A curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators.
 ---
 Everything You See Is In The Past is a curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators. The project began in September 2019 and culminated in May 2020 with an online exhibition and accompanying catalogue. It featured works from Enes Alba, Atom Chen, Dario Bucheli, and Perce Jerrom.
 
 The catalogue includes an essay by the curator and interviews and Q&As with Lisa Barnard, Pita Arreola-Burns, Elliott Burns, Valentina Peri, Ghislaine Boddington, and Walter Corneli. Following the exhibition, I published an in-depth exhimination of the curatorial process and an exhibition catalogue, with which I graduated in Digital Arts from the University of Greenwich in 2020. The name of this project pays homage to a [homonymous work](http://www.everythingyouseeisinthepast.com/) by artist Rafaël Rozendaal.
 
-![GIF of the exhibition catalogue](assets/everythingyousee/Catalogue-gif.gif){:loading="lazy"}
-<small>Exhibition catalogue, GIF</small>
+<figure>
+<img src="assets/everythingyousee/Catalogue-gif.gif" alt="GIF of the exhibition catalogue" loading="lazy">
+<figcaption>Exhibition catalogue, GIF</figcaption>
+</figure>
 
-![Screenshot of the exhibition website's homepage](assets/everythingyousee/site.png){:loading="lazy"}
-<small>The exhibition's homepage</small>
+<figure>
+<img src="assets/everythingyousee/site.png" alt="Screenshot of the exhibition website's homepage" loading="lazy">
+<figcaption>The exhibition's homepage</figcaption>
+</figure>
 
-![Still from the online opening event](assets/everythingyousee/opening.png){:loading="lazy"}
-<small>Still from the online opening event</small>
+<figure>
+<img src="assets/everythingyousee/opening.png" alt="Still from the online opening event" loading="lazy">
+<figcaption>Still from the virtual opening event</figcaption>
+</figure>
 
 ## Links
 

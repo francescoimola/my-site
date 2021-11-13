@@ -21,7 +21,6 @@ html {
   font-size: min(max(16px, 1.5vw), 22px);;
   margin: 0;
   padding: 0;
-  -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   text-rendering: auto;
   text-align: left;
@@ -93,7 +92,7 @@ h1,
 h2,
 h3 {
   display: block;
-  line-height: 0.98em;
+  line-height: 1.12em;
   margin: 1.4em 0 0.7em;
   font-weight: 700;
 }
@@ -101,6 +100,11 @@ h3 {
 h1 {
   font-size: 1.8em;
   margin-top: 0.7em;
+}
+
+h1.title {
+  font-size: 1.2em;
+  margin-bottom: 0.25em;
 }
 
 h2 {
@@ -113,7 +117,11 @@ h3 {
 
 p {
   display: block;
-  margin-bottom: 1.4em;
+  margin-bottom: 0.93333em;
+}
+
+p.subtitle {
+  font-size: 0.9em;
 }
 
 article h2:first-of-type {
@@ -249,7 +257,7 @@ img + figcaption {
   justify-content: flex-start;
   align-content: stretch;
   align-items: stretch;
-  margin-top: 0.7em;
+  margin-top: 2.1em;
   margin-bottom: -0.7em;
 }
 

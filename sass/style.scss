@@ -143,7 +143,7 @@ h1,
 h2,
 h3 {
   display: block;
-  line-height: $line-h * 0.7;
+  line-height: $line-h * 0.8;
   margin: $line-h 0 ($line-h / 2);
   font-weight: 700;
 }
@@ -151,6 +151,11 @@ h3 {
 h1 {
   font-size: $header-size;
   margin-top: $line-h / 2;
+
+  &.title {
+    font-size: $header-size/1.5;
+    margin-bottom: $rootsize / 4;
+  }
 }
 
 h2 {
@@ -158,13 +163,17 @@ h2 {
 }
 
 h3 {
-  font-size: $header-size - 0.6;
+  font-size: $header-size/1.5;
 }
 
 // Paragraphs
 p {
   display: block;
-  margin-bottom: $line-h;
+  margin-bottom: $line-h/1.5;
+
+  &.subtitle {
+    font-size: $header-size/2;
+  }
 }
 
 article h2:first-of-type {
@@ -323,7 +332,7 @@ img {
   justify-content: flex-start;
   align-content: stretch;
   align-items: stretch;
-  margin-top: $line-h/2;
+  margin-top: $line-h * 1.5;
   margin-bottom: - ($line-h/2);
 
   @media screen and ($query) {

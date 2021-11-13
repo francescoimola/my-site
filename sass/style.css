@@ -21,6 +21,7 @@ html {
   font-size: min(max(16px, 1.5vw), 22px);;
   margin: 0;
   padding: 0;
+  -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   text-rendering: auto;
   text-align: left;

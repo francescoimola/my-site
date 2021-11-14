@@ -16,7 +16,7 @@
 }
 
 html {
-  background: #010409;
+  background-color: #010409;
   font-size: 18px;
   font-size: min(max(16px, 1.5vw), 22px);;
   margin: 0;
@@ -24,7 +24,8 @@ html {
   text-size-adjust: 100%;
   text-rendering: auto;
   text-align: left;
-  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  color: #DBDCDD;
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, noto color emoji, android emoji;
   line-height: 1.4em;
   word-break: break-word;
 }
@@ -33,7 +34,6 @@ body {
   padding: 1vh 15vw;
   max-width: 100vw;
   height: 100vh;
-  color: #DBDCDD;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -48,7 +48,7 @@ body {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 0.25em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -72,43 +72,19 @@ textarea {
   margin: 0;
 }
 
-input {
-  margin: 0 0.4em 0.5em;
-  cursor: pointer;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
 h1,
 h2,
 h3 {
   display: block;
-  line-height: 1.12em;
-  margin: 1.4em 0 0.7em;
-  font-weight: 700;
-}
-
-h1 {
   font-size: 1.8em;
-  margin-top: 0.7em;
+  line-height: 1.16667em;
+  font-weight: 700;
+  margin: 1em 0;
 }
 
 h1.title {
   font-size: 1.2em;
-  margin-bottom: 0.25em;
-}
-
-h2 {
-  font-size: 1.8em;
+  margin: 1em 0 0.25em 0;
 }
 
 h3 {
@@ -117,15 +93,11 @@ h3 {
 
 p {
   display: block;
-  margin-bottom: 0.93333em;
+  margin: 0 0 1em 0;
 }
 
 p.subtitle {
   font-size: 0.9em;
-}
-
-article h2:first-of-type {
-  margin-bottom: 1.4em;
 }
 
 i,
@@ -145,7 +117,7 @@ a {
   color: #1ea3e6;
   text-decoration-color: #1ea3e6;
   text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.16em;
+  text-underline-offset: 0.32em;
 }
 
 a:focus {
@@ -173,17 +145,12 @@ a.internal-link:after {
   display: none;
 }
 
-a input,
-a label {
-  cursor: pointer;
-}
-
 small,
 figcaption {
   display: block;
-  font-size: min(max(14px, 1.5vw), 16px);;
+  font-size: min(max(12px, 1.5vw), 15px);;
   color: #808284;
-  line-height: 1.61em;
+  line-height: 1.5em;
 }
 
 small.revert,
@@ -198,7 +165,7 @@ nav #breadcrumbs {
 nav #breadcrumbs h1,
 nav #breadcrumbs h2 {
   display: inline;
-  font-size: min(max(14px, 1.5vw), 16px);;
+  font-size: min(max(12px, 1.5vw), 15px);;
   font-weight: 400;
   font-family: revert;
 }
@@ -208,7 +175,8 @@ nav a:visited {
 }
 
 footer {
-  margin: 2.1em 0 1.4em 0;
+  margin: 1.4em 0;
+  padding: 1.4em 0;
 }
 
 footer a {
@@ -228,9 +196,18 @@ blockquote p:first-child {
 ul,
 ol {
   line-height: 1.68em;
-  list-style-position: outside;
+  list-style: none;
   margin: 0 0 1em;
-  padding: 0 0 0 1em;
+  padding: 0;
+}
+
+ul li:before {
+  content: '\2736';
+  margin: 0 0.5em 0 0;
+}
+
+li {
+  padding: 0 0 0.5em 0;
 }
 
 nobr {
@@ -257,8 +234,7 @@ img + figcaption {
   justify-content: flex-start;
   align-content: stretch;
   align-items: stretch;
-  margin-top: 2.1em;
-  margin-bottom: -0.7em;
+  margin-top: 2.8em;
 }
 
 @media screen and (max-width: 834px) {
@@ -303,28 +279,29 @@ summary {
   cursor: pointer;
 }
 
+details summary > * {
+  display: inline-block;
+}
+
 @supports not (-ms-ime-align: auto) {
   details {
     /*Add the correct display in Edge, IE 10+, and Firefox*/
     display: block;
-    border: 0.08em solid #DBDCDD;
+    border: 0.096em solid #DBDCDD;
     margin-bottom: 1em;
+  }
+  details summary > h2 {
+    display: inline;
   }
   details:hover {
     background: #0b0e13;
-  }
-  details summary > * {
-    display: inline;
   }
   details summary {
     padding: 1em;
     user-select: none;
   }
-  details summary:hover, details summary:focus {
-    background: #0b0e13;
-  }
   details .contents {
-    padding: 1em;
+    padding: 0.25em 1em;
   }
   details .contents > h3 {
     margin-top: 0;

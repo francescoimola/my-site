@@ -5,6 +5,7 @@ id: home
 permalink: /
 description: I'm Francesco, London-based cultural producer connecting the dots between art and design.
 ---
-<!-- [[What's at the top of my mind|Welcome]]&nbsp;&#128075;&nbsp;I'm Francesco, a cultural producer, artist, and designer. -->
 
-# I make exhibitions, websites, events, campaigns, and interactive experiences run smoothly. Creating art that runs on the web and curating low-impact interventions and exhibition are some of my passions.
+<h1 style="margin: 1.1em 0 0.5em 0;">I make art projects, campaigns, events, and websites run smoothly. I also know a thing or two about creating art that runs on the web and curating low-impact exhibitions and interventions.</h1>
+
+Have a look at [[What's at the top of my mind|what I've been up to recently]] or [get in touch](#contact){: .internal-link #inTouch} to discuss working together.

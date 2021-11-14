@@ -5,7 +5,10 @@
 <body>
   {% if page.id == "home" %}
   <!-- Homepage -->
-  <nav><h1 class="title">Hello! I'm {{ site.title }}</h1><p class="subtitle">Cultural Producer, Designer, Arts Administrator</p></nav>
+  <nav>
+    <h1 class="title">Hello! I'm {{ site.title }}</h1>
+    <p class="subtitle">Cultural Producer, Designer, Arts Administrator</p>
+  </nav>
   <main>{{ content }}</main>
   <div class="parent">
     <div class="item">
@@ -28,7 +31,18 @@
   <!-- Footer -->
   <footer>{%- include footer.html -%}</footer>
   <!-- JS -->
-  <script src="../details.js"></script>
+  <script>
+    let contacts = document.getElementById("detailsC");
+    let startPoint = document.getElementById("inTouch");
+
+    startPoint.onclick = function () {
+      if (typeof contacts !== "undefined" && contacts.open) {
+        return true;
+      } else {
+        contacts.toggleAttribute("open");
+      }
+    }
+  </script>
 </body>
 
 </html>

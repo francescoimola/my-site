@@ -10,4 +10,5 @@ People often ask me what I'm doing, so here's what's on my plate and projects I 
 
 ### What I'm reading
 
-* _The School of Life: An Emotional Education_ - Alain de Botton
+* Swimming in the Dark - Tomasz Jedrowski
+* The School of Life: An Emotional Education - Alain de Botton

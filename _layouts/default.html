@@ -31,18 +31,6 @@
   <!-- Footer -->
   <footer>{%- include footer.html -%}</footer>
   <!-- JS -->
-  <script>
-    let contacts = document.getElementById("detailsC");
-    let startPoint = document.getElementById("inTouch");
-
-    startPoint.onclick = function () {
-      if (typeof contacts !== "undefined" && contacts.open) {
-        return true;
-      } else {
-        contacts.toggleAttribute("open");
-      }
-    }
-  </script>
 </body>
 
 </html>

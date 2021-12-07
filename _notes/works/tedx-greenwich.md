@@ -11,7 +11,7 @@ For the 2021 iteration of the TEDx University of Greenwich: _Journeys_, I collab
     </figure>
     <figure style="flex: 1.777">
         <img src="assets/tedx/sign_3.jpg" alt="CLose-up of the TEDx University of Greenwich sign showing the letters places on the board" loading="lazy">
-        <figcaption>TEDx University of Greenwich sign, detail)</figcaption>
+        <figcaption>TEDx University of Greenwich sign, detail</figcaption>
     </figure>
 </div>
 

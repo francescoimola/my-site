@@ -27,7 +27,7 @@ For the 2021 iteration of the TEDx University of Greenwich: _Journeys_, I collab
 </div>
 <br>
 
-I also translated the programme of talks into a responsive and highly-accessible website for the event attendees to stay informed of speakers, topics, and times. I followed TEDx visual language and branding, and ensured the site was lightweight (signal in the venue is scarce, so I kept the site under 6KB) and accessible from any device and to all users. 
+I also translated the programme of talks into a responsive and highly-accessible website for the event attendees to stay informed of speakers, topics, and times. I followed TEDx visual language and branding, and ensured the site was lightweight (internet signal in the venue is scarce, so I kept the site under 6KB) and accessible from any device and to all users. 
 
 <figure>
     <img src="assets/tedx/frame.jpg" alt="Mockup of a phone and a laptop with the TEDx 2021 programme website in their viewports" loading="lazy">

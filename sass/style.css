@@ -158,6 +158,10 @@ figcaption.revert {
   color: revert;
 }
 
+figcaption {
+  margin-bottom: 2em;
+}
+
 nav #breadcrumbs {
   margin-top: 0.7em;
 }
@@ -226,7 +230,7 @@ video {
 
 img + figcaption,
 video + figcaption {
-  margin-top: -0.93333em;
+  margin-top: -1.4em;
 }
 
 .parent {
@@ -324,12 +328,18 @@ details summary > * {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1em;
+  margin: 0;
 }
 
 @media screen and (max-width: 834px) {
   .split-layout {
     display: block;
   }
+}
+
+figure + div.split-layout,
+div.split-layout + figure, div.split-layout + div.split-layout {
+  margin-top: -1.4em;
 }
 
 span.direction {

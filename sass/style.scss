@@ -210,10 +210,13 @@ figcaption {
   font-size: $small;
   color: $lighter;
   line-height: $rootsize * 1.5;
-
   &.revert {
     color: revert;
   }
+}
+
+figcaption {
+  margin-bottom: $rootsize * 2;
 }
 
 // Site navigation
@@ -294,10 +297,9 @@ video {
   opacity: 100%;
 }
 
-// Image caption. Must be written in <small>
 img+figcaption,
 video+figcaption {
-  margin-top: -($line-h/1.5);
+  margin-top: -($line-h);
 }
 
 // Style the flexbox div that contains the "details" drop-down boxes on the homepage
@@ -413,6 +415,7 @@ details summary>* {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1em;
+  margin: 0;
 
   @media screen and ($query) {
     & {
@@ -420,6 +423,13 @@ details summary>* {
     }
   }
 }
+
+figure+div.split-layout,
+div.split-layout+figure, div.split-layout+div.split-layout {
+  margin-top: -$line-h;
+}
+
+
 
 span.direction {
   position: relative;

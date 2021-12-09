@@ -128,7 +128,7 @@ h3 {
   font-size: $header-size;
   line-height: $line-h / 1.2;
   font-weight: 700;
-  margin: $rootsize 0;
+  margin: $rootsize 0 ($rootsize/2);
 }
 
 h1.title {
@@ -283,19 +283,21 @@ nobr {
 }
 
 // Images
-img {
-  margin: ($line-h * 1.5) 0;
+img,
+video {
+  margin: $line-h 0;
   display: block;
   -o-object-fit: cover;
   object-fit: cover;
   max-width: 100%;
   max-height: 100%;
   opacity: 100%;
+}
 
-  // Image caption. Must be written in <small>
-  &+figcaption {
-    margin-top: -($line-h * 1.5);
-  }
+// Image caption. Must be written in <small>
+img+figcaption,
+video+figcaption {
+  margin-top: -($line-h/1.5);
 }
 
 // Style the flexbox div that contains the "details" drop-down boxes on the homepage
@@ -413,8 +415,16 @@ details summary>* {
   column-gap: 1em;
 
   @media screen and ($query) {
-    display: block;
+    & {
+      display: block;
+    }
   }
+}
+
+span.direction {
+  position: relative;
+  font-size: 0.9em;
+  bottom: -0.1em;
 }
 
 /*Add the correct display in IE 10+*/

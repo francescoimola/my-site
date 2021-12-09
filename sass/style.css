@@ -79,7 +79,7 @@ h3 {
   font-size: 1.8em;
   line-height: 1.16667em;
   font-weight: 700;
-  margin: 1em 0;
+  margin: 1em 0 0.5em;
 }
 
 h1.title {
@@ -214,8 +214,9 @@ nobr {
   white-space: nowrap;
 }
 
-img {
-  margin: 2.1em 0;
+img,
+video {
+  margin: 1.4em 0;
   display: block;
   object-fit: cover;
   max-width: 100%;
@@ -223,8 +224,9 @@ img {
   opacity: 100%;
 }
 
-img + figcaption {
-  margin-top: -2.1em;
+img + figcaption,
+video + figcaption {
+  margin-top: -0.93333em;
 }
 
 .parent {
@@ -328,6 +330,12 @@ details summary > * {
   .split-layout {
     display: block;
   }
+}
+
+span.direction {
+  position: relative;
+  font-size: 0.9em;
+  bottom: -0.1em;
 }
 
 /*Add the correct display in IE 10+*/

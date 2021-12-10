@@ -8,11 +8,11 @@ I coordinated the co-creation of a digital screening room (Vimeo Showcase) featu
 To communicate the launch of this new online screening room, I designed social media content and delivered a campaign to attract visitors. Since its launch, thousands of visitors have explored the Film & TV Showcase, and it has become a central part of the Programmes' online presence, with more films and show-reels to be added each year.
 
 <figure>
-        <img src="assets\ftv\FTV_Alumni_Showcase_1.jpg" alt="Mockup of the Vimeo Showcase opened in a laptop and a mobile device beside it" loading="lazy">
+        <img src="assets/ftv/FTV_Alumni_Showcase_1.jpg" alt="Mockup of the Vimeo Showcase opened in a laptop and a mobile device beside it" loading="lazy">
     </figure>
 
 <figure>
-        <img src="assets\ftv\vimeo_social_media_post.png" alt="Social media post inviting people to visit the Vimeo SHowcase and describing that, by scrolling right, they learn about what films are featured in this space" loading="lazy">
+        <img src="assets/ftv/vimeo_social_media_post.png" alt="Social media post inviting people to visit the Vimeo SHowcase and describing that, by scrolling right, they learn about what films are featured in this space" loading="lazy">
     </figure>
 
 ## License

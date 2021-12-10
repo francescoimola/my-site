@@ -3,7 +3,9 @@ title: "Virtual Production: How to Be Good"
 description: Digital Marketing and Content Design for a practice-based research project on Virtual Production at the University of Greenwich.
 ---
 
-I co-curated a social media campaign, shot photographs, and created content sharing the outputs of a research project on Virtual Production, titled "How to Be Good", intending to raise awareness of the importance of Virtual Production in the future of the screen industries. The film shoot at the basis of this project ran for four days and I was its resident BTS photographer. The campaign helped colleagues on the teaching team secure a deal for a book introducing Virtual production techniques and frameworks to filmmakers, including FTV students.
+I created content, shot photographs, and co-curated a social media campaign (on Instagram & Twitter) sharing the outputs of a research project on Virtual Production. Titled "How to Be Good", the project was led by Film & TV staff and practictioners at the School of Design (University of Greenwich) and it intended to raise awareness of the importance of Virtual Production in the future of the screen industries. The project was funded by [StoryFutures Academy](https://www.storyfutures.com/academy).
+
+I was the resident BTS photographer of the film shoot at the basis of this project. The campaign helped colleagues on the teaching team secure a deal for a book introducing Virtual production techniques and frameworks to filmmakers, including FTV students.
 
 <figure>
         <img src="assets/ftv/jodi_talks_to_actress.png" alt="director talks to actress" loading="lazy">
@@ -48,6 +50,14 @@ I co-curated a social media campaign, shot photographs, and created content shar
 <figure>
         <img src="assets/ftv/actress_rehearsing_scene.png" alt="actress rehearsing a scene, holding a stone ready to attack" loading="lazy">
 </figure>
+
+## Links
+
+- [Articles featuring my photographs](https://digitalresearcher.medium.com/)
+- [Film & TV Programmes on Instagram](https://www.instagram.com/filmuog/)
+- [School of Design on Twitter](https://twitter.com/GREdesignSchool)
+- [Press by StoryFutures Academy](https://www.storyfutures.com/academy/skills/train-the-trainer)
+- [Press by Be In Demand](https://www.bndmand.com/vp-portfolio)
 
 ## License
 

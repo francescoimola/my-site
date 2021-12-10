@@ -24,7 +24,7 @@ External contractors fabricated the screens while I produced the TEDx sign using
     </figure>
 </div>
 
-For _Journeys_ I also translated the programme of talks into a responsive and highly-accessible website for the event attendees to stay informed of speakers, topics, and times. I followed TEDx branding while bringing the site's visual language close to that of the University of Greenwich. I made it as lightweight as possible (internet signal in the venue is scarce, so I kept the site under 6KB) and built it so that it is accessible from any device and to all users. 
+For _Journeys_ I also translated the programme of talks into a responsive and highly-accessible [website](https://journeys-tedx.glitch.me/) for the event attendees to stay informed of speakers, topics, and times. I followed TEDx branding while bringing the site's visual language close to that of the University of Greenwich. I made it as lightweight as possible (internet signal in the venue is scarce, so I kept the site under 6KB) and built it so that it is accessible from any device and to all users. 
 
 <figure>
     <img src="assets/tedx/frame.jpg" alt="Mockup of a phone and a laptop with the TEDx 2021 programme website in their viewports" loading="lazy">
@@ -36,7 +36,8 @@ For _Journeys_ I also translated the programme of talks into a responsive and hi
 
 ## Links
 
-- [TEDx University of Greenwich Website](https://www.tedxgreenwichuniversity.co.uk/)
+- [TEDx 2021: Journeys - Programme](https://journeys-tedx.glitch.me/)
+- [TEDx University of Greenwich Official Website](https://www.tedxgreenwichuniversity.co.uk/)
 - [Images from the event on Flickr](https://www.flickr.com/photos/186880348@N07/)
 
 ## License

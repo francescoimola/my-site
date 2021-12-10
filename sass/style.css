@@ -324,23 +324,30 @@ details summary > * {
   cursor: help;
 }
 
+figure + .split-layout,
+.split-layout + figure,
+.split-layout + .split-layout {
+  margin-top: -1.4em;
+}
+
+@media screen and (max-width: 834px) {
+  figure + .split-layout,
+  .split-layout + figure,
+  .split-layout + .split-layout {
+    margin-top: revert;
+  }
+}
+
 .split-layout {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1em;
-  margin: 0;
 }
 
 @media screen and (max-width: 834px) {
   .split-layout {
     display: block;
   }
-}
-
-figure + div.split-layout,
-div.split-layout + figure,
-div.split-layout + div.split-layout {
-  margin-top: -1.4em;
 }
 
 span.direction {

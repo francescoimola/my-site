@@ -411,27 +411,27 @@ details summary>* {
   cursor: help;
 }
 
+//Shorten space between images
+figure+.split-layout,
+.split-layout+figure,
+.split-layout+.split-layout {
+  margin-top: -$line-h;
+
+  @media screen and ($query) {
+    margin-top: revert;
+  }
+}
+
 //Display two images side by side
 .split-layout {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1em;
-  margin: 0;
 
   @media screen and ($query) {
-    & {
-      display: block;
-    }
+    display: block;
   }
 }
-
-figure+div.split-layout,
-div.split-layout+figure,
-div.split-layout+div.split-layout {
-  margin-top: -$line-h;
-}
-
-
 
 span.direction {
   position: relative;

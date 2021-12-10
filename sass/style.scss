@@ -210,6 +210,7 @@ figcaption {
   font-size: $small;
   color: $lighter;
   line-height: $rootsize * 1.5;
+
   &.revert {
     color: revert;
   }
@@ -425,7 +426,8 @@ details summary>* {
 }
 
 figure+div.split-layout,
-div.split-layout+figure, div.split-layout+div.split-layout {
+div.split-layout+figure,
+div.split-layout+div.split-layout {
   margin-top: -$line-h;
 }
 

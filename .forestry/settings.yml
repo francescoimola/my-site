@@ -9,13 +9,13 @@ sections:
   label: Structures
   create: all
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
 - type: directory
   path: _layouts
   label: Layouts
   create: all
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
 - type: directory
   path: _notes
   label: Notes
@@ -40,5 +40,4 @@ build:
   preview_docker_image: forestryio/ruby:2.6
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
-    -d _site
+  instant_preview_command: jekyll build --trace

@@ -338,7 +338,8 @@ details summary > * {
 }
 
 figure + div.split-layout,
-div.split-layout + figure, div.split-layout + div.split-layout {
+div.split-layout + figure,
+div.split-layout + div.split-layout {
   margin-top: -1.4em;
 }
 

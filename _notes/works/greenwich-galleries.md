@@ -1,6 +1,6 @@
 ---
 title: University of Greenwich Galleries, 2018-2020
-description: Some of the projects I've worked on from my time at University of Greenwich Galleries
+description: Curatorial support, installation, exhibition design, and photography for the University of Greenwich Galleries.
 ---
 <style>
     .split-layout img {
@@ -14,7 +14,7 @@ description: Some of the projects I've worked on from my time at University of G
 </style>
 
 Between 2018 and 2020 I assisted the production, install, and documentation of over 60 art and architecture exhibitions
-and events at [University of Greenwich Galleries](https://www.greenwichunigalleries.co.uk/). Here are some of the
+and events at the [University of Greenwich Galleries](https://www.greenwichunigalleries.co.uk/). Here are some of the
 highlights from that time, alongside the core role(s) I played in the production/delivery of each of the listed projects.
 
 <div class="split-layout">

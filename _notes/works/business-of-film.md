@@ -1,8 +1,9 @@
 ---
 title: Business of Film, University of Greenwich
+description: Video editing and graphic design for a new asynchronous course on the business of film at the University of Greenwich.
 ---
 
-I developed a series of videos and graphic design elements for a new asynchronous course on the business of film, soon to be offered to undergraduate students on the Film & TV Programme at University of Greenwich.
+I developed a series of videos and graphic design elements for a new asynchronous course on the business of film, soon to be offered to undergraduate students on the Film & TV Programme at the University of Greenwich.
 
 <figure>
         <video width="100%" poster="assets\ftv\bof_still_frame.jpg" controls loop>

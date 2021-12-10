@@ -1,6 +1,6 @@
 ---
 title: New Alumni '19
-description: New Alumni focuses on recent Greenwich graduates working in cross-disciplinary fields within the creative industries that impact on our environment and community
+description: Exhibition focusing on recent Greenwich graduates working in cross-disciplinary fields within creative industries that impact on our environment and community
 ---
 
 Built on the success of the previous year’s exhibition, New Alumni '19 focuses on four University of Greenwich graduates

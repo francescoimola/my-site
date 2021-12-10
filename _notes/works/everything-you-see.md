@@ -1,6 +1,6 @@
 ---
 title: Everything You See Is In The Past
-description: A curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators.
+description: Curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators.
 ---
 Everything You See Is In The Past is a curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators. The project began in September 2019 and culminated in May 2020 with an online exhibition and accompanying catalogue. It featured works from Enes Alba, Atom Chen, Dario Bucheli, and Perce Jerrom.
 

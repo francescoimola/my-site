@@ -1,5 +1,6 @@
 ---
 title: Film & TV Hub, University of Greenwich
+description: Information Architecture, Community Management, and Content Design for a major hub for Film & TV students at the University of Greenwich.
 ---
 
 I developed and implemented a central hub for all FTV undergraduate and postgraduate students (hosted on their e-learning platform) to access an array of resources on funding, producing, location-scouting, casting, shooting, and marketing for their films and TV pilots. 

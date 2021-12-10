@@ -1,6 +1,6 @@
 ---
 title: TEDx University of Greenwich
-description: Designing digital and stage products for TEDx's University of Greenwich (2019-2021)
+description: Digital and Stage design for TEDx University of Greenwich, 2019-2021
 ---
 For the 2021 iteration of the TEDx University of Greenwich: _Journeys_, I collaborated with a small team of filmmakers, producers, and theatre experts to design and produce green-screens (stage flats) and a stage sign. These elements were central to the set design and served to filmmakers, who implemented virtual production techniques to film the event—in a way that had never been done before for a TEDx talk.
 

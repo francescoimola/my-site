@@ -5,6 +5,18 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _includes
+  label: Structures
+  create: all
+  match: "**/*"
+  new_doc_ext: ".html"
+- type: directory
+  path: _layouts
+  label: Layouts
+  create: all
+  match: "**/*"
+  new_doc_ext: ".html"
+- type: directory
   path: _notes
   label: Notes
   create: all

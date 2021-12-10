@@ -1,9 +1,8 @@
 ---
 title: Film & TV Vimeo Showcase, University of Greenwich
-description: Project Management, Copywriting, and Content Design for a new digital screening room featuring a selection of films and show-reels by University of Greenwich alumni.
 ---
 
-I coordinated the co-creation of a digital screening room (Vimeo Showcase) featuring a selection of short films from Film & TV alumni. I sourced films, supervised the audio transcription to captions, wrote copy, and shared the Showcase on social media and internal communications channels. 
+I coordinated the co-creation of a Vimeo Showcase featuring a selection of short films from Film & TV alumni. I sourced films, supervised the audio transcription to captions, wrote copy, and shared the Showcase on social media and internal communications channels. 
 
 To communicate the launch of this new online screening room, I designed social media content and delivered a campaign to attract visitors. Since its launch, thousands of visitors have explored the Film & TV Showcase, and it has become a central part of the Programmes' online presence, with more films and show-reels to be added each year.
 

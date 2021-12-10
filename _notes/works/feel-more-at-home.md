@@ -1,6 +1,6 @@
 ---
 title: How to feel more at home
-description: Website incorporating an expanded poem, a series of photographs, and semi-generative audiovisual elements into one interactive landing page
+description: A website incorporating an expanded poem, a series of photographs, and semi-generative audiovisual elements into one interactive landing page
 ---
 How to feel more at home is a website incorporating an expanded poem, a series of photographs, and interactive
 semi-generative audiovisual elements into a singular landing page. This work was born out of a desire to explore and

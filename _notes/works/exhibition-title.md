@@ -1,6 +1,7 @@
 ---
 title: Exhibition Title Bot
-description: An autonomous bot generated a new exhibition title for a fictional art exhibition every day for two years between 2018 and 2021.
+
+description: An autonomous bot generated a new exhibition title for a fictional art exhibition every day for two years between 2018 and 2021. It stopped posting after writing and posting over 500 titles, from the hilarious to the most grotesque.
 ---
 Exhibition Title Bot is an autonomous program that generated a new exhibition title for a fictional art exhibition every day for two years between 2018 and 2021. It stopped posting after writing and posting over 500 titles, from the hilarious to the most grotesque.
 

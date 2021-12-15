@@ -23,8 +23,8 @@ The catalogue includes an essay by the curator and interviews and Q&As with Lisa
 
 ## Links
 
-- [Read the exhibition catalogue](https://arena-attachments.s3.amazonaws.com/7413063/c6f7ebaf91a84dd94ae368676d6010a2.pdf?1590356387)
-- [Explore the documentation](https://www.are.na/francesco-imola-2o2ng4qooxm/eysiitp-project-portfolio-francesco-imola)
+- [Read the exhibition catalogue](https://drive.google.com/file/d/1AQ3RuogJDeLc54IJEakYAFARdY4AVVsu/view?usp=sharing)
+- [Explore the documentation](https://www.are.na/francesco-imola-2o2ng4qooxm/eysiitp-portfolio)
 
 ## License
 

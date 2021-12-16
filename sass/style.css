@@ -197,8 +197,7 @@ blockquote p:first-child {
   margin: 0;
 }
 
-ul,
-ol {
+ul {
   line-height: 1.68em;
   list-style: none;
   margin: 0 0 1em;

@@ -264,8 +264,7 @@ blockquote {
 }
 
 // Lists
-ul,
-ol {
+ul {
   line-height: $line-h * 1.2;
   list-style: none;
   margin: 0 0 $rootsize;

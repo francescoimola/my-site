@@ -10,4 +10,16 @@
     </div>
 </details>
 
+<script>
+    let contacts = document.getElementById("detailsC");
+    console.log(contacts);
+    let startPoint = document.getElementById("inTouch");
 
+    startPoint.onclick = function () {
+      if (contacts !== undefined && contacts.open) {
+        return true;
+      } else {
+        contacts.toggleAttribute("open");
+      }
+    }
+  </script>

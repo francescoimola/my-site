@@ -3,9 +3,7 @@ title: "Virtual Production: How to Be Good"
 description: Digital Marketing and Content Design for a practice-based research project on Virtual Production at the University of Greenwich.
 ---
 
-I created content, shot photographs, and co-curated a social media campaign (on Instagram & Twitter) sharing the outputs of a research project on Virtual Production. Titled "How to Be Good", the project was led by Film & TV staff and practictioners at the School of Design (University of Greenwich) and it intended to raise awareness of the importance of Virtual Production in the future of the screen industries. The project was funded by [StoryFutures Academy](https://www.storyfutures.com/academy).
-
-I was the resident BTS photographer of the film shoot at the basis of this project. The campaign helped colleagues on the teaching team secure a deal for a book introducing Virtual production techniques and frameworks to filmmakers, including FTV students.
+While at University of Greenwich, I worked on many fascinating projects. _How to be Good_ was one of my favourites. For this ambitious project, I shot BTS photographs, created content, and co-curated a social media campaign sharing its outputs. Film & TV staff and practitioners at the School of Design produced a short film using Virtual Production technologies as part of a wider research activity looking at how to best integrate VP in current film and television education. Outputs from the project raised awareness of the importance of Virtual Production in the future of the screen industries and helped the Film & TV Programmes secure a book deal.
 
 <figure>
         <img src="assets/ftv/jodi_talks_to_actress.png" alt="director talks to actress" loading="lazy">
@@ -13,7 +11,7 @@ I was the resident BTS photographer of the film shoot at the basis of this proje
 
 <figure>
         <img src="assets/ftv/directing_VP.png" alt="social media post asking for feedback on people's thoughts on directing Virtual Productions" loading="lazy">
-        <figcaption>Photograph: Gabriela Predan</figcaption>
+        <figcaption>Photograph: Gabriela Predan, Design: Francesco Imola</figcaption>
     </figure>
 
 <div class="split-layout">
@@ -50,6 +48,8 @@ I was the resident BTS photographer of the film shoot at the basis of this proje
 <figure>
         <img src="assets/ftv/actress_rehearsing_scene.png" alt="actress rehearsing a scene, holding a stone ready to attack" loading="lazy">
 </figure>
+
+_How to be Good_ is funded by [StoryFutures Academy](https://www.storyfutures.com/academy).
 
 ## Links
 

@@ -12,3 +12,7 @@ People often ask me what I'm doing, so here's what's on my plate and projects I 
 
 * Swimming in the Dark - Tomasz Jedrowski
 * The School of Life: An Emotional Education - Alain de Botton
+
+### What should I read next?
+
+[Suggest me a book](https://forms.gle/1FXcTV855sfVKHMT9), if you like. I'm a big fan of semi-autobiographical works, but I'm open to new discoveries.

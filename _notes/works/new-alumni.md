@@ -3,14 +3,13 @@ title: New Alumni '19
 description: Exhibition focusing on recent Greenwich graduates working in cross-disciplinary fields within creative industries that impact on our environment and community
 ---
 
-Built on the success of the previous year’s exhibition, New Alumni '19 focuses on four University of Greenwich graduates
+Built on the success of the previous year’s exhibition, "New Alumni '19" focuses on four University of Greenwich graduates
 working in cross-disciplinary fields within the creative industries that impact on our environment and community. Hosted
-in the Project Space to the Greenwich Stockwell Street Building, New Alumni '19 coincided with Greenwich Portraits in
+in the Project Space to the Greenwich Stockwell Street Building, "New Alumni '19" coincided with "Greenwich Portraits" in
 the adjacent Stephen Lawrence Gallery. The exhibitions complemented each other to showcase the University’s support for
 both new and longstanding alumni.
 
-I co-curated co-designed the exhibition alongside David Waterworth, Curator/Director at University of Greenwich Galleries. New Alumni included works and documentation of projects from John Joseph Watters, [Grace Diggens](https://www.gracediggens.com/),
-[Marilia Lezou](https://www.owmi.co.uk/about), and [Rhiannon Ashley](https://heynonnycreates.com/).
+I co-curated and co-designed the exhibition alongside David Waterworth, Curator and Director at University of Greenwich Galleries. New Alumni included works and documentation of projects from John Joseph Watters, [Grace Diggens](https://www.gracediggens.com/), [Marilia Lezou](https://www.owmi.co.uk/about), and [Rhiannon Ashley](https://heynonnycreates.com/).
 
 <div class="split-layout">
     <figure style="flex: 1.4186">

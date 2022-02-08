@@ -2,9 +2,9 @@
 title: Everything You See Is In The Past
 description: Curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators.
 ---
-Everything You See Is In The Past is a curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of artist-curators. The project began in September 2019 and culminated in May 2020 with an online exhibition and accompanying catalogue. It featured works from Enes Alba, Atom Chen, Dario Bucheli, and Perce Jerrom.
+"Everything you see is in the past" is a curatorial project and exhibition exploring the impact of the internet and contemporary digital culture on the practice of emerging artist-curators. The project began in September 2019 and culminated in May 2020 with an online exhibition and accompanying catalogue. It featured works from Enes Alba, Atom Chen, Dario Bucheli, and Perce Jerrom.
 
-The catalogue includes an essay by the curator and interviews and Q&As with Lisa Barnard, Pita Arreola-Burns, Elliott Burns, Valentina Peri, Ghislaine Boddington, and Walter Corneli. Following the exhibition, I published an in-depth exhimination of the curatorial process and an exhibition catalogue, with which I graduated in Digital Arts from the University of Greenwich in 2020. The name of this project pays homage to a [homonymous work](http://www.everythingyouseeisinthepast.com/) by artist Rafaël Rozendaal.
+The catalogue includes an essay by the curator and interviews and Q&As with Lisa Barnard, Pita Arreola-Burns, Elliott Burns, Valentina Peri, Ghislaine Boddington, and Walter Corneli. The title of this project pays homage to a [homonymous work](http://www.everythingyouseeisinthepast.com/) by artist Rafaël Rozendaal.
 
 <figure>
 <img src="assets/everythingyousee/Catalogue-gif.gif" alt="GIF of the exhibition catalogue" loading="lazy">
@@ -24,7 +24,7 @@ The catalogue includes an essay by the curator and interviews and Q&As with Lisa
 ## Links
 
 - [Read the exhibition catalogue](https://drive.google.com/file/d/1AQ3RuogJDeLc54IJEakYAFARdY4AVVsu/view?usp=sharing)
-- [Explore the documentation](https://www.are.na/francesco-imola-2o2ng4qooxm/eysiitp-portfolio)
+- [Explore further documentation](https://www.are.na/francesco-imola-2o2ng4qooxm/eysiitp-portfolio)
 
 ## License
 

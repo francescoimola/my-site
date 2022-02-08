@@ -13,9 +13,9 @@ description: Curatorial support, installation, exhibition design, and photograph
     }
 </style>
 
-Between 2018 and 2020 I assisted the production, install, and documentation of over 60 art and architecture exhibitions
+Between 2018 and 2020 I assisted the production, marketing, and documentation of over 60 art and architecture exhibitions
 and events at the [University of Greenwich Galleries](https://www.greenwichunigalleries.co.uk/). Here are some of the
-highlights from that time, alongside the core role(s) I played in the production/delivery of each of the listed projects.
+highlights from that time, alongside the core role(s) I played in the production and delivery of each project.
 
 <div class="split-layout">
     <figure style="flex: 1.7778">
@@ -42,7 +42,7 @@ highlights from that time, alongside the core role(s) I played in the production
                 (2019)</a></small>
         <img src="assets/greenwichgal/Oscillations.jpg"
             alt="Landscape poster for Oscillations, an exhibition by Russel Duke and Mark Long" loading="lazy">
-        <figcaption>Landscape poster design for Oscillations, an exhibition of works by by Russel Duke and Mark Long
+        <figcaption>Landscape poster design for "Oscillations", an exhibition of works by by Russel Duke and Mark Long
         </figcaption>
     </figure>
     <figure style="flex: 0.7063">
@@ -50,7 +50,7 @@ highlights from that time, alongside the core role(s) I played in the production
                 Forward to the Analogue (2019)</a></small>
         <img src="assets/greenwichgal/fftta-poster.jpg" alt="Poster desgn for Fast Forward to the Analogue"
             loading="lazy">
-        <figcaption>Poster design for the Fast Forward to the Analogue exhibition</figcaption>
+        <figcaption>Poster design for "Fast Forward to the Analogue"</figcaption>
     </figure>
 </div>
 
@@ -65,16 +65,16 @@ highlights from that time, alongside the core role(s) I played in the production
         <small>Curation, Design, Install & De-Install<br><a href="http://www.greenwichunigalleries.co.uk/fivetoeight/" target="_blank" rel="noopener noreferrer">528 (2019)</a></small>
         <img src="assets/greenwichgal/528.jpg" alt="Photograph of works installed in 528 as seen from the entrance of the Heritage Gallery"
             loading="lazy">
-        <figcaption>Exhibition view, Heritage Gallery</figcaption>
+        <figcaption>Exhibition view of 528, Heritage Gallery</figcaption>
     </figure>
 </div>
 
 <div class="split-layout">
     <figure style="flex: 1.4186">
-        <small>Curation, Graphic & Exhibition Design, Marketing<br><a href="/new-alumni" class="internal-link">New Alumni '19 (2019)</a></small>
+        <small>Curation, Graphic Design, Exhibition Design, and Marketing<br><a href="/new-alumni" class="internal-link">New Alumni '19 (2019)</a></small>
         <img src="assets/greenwichgal/new_alumni.jpg"
             alt="Poster design for New Alumni '19" loading="lazy">
-        <figcaption>Poster design for New Alumni '19</figcaption>
+        <figcaption>Poster design for "New Alumni '19"</figcaption>
     </figure>
     <figure style="flex: 1.4997">
     <small>Installation and de-install<br><a
@@ -91,6 +91,6 @@ highlights from that time, alongside the core role(s) I played in the production
 ## License
 All images are licensed to University of Greenwich Galleries and Francesco Imola under a <a rel="license"
     href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons
-    Attribution-NonCommercial-ShareAlike 4.0 International License</a> unless otherwise stated. Works are licensed to individual artists. The best effort has been taken to ensure artworks and artists are corretly credited. If you find any errors, please <a
-    href="mailto:frn.imola@gmail.com?subject=Re%20Credits%20error%20on%20your%20website">let me know</a> and I will
+    Attribution-NonCommercial-ShareAlike 4.0 International License</a> unless otherwise stated. Works are licensed to individual artists. The best effort has been taken to ensure artworks and artists are correctly credited. If you find any errors, please <a
+    href="mailto:hi@francescoimola.com?subject=Re%20Credits%20error%20on%20your%20website">let me know</a> and I will
 correct them.

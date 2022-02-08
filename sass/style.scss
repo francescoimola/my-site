@@ -171,7 +171,7 @@ a {
   -webkit-text-decoration-color: $links;
   text-decoration-color: $links;
   text-decoration-thickness: $border-line;
-  text-underline-offset: $border-line * 4;
+  text-underline-offset: $border-line * 2.5;
 
   &:focus {
     color: $primary;

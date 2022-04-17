@@ -13,7 +13,7 @@ description: Curatorial support, installation, exhibition design, and photograph
     }
 </style>
 
-Between 2018 and 2020 I assisted the production, marketing, and documentation of over 60 art and architecture exhibitions
+Between 2018 and 2020, I assisted in the producing, marketing, and documenting over 60 art and architecture exhibitions
 and events at the [University of Greenwich Galleries](https://www.greenwichunigalleries.co.uk/). Here are some of the
 highlights from that time, alongside the core role(s) I played in the production and delivery of each project.
 

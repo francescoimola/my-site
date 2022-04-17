@@ -2,7 +2,7 @@
 title: TEDx University of Greenwich
 description: Digital and Stage design for TEDx University of Greenwich, 2019-2021
 ---
-For _Journeys_, the 2021 iteration of TEDx University of Greenwich, I collaborated with a small team of filmmakers, producers, and theatre experts. We designed and produced a TEDx sign and two stage panels (green screens where the the Virtual Production team "projected" background animations). These elements were central to the set design and served to filmmakers, who implemented cutting-edge Virtual Production techniques to film the event—in a way that had never been done before for any TEDx talk.
+For _Journeys_, the 2021 iteration of TEDx University of Greenwich, I collaborated with a small team of filmmakers, producers, and theatre experts. We designed and produced a TEDx sign and two green-screen-fitted stage panels. These elements were central to the set design and served filmmakers, who implemented cutting-edge Virtual Production techniques to film the event—in a way that had never been done before for any TEDx talk.
 
 External contractors fabricated the screens while I produced the TEDx sign using a CNC router, theatre paints, lots of patience, and the invaluable help of Greenwich technicians.
 
@@ -24,7 +24,7 @@ External contractors fabricated the screens while I produced the TEDx sign using
     </figure>
 </div>
 
-For _Journeys_ I also translated the programme of talks into a responsive and highly-accessible [website](https://journeys-tedx.glitch.me/) for the event attendees to stay informed of speakers, topics, and times. I followed TEDx branding while bringing the site's visual language close to that of the University of Greenwich. I made it as lightweight as possible (internet signal in the venue is scarce, so I kept the site under 6KB) and built it so that it is accessible from any device and to all users. 
+For "Journeys" I also translated the programme of talks into a responsive and highly-accessible [website](https://journeys-tedx.glitch.me/) for the event attendees to stay informed of speakers, topics, and times. I followed TEDx branding while bringing the site's visual language close to that of the University of Greenwich. I made it as lightweight as possible (internet signal in the venue is scarce, so I kept the site under 6KB) and built it to be accessible from any device and to all users. 
 
 <figure>
     <img src="assets/tedx/frame.jpg" alt="Mockup of a phone and a laptop with the TEDx 2021 programme website in their viewports" loading="lazy">
@@ -43,5 +43,3 @@ For _Journeys_ I also translated the programme of talks into a responsive and hi
 ## License
 
 [This](#event_image){: .internal-link} photograph on this page is credited to TEDx University of Greenwich on <a href="https://flic.kr/p/2mGZF7n" target="_blank" rel="noopener noreferrer">Flickr</a>. The TEDx Logo, visual design, and branding is licensed to <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" rel="noopener noreferrer">TED</a>. Source code for the 2021 Programme site is available on <a href="https://glitch.com/edit/#!/journeys-tedx" target="_blank" rel="noopener noreferrer">Glitch</a> and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-

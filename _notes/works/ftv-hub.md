@@ -2,10 +2,11 @@
 title: Film & TV Hub, University of Greenwich
 description: Information Architecture, Community Management, and Content Design for a major hub for Film & TV students at the University of Greenwich.
 ---
+When I joined the Greenwich Film & TV Programmes in 2020, the teaching team needed an accessible, reliable, and easy to maintain digital space for students to find information on creating and distributing their audiovisual work. The growing impact of the pandemic on education heightened the need for a centralised platform that would ease the workload for management, lecturers, and students.
 
-I developed and implemented a central hub for all Film & TV students at the University of Greenwich. Hosted on their e-learning platform, the Hub gives access to an array of resources on funding, producing, location-scouting, casting, shooting, and marketing to help students create and distribute their films and TV pilots. 
+So over six months, I developed and implemented a central hub for all Film & TV students. The Hub gives access to resources on funding, producing, location-scouting, casting, shooting, and marketing to guide students to create and distribute their films and TV pilots. It also provides detailed guidelines for shooting during Covid, which I assembled with the help of industry specialists.
 
-WHile building the Hub, I also supported senior staff on the Film & TV Programmes in managing a newly-opened community space on Slack, where I maintained a channel in which I shared links to affordable film festivals and awards for students to submit their films. To invite students to join the Hub and the Slack workspace, I designed engaging social media posts and internal communication graphics.
+While building the Hub, I helped manage a new community space on Slack. I then designed engaging social media posts and internal communication graphics to attract and invite students to join the Hub and the Slack workspace.
 
 <figure>
         <img src="assets/ftv/we_built_a_hub.png" alt="Typography design reading 'Business of Film (explained)' fading in and out at the centre of the frame in loop" loading="lazy">

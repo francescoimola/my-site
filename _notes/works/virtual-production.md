@@ -3,9 +3,9 @@ title: "Virtual Production: How to Be Good"
 description: Digital Marketing and Content Design for a practice-based research project on Virtual Production at the University of Greenwich.
 ---
 
-While at University of Greenwich, I worked on many fascinating projects. "How to be Good" was certainly one of my favourites. For this ambitious production, I shot BTS photographs, created content, and co-curated a social media campaign sharing its outputs.
+While at the University of Greenwich, I worked on many fascinating projects. "How to be Good" was undoubtedly one of my favourites. I shot BTS photographs for this ambitious production, created content, and co-curated a social media campaign sharing its outputs.
 
-Film & TV staff and practitioners at the School of Design produced a short film using Virtual Production technologies as part of a wider research activity looking at how to best integrate VP in current film and television education. Outputs from the project raised awareness of the importance of Virtual Production in the future of the screen industries and helped the Film & TV Programmes secure a book deal.
+Film & TV staff and practitioners at the School of Design produced a short film using Virtual Production technologies as part of a broader research activity looking at how best to integrate VP into current film and television education. Outputs from the project raised awareness of the importance of Virtual Production in the future of the screen industries and helped the Film & TV Programmes secure a book deal.
 
 <figure>
         <img src="assets/ftv/jodi_talks_to_actress.png" alt="director talks to actress" loading="lazy">

@@ -2,9 +2,9 @@
 title: How to feel more at home
 description: Website incorporating an expanded poem, a series of photographs, and semi-generative audiovisual elements into one interactive landing page
 ---
-"How to feel more at home" is a web work I created in 2020. It incorporates an expanded poem, a series of photographs, and semi-generative audiovisual elements into a vibrant landing page. The work reveals itself as the user interacts, almost by instinct, with elements framing the poem.
+"How to feel more at home" is a 2020 web-based work that incorporates an expanded poem, a series of photographs, and semi-generative audiovisual components into a landing page. The work reveals itself as the user interacts, almost by instinct, with elements framing the poem.
 
-This work was born out of a desire to explore and articulate personal ideas of home, what (and who) makes one, and how to find meaning living in-between homes. It is inspired and expanded by an [Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home) by the same title that I started in 2020 and now tend to on a weekly basis.
+This work was born out of a desire to explore and articulate personal ideas about home, what (and who) makes one, and how to find meaning living in-between homes. It is inspired and expanded by an [Are.na channel](https://www.are.na/francesco-imola-2o2ng4qooxm/how-to-feel-more-at-home) by the same title, started in 2020 and now maintained monthly.
 
 I built "How to feel more at home" using [p5.js](https://p5js.org/), [Tone.js](https://tonejs.github.io/), and
 [Tonal](https://github.com/tonaljs/tonal).

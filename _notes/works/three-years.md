@@ -1,13 +1,13 @@
 ---
 title: Three Years
-description: Over a thousand tweets from my old Twitter account compiled in a book, installed in an exhibition, and read in-person uninterruptedly.  
+description: Over a thousand tweets from my old Twitter account compiled in a book, installed in an exhibition, and read in person uninterruptedly.  
 ---
 
 In 2019, I downloaded my entire Twitter archive of over a thousand tweets from my (old, now closed) account spanning nearly three years. I used this dataset to write a book, install it in an exhibition, and perform an uninterrupted 2:30 hrs live reading. As a believer in the power of journaling, I was interested in how presenting data as a stream of consciousness could tell the story of how it came to be published on social media.    
 
-"Three Years" was launched and read live on 23 March 2019 at the Heritage Gallery of University of Greenwich Galleries. It was displayed as part of [528](http://www.greenwichunigalleries.co.uk/fivetoeight/), a group show I co-curated with fellow students at the University of Greenwich.
+"Three Years" was launched and read live on 23 March 2019 at the Heritage Gallery of the University of Greenwich Galleries. It was displayed as part of [528](http://www.greenwichunigalleries.co.uk/fivetoeight/), a group show I co-curated with fellow students at the University of Greenwich.
 
-To display the book, I built a custom "single-bookshelf" from a wooden pole in which the book is slotted in. I installed this on a plinth I customised for the show. Designing "Three Years" was my first attempt at book design. Since then, I have created several more physical designs, including posters, booklets, signage, and [[Everything You See Is In The Past|exhibition catalogues]].
+I built a custom "single-bookshelf" from a wooden pole in which the book is slotted in to display the book. I installed this on a plinth I customised for the show. Designing "Three Years" was my first attempt at book design. Since then, I have created several more physical designs, including posters, booklets, signage, and [[Everything You See Is In The Past|exhibition catalogues]].
 
 <figure>
   <img src="assets/three_years/mockup.png" alt="Book Mockup" loading="lazy">
@@ -25,16 +25,7 @@ To display the book, I built a custom "single-bookshelf" from a wooden pole in w
 
 ## Links
 
-* [Read (PDF)](assets/three_years/Three_Years.pdf#view=FitV&pagemode=thumbs)
-
-## Get the paperback of "Three Years"
-
-* [Blackwells](https://blackwells.co.uk/bookshop/product/Three-Years-by-Imola-Francesco/9780244761820) (UK)
-* [Lulu](https://www.lulu.com/en/gb/shop/francesco-imola/three-years/paperback/product-14q2wqw6.html?page=1&pageSize=4) (UK)
-* [Book Depository](https://www.bookdepository.com/book/9780244761820) (UK and Selected Countries)
-* [Barnes and Noble](https://www.barnesandnoble.com/w/three-years-francesco-imola/1131049662) (US and Selected Countries)
-* [Amazon](https://amzn.to/34NvaSW) (Worldwide - Affiliate link)
-* [Google Books](https://www.google.co.uk/books/edition/Three_Years/zxGKDwAAQBAJ) (Elsewhere)
+The paperback book is no longer available to purchase. But you can still [read the digital version](assets/three_years/Three_Years.pdf#view=FitV&pagemode=thumbs)
 
 ## Specs
 

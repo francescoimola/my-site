@@ -38,6 +38,7 @@ $query: "max-width: 834px";
   margin: 0;
   padding: 0;
   border: 0;
+/*   border: 1px solid yellow; */
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -83,11 +84,15 @@ body {
   // Less padding on mobile
   @media screen and ($query) {
     & {
-      padding: 1vh 4vw;
+      padding: 0 4vw;
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
     }
   }
+}
+
+main {
+  padding-bottom: $line-h * 4;
 }
 
 // Prevent `sub` and `sup` elements from affecting the line height in all browsers
@@ -115,7 +120,7 @@ textarea {
   // Change the font styles in all browsers
   font-size: 100%;
   line-height: 1.15;
-
+  background: transparent;
   // Remove the margin in Firefox and Safari
   margin: 0;
 }
@@ -163,7 +168,7 @@ strong {
 }
 
 // Links
-a {
+a, button {
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
@@ -172,6 +177,7 @@ a {
   text-decoration-color: $links;
   text-decoration-thickness: $border-line;
   text-underline-offset: $border-line * 2.5;
+  cursor: pointer;
 
   &:focus {
     color: $primary;
@@ -179,6 +185,12 @@ a {
     outline: 1px dotted;
   }
 
+  &:hover {
+    color: $primary;
+  }
+}
+
+a {
   // Change underline color for links that have been visited
   &:visited {
     -webkit-text-decoration-color: #e6931e;
@@ -189,7 +201,7 @@ a {
   &:after {
     position: relative;
     font-size: calc(6px + 0.4vw);
-    content: "\00a0\00a0\279A""";
+    content: "\00a0\00a0\279A", "";
     line-height: 0;
     color: $lighter;
     padding-right: 0.3em;
@@ -200,6 +212,11 @@ a {
   // Do not display pseudo-element on internal links
   &.internal-link:after {
     display: none;
+  }
+
+  &.novisited:visited {
+    -webkit-text-decoration-color: revert;
+    text-decoration-color: revert;
   }
 }
 
@@ -240,6 +257,16 @@ nav {
   a:visited {
     -webkit-text-decoration-color: $links;
     text-decoration-color: $links;
+  }
+}
+
+table{
+  width: 100%;
+
+  th, td {
+    width: 25%;
+    padding: $rootsize $rootsize $rootsize 0;
+    text-align: left;
   }
 }
 

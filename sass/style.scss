@@ -38,7 +38,7 @@ $query: "max-width: 834px";
   margin: 0;
   padding: 0;
   border: 0;
-/*   border: 1px solid yellow; */
+  /*   border: 1px solid yellow; */
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -168,7 +168,8 @@ strong {
 }
 
 // Links
-a, button {
+a,
+button {
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
@@ -191,6 +192,7 @@ a, button {
 }
 
 a {
+
   // Change underline color for links that have been visited
   &:visited {
     -webkit-text-decoration-color: #e6931e;
@@ -201,7 +203,7 @@ a {
   &:after {
     position: relative;
     font-size: calc(6px + 0.4vw);
-    content: "\00a0\00a0\279A", "";
+    content: "\00a0\00a0\279A" "";
     line-height: 0;
     color: $lighter;
     padding-right: 0.3em;
@@ -257,16 +259,6 @@ nav {
   a:visited {
     -webkit-text-decoration-color: $links;
     text-decoration-color: $links;
-  }
-}
-
-table{
-  width: 100%;
-
-  th, td {
-    width: 25%;
-    padding: $rootsize $rootsize $rootsize 0;
-    text-align: left;
   }
 }
 
@@ -329,101 +321,12 @@ video+figcaption {
   margin-top: -($line-h);
 }
 
-// Style the flexbox div that contains the "details" drop-down boxes on the homepage
-.parent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: stretch;
-  margin-top: $line-h * 2;
-
-  @media screen and ($query) {
-
-    // Restyle parent on mobiles
-    & {
-      flex-wrap: wrap;
-    }
-  }
-
-  // Split width equally
-  .item {
-    width: 50%;
-    margin-right: $rootsize;
-
-    @media screen and ($query) {
-
-      // Restyle item on mobiles
-      & {
-        width: 100%;
-        max-width: 100%;
-        margin-right: revert;
-      }
-    }
-
-    // First-side: Left
-    &:nth-child(1) {
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto;
-    }
-
-    // Second-side: Right
-    &:nth-child(2) {
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto;
-    }
-  }
-}
-
-// Legacy Firefox implementation of flexbox. Treats all flex containers as inline-block elements.
-@-moz-document url-prefix() {
-  .parent {
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
-
 summary {
   cursor: pointer;
 }
 
 details summary>* {
   display: inline-block;
-}
-
-// Fix stilying issues with details and summary. IE will ignore these settings.
-@supports not (-ms-ime-align: auto) {
-
-  details {
-    /*Add the correct display in Edge, IE 10+, and Firefox*/
-    display: block;
-    border: ($border-line*1.2) solid $primary;
-    margin-bottom: $rootsize;
-
-    & summary>h2 {
-      display: inline;
-    }
-
-    &:hover {
-      background: $light;
-    }
-
-    summary {
-      padding: $rootsize;
-      user-select: none;
-    }
-
-    .contents {
-      padding: ($rootsize/4) $rootsize;
-
-      &>h3 {
-        margin-top: 0;
-      }
-    }
-  }
 }
 
 // Style internal links that point to not-yet-existing pages 
@@ -456,6 +359,20 @@ figure+.split-layout,
 
   @media screen and ($query) {
     display: block;
+  }
+}
+
+.category[data-number] {
+  margin-top: $line-h;
+  padding-top: $rootsize;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $rootsize;
+  grid-auto-rows: minmax(100px, auto);
+  border-top: 2px solid $lighter;
+
+  figure img {
+    margin: 0;
   }
 }
 

@@ -325,10 +325,6 @@ summary {
   cursor: pointer;
 }
 
-details summary>* {
-  display: inline-block;
-}
-
 // Style internal links that point to not-yet-existing pages 
 .invalid-link {
   color: mix($site, white, 80%);

@@ -263,10 +263,6 @@ summary {
   cursor: pointer;
 }
 
-details summary > * {
-  display: inline-block;
-}
-
 .invalid-link {
   color: #34363a;
   cursor: help;

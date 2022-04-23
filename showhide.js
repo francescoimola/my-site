@@ -21,7 +21,7 @@ for (let button of Buttons) {
     for (let category of allContent) {
       /* display the content if the value in the data attribute of the button and category are the same */
       if (category.getAttribute('data-number') === button.getAttribute('data-number')) {
-        category.style.display = "grid";
+        category.style.display = "block";
       }
       // if it's not equal then hide it.
       else {

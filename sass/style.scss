@@ -8,12 +8,12 @@ $lighter: mix($site, white, 50%);
 // Measurements
 $rootsize: 1em;
 $line-h: 1.4em;
-$small: #{"min(max(12px, 1.5vw), 15px);"};
+$small: #{"min(max(10px, 1.5vw), 13px);"};
 $border-line: 0.08em;
 $header-size: 1.8em;
 
 //Typefaces
-$SpaceGrotesk: "Space Grotesk",
+$Arimo: "Arimo",
 -apple-system,
 BlinkMacSystemFont,
 Segoe UI,
@@ -57,8 +57,8 @@ $query: "max-width: 834px";
 // HTML-wide settings
 html {
   background-color: $site;
-  font-size: 18px;
-  font-size: #{"min(max(16px, 1.5vw), 22px);"};
+  font-size: 16px;
+  font-size: #{"min(max(16px, 1.5vw), 20px);"};
   margin: 0;
   padding: 0;
   -webkit-text-size-adjust: 100%;
@@ -68,7 +68,7 @@ html {
   text-rendering: auto;
   text-align: left;
   color: $primary;
-  font-family: $SpaceGrotesk;
+  font-family: $Arimo;
   line-height: $line-h;
   word-break: break-word;
 }
@@ -203,7 +203,7 @@ a {
   &:after {
     position: relative;
     font-size: calc(6px + 0.4vw);
-    content: "\00a0\00a0\279A" "";
+    content: "\00a0\00a0\279A";
     line-height: 0;
     color: $lighter;
     padding-right: 0.3em;
@@ -359,16 +359,63 @@ figure+.split-layout,
 }
 
 .category[data-number] {
-  margin-top: $line-h;
-  padding-top: $rootsize;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: $rootsize;
-  grid-auto-rows: minmax(100px, auto);
-  border-top: 2px solid $lighter;
+  display: block;
 
-  figure img {
-    margin: 0;
+  section {
+    margin-top: $line-h;
+    padding-top: $rootsize;
+    border-top: 2px solid $lighter;
+
+    .entry {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: $rootsize;
+      margin-bottom: $rootsize;
+
+      @media screen and ($query) {
+        display: block;
+
+        div {
+          padding-bottom: 1em;
+
+          &:last-child {
+            padding-bottom: revert;
+          }
+        }
+      }
+    }
+
+    .samples {
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: $rootsize/4;
+
+      @media screen and ($query) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      img {
+        margin: 0;
+        vertical-align: top;
+        
+        &:hover {
+          -webkit-transform: scale(3);
+          transform: scale(2) translate(5%, 0);
+          display: table-cell;
+          margin-left: auto;
+          margin-right: auto;
+          z-index: 99;
+
+          @media screen and ($query) {
+            -webkit-transform: revert;
+            transform: revert;
+            display: revert;
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 }
 

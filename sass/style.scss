@@ -75,7 +75,7 @@ html {
 
 // Body settings
 body {
-  padding: 1vh 15vw;
+  padding: 0vh 18vw;
   max-width: 100vw;
   height: 100vh;
   overflow-y: scroll;
@@ -368,9 +368,13 @@ figure+.split-layout,
 
     .entry {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: $rootsize;
       margin-bottom: $rootsize;
+
+      .info {
+        grid-column: span 2;
+      }
 
       @media screen and ($query) {
         display: block;
@@ -388,20 +392,29 @@ figure+.split-layout,
     .samples {
       z-index: 1;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-flow: dense;
       gap: $rootsize/4;
+
+      video {
+        vertical-align: top;
+        object-fit: contain;
+        margin: 0;
+        grid-column: 1 / 3;
+      }
 
       @media screen and ($query) {
         grid-template-columns: repeat(2, 1fr);
       }
 
       img {
-        margin: 0;
         vertical-align: top;
-        
+        object-fit: scale-down;
+        margin: 0;
+
         &:hover {
           -webkit-transform: scale(3);
-          transform: scale(2) translate(5%, 0);
+          transform: scale(3);
           display: table-cell;
           margin-left: auto;
           margin-right: auto;

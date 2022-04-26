@@ -16,8 +16,6 @@ Cross-referencing mythology, pop culture, the supernatural, digital self-hood, a
 
 _July 2020_
 
-[[Feed Your Demons and Meet the Ally|Go back to the exhibition overview]]
-
 ## Bibliography
 
 1. Allione, Lama Tsultrim. 2020. “How To Feed Your Demons”. Lion’s Roar. https://www.lionsroar.com/how-to-practice-feeding-your-demons/.     

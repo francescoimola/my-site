@@ -5,11 +5,8 @@
 <body>
   {% if page.id == "home" %}
   <!-- Homepage -->
-  <nav>
-    <h1 class="title">Hello! I'm {{ site.title }}</h1>
-    <p class="subtitle">Cultural Producer, Designer, Digital Marketer</p>
-  </nav>
-  <main>{{ content }}</main>
+  <nav>{%- include breadcrumbs.html -%}</nav>
+  <main style="margin-top: 1em;">{{ content }}</main>
   {%- include all.html -%}
   </div>
   <!-- End Homepage -->

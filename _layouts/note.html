@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
-<article>
-  <h2>{{ page.title }}</h2>
-  {{ content }}
-</article>
+
+<body>
+    <nav>{%- include breadcrumbs.html -%}</nav>
+    <main>
+        <article>
+            <h2>{{ page.title }}</h2>
+            {{ page.content }}
+        </article>
+    </main>
+    <footer>{%- include footer.html -%}</footer>
+    <script src="showhide.js"></script>
+</body>

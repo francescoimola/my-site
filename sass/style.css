@@ -259,13 +259,13 @@ video {
   display: block;
 }
 
-.category[data-number] section {
+.category[data-number] .work {
   margin-top: 1.4em;
   padding-top: 1em;
   border-top: 2px solid #808284;
 }
 
-.category[data-number] section .entry {
+.category[data-number] .work .entry {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -274,27 +274,27 @@ video {
   margin-bottom: 1em;
 }
 
-.category[data-number] section .entry a {
+.category[data-number] .work .entry a {
   white-space: nowrap;
 }
 
-.category[data-number] section .entry .info {
+.category[data-number] .work .entry .info {
   grid-column: span 2;
 }
 
 @media screen and (max-width: 834px) {
-  .category[data-number] section .entry {
+  .category[data-number] .work .entry {
     display: block;
   }
-  .category[data-number] section .entry div {
+  .category[data-number] .work .entry div {
     padding-bottom: 1em;
   }
-  .category[data-number] section .entry div:last-child {
+  .category[data-number] .work .entry div:last-child {
     padding-bottom: revert;
   }
 }
 
-.category[data-number] section .samples {
+.category[data-number] .work .samples {
   z-index: 1;
   display: -ms-grid;
   display: grid;
@@ -305,7 +305,7 @@ video {
 }
 
 @media screen and (max-width: 834px) {
-  .category[data-number] section .samples {
+  .category[data-number] .work .samples {
     -ms-grid-columns: none;
         grid-template-columns: none;
     display: -webkit-box;
@@ -321,8 +321,8 @@ video {
   }
 }
 
-.category[data-number] section .samples video,
-.category[data-number] section .samples img {
+.category[data-number] .work .samples video,
+.category[data-number] .work .samples img {
   -o-object-fit: contain;
      object-fit: contain;
   vertical-align: top;
@@ -330,8 +330,8 @@ video {
 }
 
 @media screen and (max-width: 834px) {
-  .category[data-number] section .samples video,
-  .category[data-number] section .samples img {
+  .category[data-number] .work .samples video,
+  .category[data-number] .work .samples img {
     width: 80%;
     height: auto;
     -ms-flex-negative: 0;
@@ -340,7 +340,7 @@ video {
   }
 }
 
-.category[data-number] section .samples img:hover {
+.category[data-number] .work .samples img:hover {
   -webkit-transform: scale(3);
   transform: scale(3);
   display: table-cell;
@@ -350,7 +350,7 @@ video {
 }
 
 @media screen and (max-width: 834px) {
-  .category[data-number] section .samples img:hover {
+  .category[data-number] .work .samples img:hover {
     display: revert;
     margin: 0;
     -webkit-transform: none;

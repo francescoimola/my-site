@@ -322,7 +322,7 @@ video {
 .category[data-number] {
   display: block;
 
-  section {
+  .work {
     margin-top: $line-h;
     padding-top: $rootsize;
     border-top: 2px solid $lighter;

@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
-<div>
-{{ content }}
-</div>
+
+<body>
+    <main style="margin-top: 1em;">
+        {{ page.content }}
+    </main>
+    {%- include all.html -%}
+    <footer>{%- include footer.html -%}</footer>
+    <script src="showhide.js"></script>
+</body>

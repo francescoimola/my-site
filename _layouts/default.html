@@ -1,23 +1,2 @@
-<!DOCTYPE html>
-<html lang="en">
 {%- include head.html -%}
-
-<body>
-  {% if page.id == "home" %}
-  <!-- Homepage -->
-  <nav>{%- include breadcrumbs.html -%}</nav>
-  <main style="margin-top: 1em;">{{ content }}</main>
-  {%- include all.html -%}
-  </div>
-  <!-- End Homepage -->
-  {% else %}
-  <!-- Notes Pages -->
-  <nav>{%- include breadcrumbs.html -%}</nav>
-  <main>{{ content }}</main>
-  {% endif %}
-  <!-- Footer -->
-  <footer>{%- include footer.html -%}</footer>
-  <script src="showhide.js"></script>
-</body>
-
-</html>
+{{ content }}

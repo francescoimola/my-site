@@ -221,15 +221,16 @@ a {
 }
 
 // Style <small> tag
-small {
+small,
+.makeitsmall {
   display: block;
   font-size: $small;
   color: $lighter;
   line-height: $rootsize * 1.5;
+}
 
-  &.revert {
-    color: revert;
-  }
+small.revert, .makeitsmall.revert  {
+  color: revert;
 }
 
 // Site navigation

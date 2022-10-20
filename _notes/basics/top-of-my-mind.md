@@ -1,20 +1,21 @@
 ---
 title: What's at the top of my mind
 ---
-People often ask me what I'm doing, so here's what's on my plate:
+Here's what's on my plate:
 
-* I've just been promoted to Marketing and Communications Officer at [Blueberry](https://blueberrycreatives.co.uk/). Lately, I've been spending most of my week improving and maintaining workflows to make the team more efficient and our marketing outputs consistent. I'm also co-designing a new company website and creating email and social media content.
-* My time on [Node](https://nodecenter.net/)'s International Curatorial Programme is ending, and I'm now summarising my learnings in a final assignment.
-* When I'm not doing the above, I'm either taking a long walk, eating falafel, tending to my [Are.na channels](https://www.are.na/francesco-imola-2o2ng4qooxm/), or practicing yoga.
+* I have recently moved from London to Folkestone, in the south of England. I’m a 10 min walk to the sea and not far from kilometres of beautiful coastline, cliffs, parks, and nature. [Here](https://www.are.na/block/18552671) I talk more about how it felt to leave the city—spoiler: it wasn't easy, but I think I made the right decision.
+* Lately, I've been spending my work week improving [Blueberry](https://blueberrycreatives.co.uk/)'s marketing workflows, creating content for their social media, and redesigning their newsletters.
+* I'm part of an international group of curators and art practictioners. We're meeting monthly to discuss work, art and life. We share learning experiences and are slowly discovering common interests.
+* When I'm not doing the above, I'm either taking long walks, tending to my [Are.na channels](https://www.are.na/francesco-imola-2o2ng4qooxm/), practicing yoga, bing-watching tiny-house videos, or listening to Phoebe Bridgers.
 
 ### What I'm reading
 
-* Are.na 2022 Annual
-* The Trial by Franz Kafka
+* Design as Art - Bruno Munari
+* The Precipice - Toby Ord
 
 ### What's playing in my headphones
-Check out my [recently played artists on Spotify](https://open.spotify.com/user/francescoimola?si=9c88c6d6a55c4ac7)
+[Follow me on Last.fm](https://www.last.fm/user/imolafrancesco)
 
 ### What should I read or watch next
 
-[Send me an email](mailto:hi@francescoimola.com?body=Hi%20Francesco%2C) with the title of a book/film/series you think I might like. I'm a big fan of documenatries and semi-autobiographical books, but I'm open to any genre.
+[Send me an email](mailto:hi@francescoimola.com?body=Hi%20Francesco%2C) with the title of a book, film, or series you think I might like. I'm a big fan of documentaries and semi-autobiographical stuff, but I'm open to any genre.

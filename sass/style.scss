@@ -99,7 +99,7 @@ main {
     padding: 0;
   }
 
-  padding: 0 0 ($line-h * 4) 0;
+  padding: ($line-h * 2) 0;
 }
 
 // Prevent `sub` and `sup` elements from affecting the line height in all browsers

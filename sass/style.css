@@ -54,7 +54,7 @@ body {
 }
 
 main {
-  padding: 0 0 5.6em 0;
+  padding: 3em 0;
 }
 
 main h1 {
@@ -168,14 +168,15 @@ a.novisited:visited {
   text-decoration-color: revert;
 }
 
-small {
+small,
+.makeitsmall {
   display: block;
   font-size: min(max(12px, 1.5vw), 13px);;
   color: #808284;
   line-height: 1.5em;
 }
 
-small.revert {
+small.revert, .makeitsmall.revert {
   color: revert;
 }
 

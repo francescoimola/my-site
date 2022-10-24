@@ -9,8 +9,6 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 *:active,
@@ -34,8 +32,8 @@ html {
   text-align: left;
   color: #dbdcdd;
   font-family: "Arimo", -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, noto color emoji,
-    android emoji;
+  Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, noto color emoji,
+  android emoji;
   line-height: 1.4em;
   word-break: break-word;
 }
@@ -151,21 +149,6 @@ a:visited {
   text-decoration-color: #e6931e;
 }
 
-a:after {
-  position: relative;
-  font-size: calc(6px + 0.4vw);
-  content: "\00a0\00a0\279A";
-  line-height: 0;
-  color: #808284;
-  padding-right: 0.3em;
-  margin: 0;
-  margin-left: -0.05em;
-}
-
-a.internal-link:after {
-  display: none;
-}
-
 a.novisited:visited {
   -webkit-text-decoration-color: revert;
   text-decoration-color: revert;
@@ -267,7 +250,7 @@ video {
 .category[data-number] .work {
   margin-top: 1.4em;
   padding-top: 1em;
-  border-top: 2px solid #808284;
+  border-top: 1px solid #808284;
 }
 
 .category[data-number] .work .entry {

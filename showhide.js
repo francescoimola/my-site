@@ -1,2 +1,17 @@
-let Buttons=document.querySelectorAll(".selectors button");for(let button of Buttons){button.addEventListener("click",(e)=>{const et=e.target;const active=document.querySelector(".active");if(active){active.classList.remove("active")}
-et.classList.add("active");let allContent=document.querySelectorAll(".category");for(let category of allContent){if(category.getAttribute("data-number")===button.getAttribute("data-number")){category.style.display="block"}else{category.style.display="none"}}})}
+let Buttons = document.querySelectorAll(".selectors button");
+
+for (let button of Buttons) {
+	button.addEventListener("click", (e) => {
+
+		let allContent = document.querySelectorAll(".category");
+		for (let category of allContent) {
+			if (category.getAttribute("data-number") === button.getAttribute("data-number")) {
+				category.style.display = "block";
+				category.style.visibility = "visible";
+			} else {
+				category.style.display = "none";
+				category.style.visibility = "hidden";
+			}
+		}
+	});
+}

@@ -119,8 +119,7 @@ strong {
   font-weight: 700;
 }
 
-a,
-button {
+a, button {
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
@@ -130,7 +129,7 @@ button {
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.2em;
   cursor: pointer;
-}
+};
 
 a:focus,
 button:focus {
@@ -142,11 +141,15 @@ button:focus {
 a:hover,
 button:hover {
   color: #dbdcdd;
-}
+};
 
 a:visited {
   -webkit-text-decoration-color: #e6931e;
   text-decoration-color: #e6931e;
+}
+
+a.novisited{
+  text-decoration: none;
 }
 
 a.novisited:visited {
@@ -165,22 +168,6 @@ small,
 small.revert,
 .makeitsmall.revert {
   color: revert;
-}
-
-nav #breadcrumbs {
-  margin-top: 0.7em;
-}
-
-nav #breadcrumbs h1,
-nav #breadcrumbs h2 {
-  display: inline;
-  font-size: min(max(12px, 1.5vw), 13px);
-  font-weight: 400;
-}
-
-nav a:visited {
-  -webkit-text-decoration-color: #1ea3e6;
-  text-decoration-color: #1ea3e6;
 }
 
 footer {
@@ -299,7 +286,6 @@ video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow-x: scroll;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
@@ -307,6 +293,11 @@ video {
     -ms-flex-pack: start;
     justify-content: start;
   }
+
+  div.samples.scroll {
+    overflow-x: scroll;
+  }
+
 }
 
 .category[data-number] .work .samples video,

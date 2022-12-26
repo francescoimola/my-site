@@ -133,15 +133,18 @@ a, button {
 
 a:focus,
 button:focus {
-  color: #dbdcdd;
+  color: pink;
   background: #0b0e13;
   outline: 1px dotted;
 }
 
-a:hover,
-button:hover {
+button:hover, .highlighted {
+  color: pink;
+}
+
+a:hover {
   color: #dbdcdd;
-};
+}
 
 a:visited {
   -webkit-text-decoration-color: #e6931e;

@@ -11,6 +11,14 @@
   vertical-align: baseline;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 *:active,
 *:focus {
   outline: none;
@@ -55,7 +63,7 @@ body {
 }
 
 main {
-  padding: 0 0 5.6em 0;
+  padding: 0 0 4vh 0;
 }
 
 sub,
@@ -119,7 +127,27 @@ strong {
   font-weight: 700;
 }
 
-a, button {
+button[data-href] {
+  width: 100%;
+  display: block;
+  border: 1px solid #dbdcdd;
+  padding: 0.8em;
+  margin-bottom: 0.5em;
+  color: #dbdcdd;
+  text-align: left;
+  font-size: 1.8em;
+  line-height: 1.16667em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+button[data-href]:hover, button[data-href]:focus, button[data-href].highlighted {
+  color: #010409;
+  background-color: #dbdcdd;
+}
+
+a {
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
@@ -129,17 +157,12 @@ a, button {
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.2em;
   cursor: pointer;
-};
-
-a:focus,
-button:focus {
-  color: pink;
-  background: #0b0e13;
-  outline: 1px dotted;
 }
 
-button:hover, .highlighted {
-  color: pink;
+a:focus { 
+  color: #dbdcdd;
+  background: #0b0e13;
+  outline: 1px dotted #dbdcdd;
 }
 
 a:hover {
@@ -149,15 +172,6 @@ a:hover {
 a:visited {
   -webkit-text-decoration-color: #e6931e;
   text-decoration-color: #e6931e;
-}
-
-a.novisited{
-  text-decoration: none;
-}
-
-a.novisited:visited {
-  -webkit-text-decoration-color: revert;
-  text-decoration-color: revert;
 }
 
 small,
@@ -193,7 +207,6 @@ blockquote p:first-child {
 }
 
 ul {
-  line-height: 1.68em;
   list-style: none;
   margin: 0 0 1em;
   padding: 0;
@@ -204,8 +217,12 @@ ul li:before {
   margin: 0 0.5em 0 0;
 }
 
-li {
+ul li {
   padding: 0 0 0.5em 0;
+}
+
+ol {
+  margin-left: 1.2em;
 }
 
 nobr {
@@ -223,56 +240,45 @@ video {
   opacity: 100%;
 }
 
-.invalid-link {
-  color: #34363a;
-  cursor: help;
-}
-
-.invalid-link-brackets {
-  color: #1a1d22;
-  cursor: help;
-}
-
-.category[data-number] {
+.category {
   display: block;
 }
 
-.category[data-number] .work {
+.category .work {
   margin-top: 1.4em;
   padding-top: 1em;
   border-top: 1px solid #808284;
 }
 
-.category[data-number] .work .entry {
+.category .work .entry {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [3];
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
   margin-bottom: 1em;
 }
 
-.category[data-number] .work .entry a {
+.category .work .entry a {
   white-space: nowrap;
 }
 
-.category[data-number] .work .entry .info {
+.category .work .entry .info {
   grid-column: span 2;
 }
 
 @media screen and (max-width: 834px) {
-  .category[data-number] .work .entry {
+  .category .work .entry {
     display: block;
   }
-  .category[data-number] .work .entry div {
+  .category .work .entry div {
     padding-bottom: 1em;
   }
-  .category[data-number] .work .entry div:last-child {
+  .category .work .entry div:last-child {
     padding-bottom: revert;
   }
 }
 
-.category[data-number] .work .samples {
+.category .work .samples {
   z-index: 1;
   display: -ms-grid;
   display: grid;
@@ -283,7 +289,7 @@ video {
 }
 
 @media screen and (max-width: 834px) {
-  .category[data-number] .work .samples {
+  .category .work .samples {
     -ms-grid-columns: none;
     grid-template-columns: none;
     display: -webkit-box;
@@ -303,8 +309,8 @@ video {
 
 }
 
-.category[data-number] .work .samples video,
-.category[data-number] .work .samples img {
+.category .work .samples video,
+.category .work .samples img {
   -o-object-fit: contain;
   object-fit: contain;
   vertical-align: top;
@@ -312,8 +318,8 @@ video {
 }
 
 @media screen and (max-width: 834px) {
-  .category[data-number] .work .samples video,
-  .category[data-number] .work .samples img {
+  .category .work .samples video,
+  .category .work .samples img {
     width: 80%;
     height: auto;
     -ms-flex-negative: 0;
@@ -322,7 +328,7 @@ video {
   }
 }
 
-.category[data-number] .work .samples img:hover {
+.category .work .samples img:hover {
   -webkit-transform: scale(3);
   transform: scale(3);
   display: table-cell;
@@ -332,22 +338,12 @@ video {
 }
 
 @media screen and (max-width: 834px) {
-  .category[data-number] .work .samples img:hover {
+  .category .work .samples img:hover {
     display: revert;
     margin: 0;
     -webkit-transform: none;
     transform: none;
   }
-}
-
-.category[data-number="4"] {
-  padding-bottom: 2em;
-}
-
-span.direction {
-  position: relative;
-  font-size: 0.9em;
-  bottom: -0.1em;
 }
 
 /*Add the correct display in IE 10+*/

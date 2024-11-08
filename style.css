@@ -118,6 +118,10 @@ section div {
   border-bottom: 1px solid var(--border-color);
 }
 
+section div a {
+  align-self: flex-start;
+}
+
 section div:last-child {
   border: none;
 }

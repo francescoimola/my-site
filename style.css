@@ -1,6 +1,6 @@
 /* Root CSS Variables */
 :root {
-  --font-size: clamp(14px, 2vw, 17px);
+  --font-size: clamp(15px, 1.15vw, 20px);
   --bkg-col: #010409;
   --bkg-lighter: #dbdcdd1a;
   --text-col: #dbdcdd;
@@ -64,8 +64,8 @@ a {
   font-weight: inherit;
 }
 
-header h1,
-header h1 a,
+header > h1,
+header > h1 > a,
 a {
   color: inherit;
   text-decoration: none;
@@ -73,7 +73,7 @@ a {
 }
 
 header p,
-section div small {
+section > div > small {
   color: var(--secondary-color);
 }
 
@@ -85,6 +85,7 @@ p,
 h2,
 h3,
 li {
+  margin-top: 0;
   margin-bottom: var(--spacing-medium);
   list-style-position: inside;
 }
@@ -112,7 +113,7 @@ a:focus {
 }
 
 section,
-section div {
+section > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,21 +123,21 @@ section div {
   flex-direction: column;
 }
 
-section {
+section.links {
   padding: var(--spacing-large) 0;
   gap: var(--spacing-medium);
 }
 
-section div {
+section.links > div {
   padding-bottom: var(--spacing-medium);
   border-bottom: 1px solid var(--border-color);
 }
 
-section div a {
+section.links > a {
   align-self: flex-start;
 }
 
-section div:last-child, .cards-wrapper div {
+section.links > div:last-child, .cards-wrapper > div {
   border: none;
 }
 
@@ -154,8 +155,8 @@ footer {
 }
 
 .cards-wrapper {
-  margin-left: var(--spacing-small);
-  padding: 0 0 var(--spacing-medium) var(--spacing-large);
+  margin: 0 var(--spacing-small);
+  padding: 0 var(--spacing-large) var(--spacing-medium) var(--spacing-large);
   display: flex;
   flex-direction: row;
   gap: var(--spacing-medium);
@@ -191,6 +192,7 @@ a:focus {
   border-radius: var(--spacing-medium);
 }
 
-.card h3:first-of-type {
+.card > h3:first-of-type {
   padding-top: 0;
 }
+

@@ -136,7 +136,7 @@ section div a {
   align-self: flex-start;
 }
 
-section div:last-child {
+section div:last-child, .cards-wrapper div {
   border: none;
 }
 

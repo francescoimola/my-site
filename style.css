@@ -1,180 +1,196 @@
 /* Root CSS Variables */
 :root {
-  --font-size:clamp(12px,2vw,17px);
-  --bkg-col:#010409;
-  --bkg-lighter:#dbdcdd1a;
-  --text-col:#dbdcdd;
-  --secondary-color:#dbdcddbf;
-  --border-color:#dbdcdd54;
-  --link-col:#1ea3e6;
-  --visited-col:#e6931e;
-  --spacing-small:.5rem;
-  --spacing-medium:1rem;
-  --spacing-large:clamp(1rem,2vw,4rem);
-  --spacing-xlarge:25vw
-  }
-  
-  /* General Reset */
-  * {
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-  font-family:"Archivo",sans-serif;
-  font-weight:400
-  }
-  
-  *,::before,::after {
-  box-sizing:border-box
-  }
-  
-  /* Body Styling */
-  body {
-  margin:var(--spacing-small);
-  padding:var(--spacing-large);
-  background:var(--bkg-col);
-  color:var(--text-col);
-  font-size:var(--font-size);
-  line-height:1.6
-  /* max-width: 60ch; */
-  }
-  
-  /* Header & Typography */
-  header {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  gap:.2rem;
-  margin-bottom:var(--spacing-large);
-  padding-bottom:var(--spacing-medium)
-  }
-  
-  h1,h2,h3,b {
-  font-weight:700;
-  font-size:var(--font-size)
-  }
-  
-  a {
-  font-weight:inherit
-  }
-  
-  header h1,header h1 a,a {
-  color:inherit;
-  text-decoration:none;
-  font-weight:700
-  }
-  
-  header p,section div small {
-  color:var(--secondary-color)
-  }
-  
-  h3 {
-  padding-top:var(--spacing-large)
-  }
-  
-  p,h2,h3,li {
-  margin-bottom:var(--spacing-medium);
-  list-style-position:inside
-  }
-  
-  /* Link Styling */
-  a {
-  color:var(--link-col);
-  position:relative;
+  --font-size: clamp(14px, 2vw, 17px);
+  --bkg-col: #010409;
+  --bkg-lighter: #dbdcdd1a;
+  --text-col: #dbdcdd;
+  --secondary-color: #dbdcddbf;
+  --border-color: #dbdcdd54;
+  --link-col: #1ea3e6;
+  --visited-col: #e6931e;
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: clamp(1rem, 2vw, 4rem);
+  --spacing-xlarge: 25vw;
+}
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo", sans-serif;
   font-weight: 400;
-  }
-  
-  a:hover {
-  text-decoration-style:dotted;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background: var(--bkg-col);
+  color: var(--text-col);
+  font-size: var(--font-size);
+  line-height: 1.6;
+  /* max-width: 60ch; */
+}
+
+/* Header & Typography */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: var(--spacing-large);
+  padding-bottom: var(--spacing-medium);
+}
+
+h1,
+h2,
+h3,
+b {
+  font-weight: 700;
+  font-size: var(--font-size);
+}
+
+a {
+  font-weight: inherit;
+}
+
+header h1,
+header h1 a,
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header p,
+section div small {
+  color: var(--secondary-color);
+}
+
+h3 {
+  padding-top: var(--spacing-large);
+}
+
+p,
+h2,
+h3,
+li {
+  margin-bottom: var(--spacing-medium);
+  list-style-position: inside;
+}
+
+/* Link Styling */
+a {
+  color: var(--link-col);
+  position: relative;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration-style: dotted;
   /* Fallback for dotted underline */
-  text-decoration-color:var(--secondary-color)
-  }
-  
-  a:visited {
-  text-decoration-color:var(--visited-col)
-  }
-  
-  a:focus {
-  outline:2px solid var(--link-col);
-  outline-offset:2px
-  }
-  
-  section,section div {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column
-  }
-  
-  section {
-  padding:var(--spacing-large) 0;
-  gap:var(--spacing-medium)
-  }
-  
-  section div {
-  padding-bottom:var(--spacing-medium);
-  border-bottom:1px solid var(--border-color)
-  }
-  
-  section div a {
-  align-self:flex-start
-  }
-  
-  section div:last-child {
-  border:none
-  }
-  
-  footer {
-  padding-top:var(--spacing-large)
-  }
-  
-  .limit-width {
-  max-width:60ch
-  }
-  
-  .cards-wrapper {
-  display:flex;
-  flex-direction:row;
-  gap:var(--spacing-medium);
-  padding-bottom:var(--spacing-medium);
-  overflow-y:scroll
-  }
-  
-  /* SVG Icon Styling for External Links */
-  .external-link::after {
-  content:url("assets/external-link.svg");
-  margin-left:.25rem;
+  text-decoration-color: var(--secondary-color);
+}
+
+a:visited {
+  text-decoration-color: var(--visited-col);
+}
+
+a:focus {
+  outline: 2px solid var(--link-col);
+  outline-offset: 2px;
+}
+
+section,
+section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+section {
+  padding: var(--spacing-large) 0;
+  gap: var(--spacing-medium);
+}
+
+section div {
+  padding-bottom: var(--spacing-medium);
+  border-bottom: 1px solid var(--border-color);
+}
+
+section div a {
+  align-self: flex-start;
+}
+
+section div:last-child {
+  border: none;
+}
+
+footer {
+  padding-top: var(--spacing-large);
+}
+
+.limit-width {
+  max-width: 60ch;
+}
+
+.dist-from-edges {
+  margin: var(--spacing-small);
+  padding: var(--spacing-large);
+}
+
+.cards-wrapper {
+  margin-left: var(--spacing-small);
+  padding: 0 0 var(--spacing-medium) var(--spacing-large);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-medium);
+  overflow-y: scroll;
+}
+
+/* SVG Icon Styling for External Links */
+.external-link::after {
+  content: url("assets/external-link.svg");
+  margin-left: 0.25rem;
   /* Adjusted for better spacing */
-  vertical-align:middle;
-  display:inline-block;
-  width:.8em;
+  vertical-align: middle;
+  display: inline-block;
+  width: 0.8em;
   /* Scale with the font size */
-  height:auto
-  }
-  
-  /* Focus Ring for Links */
-  a:focus {
-  outline:2px solid var(--link-col);
+  height: auto;
+}
+
+/* Focus Ring for Links */
+a:focus {
+  outline: 2px solid var(--link-col);
   /* Show focus ring only when keyboard-focused */
-  outline-offset:2px
-  }
-  
-  .card {
-  background:var(--bkg-lighter);
-  padding:var(--spacing-large);
-  min-width:40ch;
-  max-width:50ch;
-  align-self:flex-start;
-  height:auto;
-  border-radius:var(--spacing-medium)
-  }
-  
-  .card h3:first-of-type {
-  padding-top:0
-  }
+  outline-offset: 2px;
+}
+
+.card {
+  background: var(--bkg-lighter);
+  padding: var(--spacing-large);
+  min-width: 40ch;
+  max-width: 50ch;
+  align-self: flex-start;
+  height: auto;
+  border-radius: var(--spacing-medium);
+}
+
+.card h3:first-of-type {
+  padding-top: 0;
+}

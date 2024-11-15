@@ -142,10 +142,9 @@ ul {
   z-index: 2;
   text-decoration: none;
   background-color: var(--bkg-col);
-  outline: 0.125rem solid var(--bkg-lighter);
+  outline: 0.0625rem solid var(--bkg-lighter);
   padding: var(--spacing-medium);
   align-self: flex-start;
-  border-radius: var(--spacing-small);
 }
 
 .links > a:hover {

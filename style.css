@@ -85,8 +85,8 @@ a:visited {
 }
 
 a:focus {
-  outline: 1px solid var(--link-col);
-  outline-offset: 2px;
+  outline: 0.0625rem solid var(--link-col);
+  outline-offset: 0.125rem;
 }
 
 .external-link::after {
@@ -142,7 +142,7 @@ ul {
   z-index: 2;
   text-decoration: none;
   background-color: var(--bkg-col);
-  outline: 2px solid var(--bkg-lighter);
+  outline: 0.125rem solid var(--bkg-lighter);
   padding: var(--spacing-medium);
   align-self: flex-start;
   border-radius: var(--spacing-small);
@@ -150,13 +150,13 @@ ul {
 
 .links > a:hover {
   background-color: var(--bkg-mid);
-  outline: 2px solid var(--text-col);
-  outline-offset: -2px;
+  outline: 0.125rem solid var(--text-col);
+  outline-offset: -0.125rem;
   transition: all 0.2s ease-in-out;
 }
 
 .links > a:focus {
-  outline: 1px solid var(--link-col);
+  outline: 0.0625rem solid var(--link-col);
 }
 
 .links > a > div {
@@ -202,7 +202,7 @@ table td {
 }
 
 table tr:not(:last-child) {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0.0625rem solid var(--border-color);
 }
 
 /* Responsive Tables */

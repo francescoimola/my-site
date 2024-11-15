@@ -31,7 +31,6 @@ body {
   font-size: var(--font-size);
   line-height: 1.6;
   color: var(--text-col);
-  filter: blur(0.2px);
 }
 
 /* Typography */

@@ -13,12 +13,12 @@
   /* Define CSS variables for consistent theming */
   --font-size: clamp(15px, 1.15vw, 20px);
   --bkg-col: #010409;
-  --bkg-lighter: rgba(219, 220, 221, 0.06);
+  --bkg-mid: rgba(219, 220, 221, 0.09);
+  --bkg-lighter: #dbdcdd59;
   --text-col: #dbdcdd;
   --secondary-color: #dbdcddbf;
   --border-color: #dbdcdd54;
   --link-col: #1ea3e6;
-  --visited-col: #e6931e;
   --spacing-xsmall: 0.25rem;
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
@@ -80,7 +80,7 @@ a:hover {
 }
 
 a:visited {
-  text-decoration-color: var(--visited-col);
+  text-decoration-color: inherit;
   outline-color: var(--visited-col);
 }
 
@@ -149,7 +149,9 @@ ul {
 }
 
 .links > a:hover {
-  background-color: var(--bkg-lighter);
+  background-color: var(--bkg-mid);
+  outline: 2px solid var(--text-col);
+  outline-offset: -2px;
   transition: all 0.2s ease-in-out;
 }
 

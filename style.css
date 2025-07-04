@@ -5,13 +5,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Archivo, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
 :root {
   /* Define CSS variables for consistent theming */
-  --font-size: clamp(15px, 1.15vw, 20px);
+  --font-size: clamp(20px, 1.15vw, 28px);
   --bkg-col: #010409;
   --bkg-mid: rgba(219, 220, 221, 0.09);
   --bkg-lighter: #dbdcdd59;
@@ -77,6 +77,7 @@ a:hover {
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: var(--secondary-color);
+  text-underline-offset: 0.15rem;
 }
 
 a:visited {
@@ -131,39 +132,16 @@ ul {
 
 .links {
   padding-top: var(--spacing-large);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
-  gap: var(--spacing-small);
-}
-
-.links > a {
-  z-index: 2;
-  text-decoration: none;
-  background-color: var(--bkg-col);
-  outline: 0.0625rem solid var(--bkg-lighter);
-  padding: var(--spacing-medium);
-  align-self: flex-start;
-}
-
-.links > a:hover {
-  background-color: var(--bkg-mid);
-  outline: 0.125rem solid var(--text-col);
-  outline-offset: -0.125rem;
-  transition: all 0.2s ease-in-out;
-}
-
-.links > a:focus {
-  outline: 0.0625rem solid var(--link-col);
-}
-
-.links > a > div {
-  min-height: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: var(--spacing-small);
+  justify-content: stretch;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.links * {
+  width: 100%;;
 }
 
 /* Footer */
